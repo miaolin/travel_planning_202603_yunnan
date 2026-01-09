@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026年3月云南之旅 - 行程规划</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <h1>2026年3月 云南之旅</h1>
+        <div class="trip-dates">2026年3月14日 - 3月22日</div>
+        <div class="trip-info">昆明 • 大理 • 丽江 • 沙溪古镇 | 8天7晚家庭之旅</div>
+    </div>
+
+    <div class="container">
+        <nav class="nav-menu">
+            <a href="#overview">行程概览</a>
+            <a href="#todo">待办事项</a>
+            <a href="#flights">航班信息</a>
+            <a href="#hotels">住宿安排</a>
+            <a href="#itinerary">每日行程</a>
+            <a href="#costs">费用汇总</a>
+        </nav>
+
+        <!-- Section 1: Trip Overview -->
+        <section id="overview" class="section">
+            <h2 class="section-title">行程概览</h2>
+            <div class="overview-grid">
+                <div class="overview-card">
+                    <h3>旅行天数</h3>
+                    <div class="value">8天7晚</div>
+                </div>
+                <div class="overview-card">
+                    <h3>出行人数</h3>
+                    <div class="value">4人</div>
+                </div>
+                <div class="overview-card">
+                    <h3>目的地</h3>
+                    <div class="value">云南</div>
+                </div>
+                <div class="overview-card">
+                    <h3>主要城市</h3>
+                    <div class="value">昆明/大理/丽江</div>
+                </div>
+            </div>
+
+            <div class="tips-section">
+                <div class="tips-title">行程亮点</div>
+                <div class="tip-item">洱海生态走廊骑行,欣赏苍山洱海美景</div>
+                <div class="tip-item">探访大理古城、喜洲古镇、沙溪古镇,感受白族文化</div>
+                <div class="tip-item">玉龙雪山雪景观赏(海拔4680米)</div>
+                <div class="tip-item">亲子手工体验:扎染、鲜花饼制作、陶艺</div>
+                <div class="tip-item">入住洱海景观酒店和雪山全景度假酒店</div>
+                <div class="tip-item">体验云南特色美食:喜洲粑粑、鲜花饼、过桥米线</div>
+            </div>
+        </section>
+
+        <!-- Section 2: To-Do List -->
+        <section id="todo" class="section">
+            <h2 class="section-title">待办事项</h2>
+
+            <div class="todo-list">
+                <div class="todo-category">
+                    <div class="todo-category-title">紧急待办 (高优先级)</div>
+                    <div class="todo-item" onclick="toggleTodo(this)">
+                        <div class="todo-checkbox"></div>
+                        <div class="todo-content">
+                            <div class="todo-text">
+                                支付白沙古镇酒店费用 (¥551.08)
+                                <span class="priority-badge priority-high">高</span>
+                            </div>
+                            <div class="todo-detail">不晚单予酒店,3月18-21日,截止日期:3月21日19:00前可免费取消</div>
+                        </div>
+                    </div>
+                    <div class="todo-item" onclick="toggleTodo(this)">
+                        <div class="todo-checkbox"></div>
+                        <div class="todo-content">
+                            <div class="todo-text">
+                                预订沙溪古镇住宿 (2晚,3月16-18日)
+                                <span class="priority-badge priority-high">高</span>
+                            </div>
+                            <div class="todo-detail">建议订在沙溪古镇中心区域,方便游览</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="todo-category">
+                    <div class="todo-category-title">交通安排</div>
+                    <div class="todo-item" onclick="toggleTodo(this)">
+                        <div class="todo-checkbox"></div>
+                        <div class="todo-content">
+                            <div class="todo-text">
+                                预订昆明机场取车服务
+                                <span class="priority-badge priority-high">高</span>
+                            </div>
+                            <div class="todo-detail">3月14日 07:00取车,3月21日还车,建议选择SUV或MPV</div>
+                        </div>
+                    </div>
+                    <div class="todo-item" onclick="toggleTodo(this)">
+                        <div class="todo-checkbox"></div>
+                        <div class="todo-content">
+                            <div class="todo-text">
+                                办理中国驾照翻译件或国际驾照
+                                <span class="priority-badge priority-medium">中</span>
+                            </div>
+                            <div class="todo-detail">租车公司需要,部分平台提供免费翻译服务</div>
+                        </div>
+                    </div>
+                    <div class="todo-item" onclick="toggleTodo(this)">
+                        <div class="todo-checkbox"></div>
+                        <div class="todo-content">
+                            <div class="todo-text">
+                                下载高德地图或百度地图App
+                                <span class="priority-badge priority-medium">中</span>
+                            </div>
+                            <div class="todo-detail">提前下载云南离线地图包</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="todo-category">
+                    <div class="todo-category-title">景点门票预订</div>
+                    <div class="todo-item" onclick="toggleTodo(this)">
+                        <div class="todo-checkbox"></div>
+                        <div class="todo-content">
+                            <div class="todo-text">
+                                预订玉龙雪山门票+大索道 × 4人
+                                <span class="priority-badge priority-high">高</span>
+                            </div>
+                            <div class="todo-detail">游览日期:3月19日,需提前7-14天预订,约¥500-600/人</div>
+                        </div>
+                    </div>
+                    <div class="todo-item" onclick="toggleTodo(this)">
+                        <div class="todo-checkbox"></div>
+                        <div class="todo-content">
+                            <div class="todo-text">
+                                购买氧气瓶和葡萄糖(玉龙雪山用)
+                                <span class="priority-badge priority-medium">中</span>
+                            </div>
+                            <div class="todo-detail">可在丽江古城购买,约¥30-50/瓶</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="todo-category">
+                    <div class="todo-category-title">体验活动预订</div>
+                    <div class="todo-item" onclick="toggleTodo(this)">
+                        <div class="todo-checkbox"></div>
+                        <div class="todo-content">
+                            <div class="todo-text">
+                                预约双廊木夕大里下午茶 (C4或C5)
+                                <span class="priority-badge priority-medium">中</span>
+                            </div>
+                            <div class="todo-detail">计划日期:3月16日傍晚,需提前预约</div>
+                        </div>
+                    </div>
+                    <div class="todo-item" onclick="toggleTodo(this)">
+                        <div class="todo-checkbox"></div>
+                        <div class="todo-content">
+                            <div class="todo-text">
+                                预订喜洲扎染手工体验
+                                <span class="priority-badge priority-low">低</span>
+                            </div>
+                            <div class="todo-detail">计划日期:3月16日下午,可现场预约</div>
+                        </div>
+                    </div>
+                    <div class="todo-item" onclick="toggleTodo(this)">
+                        <div class="todo-checkbox"></div>
+                        <div class="todo-content">
+                            <div class="todo-text">
+                                预订鲜花饼制作/陶艺体验
+                                <span class="priority-badge priority-low">低</span>
+                            </div>
+                            <div class="todo-detail">素方舟手工活动,可选项目</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="todo-category">
+                    <div class="todo-category-title">证件与保险</div>
+                    <div class="todo-item" onclick="toggleTodo(this)">
+                        <div class="todo-checkbox"></div>
+                        <div class="todo-content">
+                            <div class="todo-text">
+                                确认护照有效期(至少6个月以上)
+                                <span class="priority-badge priority-high">高</span>
+                            </div>
+                            <div class="todo-detail">所有家庭成员的护照</div>
+                        </div>
+                    </div>
+                    <div class="todo-item" onclick="toggleTodo(this)">
+                        <div class="todo-checkbox"></div>
+                        <div class="todo-content">
+                            <div class="todo-text">
+                                购买旅行保险
+                                <span class="priority-badge priority-medium">中</span>
+                            </div>
+                            <div class="todo-detail">建议包含高原反应和自驾保险</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="todo-category">
+                    <div class="todo-category-title">行李准备清单</div>
+                    <div class="todo-item" onclick="toggleTodo(this)">
+                        <div class="todo-checkbox"></div>
+                        <div class="todo-content">
+                            <div class="todo-text">防晒用品 (SPF50+防晒霜、太阳镜、遮阳帽)</div>
+                        </div>
+                    </div>
+                    <div class="todo-item" onclick="toggleTodo(this)">
+                        <div class="todo-checkbox"></div>
+                        <div class="todo-content">
+                            <div class="todo-text">衣物 (外套、长裤、短袖、舒适步行鞋)</div>
+                        </div>
+                    </div>
+                    <div class="todo-item" onclick="toggleTodo(this)">
+                        <div class="todo-checkbox"></div>
+                        <div class="todo-content">
+                            <div class="todo-text">常用药品 (感冒药、肠胃药、创可贴、晕车药)</div>
+                        </div>
+                    </div>
+                    <div class="todo-item" onclick="toggleTodo(this)">
+                        <div class="todo-checkbox"></div>
+                        <div class="todo-content">
+                            <div class="todo-text">电子设备 (相机、充电器、充电宝、转换插头)</div>
+                        </div>
+                    </div>
+                    <div class="todo-item" onclick="toggleTodo(this)">
+                        <div class="todo-checkbox"></div>
+                        <div class="todo-content">
+                            <div class="todo-text">保温杯(高原地区多喝热水)</div>
+                        </div>
+                    </div>
+                    <div class="todo-item" onclick="toggleTodo(this)">
+                        <div class="todo-checkbox"></div>
+                        <div class="todo-content">
+                            <div class="todo-text">打印所有酒店和机票确认单</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="todo-category">
+                    <div class="todo-category-title">出发前检查</div>
+                    <div class="todo-item" onclick="toggleTodo(this)">
+                        <div class="todo-checkbox"></div>
+                        <div class="todo-content">
+                            <div class="todo-text">
+                                确认航班状态(提前24小时)
+                                <span class="priority-badge priority-high">高</span>
+                            </div>
+                            <div class="todo-detail">通过航空公司App或官网查询</div>
+                        </div>
+                    </div>
+                    <div class="todo-item" onclick="toggleTodo(this)">
+                        <div class="todo-checkbox"></div>
+                        <div class="todo-content">
+                            <div class="todo-text">
+                                在线值机(起飞前24-48小时)
+                                <span class="priority-badge priority-medium">中</span>
+                            </div>
+                            <div class="todo-detail">选择合适座位,节省机场时间</div>
+                        </div>
+                    </div>
+                    <div class="todo-item" onclick="toggleTodo(this)">
+                        <div class="todo-checkbox"></div>
+                        <div class="todo-content">
+                            <div class="todo-text">确认所有预订的酒店和活动</div>
+                        </div>
+                    </div>
+                    <div class="todo-item" onclick="toggleTodo(this)">
+                        <div class="todo-checkbox"></div>
+                        <div class="todo-content">
+                            <div class="todo-text">兑换/携带足够现金(人民币)</div>
+                            <div class="todo-detail">虽然移动支付普及,但部分小店仍需现金</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tips-section">
+                <div class="tips-title">待办事项提醒</div>
+                <div class="tip-item">点击待办事项可标记为已完成</div>
+                <div class="tip-item">高优先级事项建议在出发前2周完成</div>
+                <div class="tip-item">玉龙雪山门票非常紧俏,务必提前预订</div>
+                <div class="tip-item">自驾需携带驾驶证原件及翻译件,副驾驶也需带驾照</div>
+            </div>
+        </section>
+
+        <!-- Section 3: Flight Information -->
+        <section id="flights" class="section">
+            <h2 class="section-title">航班信息</h2>
+
+            <div class="flight-card">
+                <div class="flight-header">
+                    <div class="flight-route">去程:新加坡 → 昆明</div>
+                    <div class="flight-badge">已确认</div>
+                </div>
+                <div class="flight-details">
+                    <div class="flight-detail-item">
+                        <div class="flight-detail-label">日期</div>
+                        <div class="flight-detail-value">2026年3月14日 星期六</div>
+                    </div>
+                    <div class="flight-detail-item">
+                        <div class="flight-detail-label">航空公司</div>
+                        <div class="flight-detail-value">中国东方航空</div>
+                    </div>
+                    <div class="flight-detail-item">
+                        <div class="flight-detail-label">起飞时间</div>
+                        <div class="flight-detail-value">02:40 (新加坡樟宜机场 SIN)</div>
+                    </div>
+                    <div class="flight-detail-item">
+                        <div class="flight-detail-label">到达时间</div>
+                        <div class="flight-detail-value">06:55 (昆明长水机场 KMG)</div>
+                    </div>
+                    <div class="flight-detail-item">
+                        <div class="flight-detail-label">飞行时间</div>
+                        <div class="flight-detail-value">约4小时15分钟</div>
+                    </div>
+                    <div class="flight-detail-item">
+                        <div class="flight-detail-label">航班类型</div>
+                        <div class="flight-detail-value">直飞</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flight-card">
+                <div class="flight-header">
+                    <div class="flight-route">回程:昆明 → 新加坡</div>
+                    <div class="flight-badge">已确认</div>
+                </div>
+                <div class="flight-details">
+                    <div class="flight-detail-item">
+                        <div class="flight-detail-label">日期</div>
+                        <div class="flight-detail-value">2026年3月22日 星期日</div>
+                    </div>
+                    <div class="flight-detail-item">
+                        <div class="flight-detail-label">航空公司</div>
+                        <div class="flight-detail-value">中国东方航空</div>
+                    </div>
+                    <div class="flight-detail-item">
+                        <div class="flight-detail-label">起飞时间</div>
+                        <div class="flight-detail-value">07:25 (昆明长水机场 KMG)</div>
+                    </div>
+                    <div class="flight-detail-item">
+                        <div class="flight-detail-label">到达时间</div>
+                        <div class="flight-detail-value">11:40 (新加坡樟宜机场 SIN)</div>
+                    </div>
+                    <div class="flight-detail-item">
+                        <div class="flight-detail-label">飞行时间</div>
+                        <div class="flight-detail-value">约4小时15分钟</div>
+                    </div>
+                    <div class="flight-detail-item">
+                        <div class="flight-detail-label">航班类型</div>
+                        <div class="flight-detail-value">直飞</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tips-section">
+                <div class="tips-title">航班温馨提示</div>
+                <div class="tip-item">去程为凌晨航班,建议提前2-3小时到达机场</div>
+                <div class="tip-item">4位乘客,总费用 S$3,167.25 已支付</div>
+                <div class="tip-item">昆明长水机场距离市区约24公里,建议提前预订接送机服务</div>
+                <div class="tip-item">回程为早班机,建议前一晚入住机场附近酒店</div>
+            </div>
+        </section>
+
+        <!-- Section 4: Hotel Information -->
+        <section id="hotels" class="section">
+            <h2 class="section-title">住宿安排</h2>
+
+            <div class="hotel-timeline">
+                <div class="hotel-item">
+                    <div class="hotel-header">
+                        <div class="hotel-name">以山酒店(大理二城邻)</div>
+                        <div class="payment-status paid">已付款</div>
+                    </div>
+                    <div class="hotel-dates">
+                        <strong>入住:</strong> 2026年3月14日 12:00 &nbsp;&nbsp;|&nbsp;&nbsp; <strong>退房:</strong> 2026年3月16日 12:00
+                    </div>
+                    <div class="hotel-info">
+                        <div class="hotel-info-item">
+                            <span class="hotel-info-label">房型:</span>
+                            <span class="hotel-info-value">复兴阁房 二城邻</span>
+                        </div>
+                        <div class="hotel-info-item">
+                            <span class="hotel-info-label">入住天数:</span>
+                            <span class="hotel-info-value">2晚</span>
+                        </div>
+                        <div class="hotel-info-item">
+                            <span class="hotel-info-label">订单号:</span>
+                            <span class="hotel-info-value">1176095303506738320</span>
+                        </div>
+                        <div class="hotel-info-item">
+                            <span class="hotel-info-label">费用:</span>
+                            <span class="hotel-info-value">¥2,466.20</span>
+                        </div>
+                        <div class="hotel-info-item">
+                            <span class="hotel-info-label">联系电话:</span>
+                            <span class="hotel-info-value">18271882922</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hotel-item">
+                    <div class="hotel-header">
+                        <div class="hotel-name">不晚单予·日照金山雪山全景度假酒店(白沙古镇店)</div>
+                        <div class="payment-status unpaid">待付款</div>
+                    </div>
+                    <div class="hotel-dates">
+                        <strong>入住:</strong> 2026年3月18日 14:00 &nbsp;&nbsp;|&nbsp;&nbsp; <strong>退房:</strong> 2026年3月21日 14:00
+                    </div>
+                    <div class="hotel-info">
+                        <div class="hotel-info-item">
+                            <span class="hotel-info-label">地址:</span>
+                            <span class="hotel-info-value">丽江精品民宿 No.16</span>
+                        </div>
+                        <div class="hotel-info-item">
+                            <span class="hotel-info-label">入住天数:</span>
+                            <span class="hotel-info-value">3晚</span>
+                        </div>
+                        <div class="hotel-info-item">
+                            <span class="hotel-info-label">订单号:</span>
+                            <span class="hotel-info-value">1128144973013193</span>
+                        </div>
+                        <div class="hotel-info-item">
+                            <span class="hotel-info-label">费用:</span>
+                            <span class="hotel-info-value">¥551.08 (明细)</span>
+                        </div>
+                        <div class="hotel-info-item">
+                            <span class="hotel-info-label">取消政策:</span>
+                            <span class="hotel-info-value">3月21日 19:00前可免费取消</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hotel-item">
+                    <div class="hotel-header">
+                        <div class="hotel-name">桔子昆明长水国际机场酒店</div>
+                        <div class="payment-status paid">已付款</div>
+                    </div>
+                    <div class="hotel-dates">
+                        <strong>入住:</strong> 2026年3月21日 14:00 &nbsp;&nbsp;|&nbsp;&nbsp; <strong>退房:</strong> 2026年3月22日 13:00
+                    </div>
+                    <div class="hotel-info">
+                        <div class="hotel-info-item">
+                            <span class="hotel-info-label">地址:</span>
+                            <span class="hotel-info-value">云南省昆明市官渡区空港大道12001-1...</span>
+                        </div>
+                        <div class="hotel-info-item">
+                            <span class="hotel-info-label">房型:</span>
+                            <span class="hotel-info-value">银会员价 | 56-60㎡ | 2张1.8*2米床 | 外景窗</span>
+                        </div>
+                        <div class="hotel-info-item">
+                            <span class="hotel-info-label">入住天数:</span>
+                            <span class="hotel-info-value">1晚</span>
+                        </div>
+                        <div class="hotel-info-item">
+                            <span class="hotel-info-label">费用:</span>
+                            <span class="hotel-info-value">¥551.08 (待确认)</span>
+                        </div>
+                        <div class="hotel-info-item">
+                            <span class="hotel-info-label">服务:</span>
+                            <span class="hotel-info-value">30秒入住</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tips-section">
+                <div class="tips-title">住宿温馨提示</div>
+                <div class="tip-item">3月18日-21日的白沙古镇酒店<span class="highlight">尚未付款</span>,请尽快完成支付</div>
+                <div class="tip-item">酒店入住需携带护照等有效证件</div>
+                <div class="tip-item">大理酒店靠近洱海,建议早起欣赏日出</div>
+                <div class="tip-item">丽江酒店可观赏玉龙雪山全景,天气晴朗时景观绝佳</div>
+            </div>
+        </section>
+
+        <!-- Section 5: Daily Itinerary -->
+        <section id="itinerary" class="section">
+            <h2 class="section-title">每日行程</h2>
+
+            <div class="day-item">
+                <div class="day-header">
+                    <div class="day-title">Day 1 - 3月14日 星期六</div>
+                    <div class="day-location">新加坡 → 昆明 → 大理</div>
+                </div>
+                <div class="activities">
+                    <div class="activity-item">凌晨02:40乘坐东航航班从新加坡出发</div>
+                    <div class="activity-item">06:55抵达昆明长水国际机场</div>
+                    <div class="activity-item">机场取车,自驾前往大理(约340公里,4小时车程)</div>
+                    <div class="activity-item">12:00入住以山酒店(大理洱海)</div>
+                    <div class="activity-item">下午自由活动,酒店休息调整</div>
+                    <div class="activity-item">傍晚可在洱海边散步,欣赏日落</div>
+                </div>
+            </div>
+
+            <div class="day-item">
+                <div class="day-header">
+                    <div class="day-title">Day 2 - 3月15日 星期日</div>
+                    <div class="day-location">大理</div>
+                </div>
+                <div class="activities">
+                    <div class="activity-item">上午:大理古城游览(人民路、洋人街、五华楼)</div>
+                    <div class="activity-item">中午:品尝大理特色美食(喜洲粑粑、乳扇、烤饵块)</div>
+                    <div class="activity-item">下午:洱海生态走廊骑行或散步</div>
+                    <div class="activity-item">傍晚:返回酒店,洱海边晚餐</div>
+                </div>
+            </div>
+
+            <div class="day-item">
+                <div class="day-header">
+                    <div class="day-title">Day 3 - 3月16日 星期一</div>
+                    <div class="day-location">大理(喜洲古镇)</div>
+                </div>
+                <div class="activities">
+                    <div class="activity-item">上午:前往喜洲古镇(距离酒店约18公里)</div>
+                    <div class="activity-item">参观喜洲古建筑群:严家大院、杨品相宅</div>
+                    <div class="activity-item">品尝喜洲特色:喜洲粑粑、烤乳扇</div>
+                    <div class="activity-item">下午:亲子手工体验(扎染工坊)</div>
+                    <div class="activity-item">可选:素方舟手工活动(鲜花饼制作/陶艺/农场体验)</div>
+                    <div class="activity-item">傍晚:双廊木夕大里下午茶(需提前预约C4或C5)</div>
+                    <div class="activity-item">晚上:退房后前往下一站</div>
+                </div>
+            </div>
+
+            <div class="day-item">
+                <div class="day-header">
+                    <div class="day-title">Day 4 - 3月17日 星期二</div>
+                    <div class="day-location">大理 → 沙溪古镇</div>
+                </div>
+                <div class="activities">
+                    <div class="activity-item">上午:退房,驾车前往沙溪古镇(约126公里,3小时11分)</div>
+                    <div class="activity-item">途经11个服务区,4个可加油站</div>
+                    <div class="activity-item">中午:抵达沙溪古镇,入住民宿</div>
+                    <div class="activity-item">下午:游览沙溪古镇(寺登街、古戏台)</div>
+                    <div class="activity-item">体验茶马古道文化,探访白族传统建筑</div>
+                    <div class="activity-item">晚上:沙溪古镇夜市(农历集市日:初二、初九、十六、二十三)</div>
+                </div>
+            </div>
+
+            <div class="day-item">
+                <div class="day-header">
+                    <div class="day-title">Day 5 - 3月18日 星期三</div>
+                    <div class="day-location">沙溪 → 丽江(白沙古镇)</div>
+                </div>
+                <div class="activities">
+                    <div class="activity-item">上午:沙溪古镇深度游览</div>
+                    <div class="activity-item">中午:驾车前往丽江白沙古镇</div>
+                    <div class="activity-item">14:00入住不晚单予·日照金山雪山全景度假酒店</div>
+                    <div class="activity-item">下午:白沙古镇游览(白沙壁画、纳西族文化)</div>
+                    <div class="activity-item">傍晚:酒店观赏玉龙雪山日落</div>
+                </div>
+            </div>
+
+            <div class="day-item">
+                <div class="day-header">
+                    <div class="day-title">Day 6 - 3月19日 星期四</div>
+                    <div class="day-location">丽江(玉龙雪山)</div>
+                </div>
+                <div class="activities">
+                    <div class="activity-item">早上:早餐后前往玉龙雪山景区(建议06:00-07:00出发)</div>
+                    <div class="activity-item">游览玉龙雪山(大索道至海拔4506米冰川公园)</div>
+                    <div class="activity-item">蓝月谷景区游览(白水河、蓝月湖)</div>
+                    <div class="activity-item">下午:返回酒店休息</div>
+                    <div class="activity-item">晚上:丽江古城晚餐,四方街、酒吧街游览</div>
+                </div>
+            </div>
+
+            <div class="day-item">
+                <div class="day-header">
+                    <div class="day-title">Day 7 - 3月20日 星期五</div>
+                    <div class="day-location">丽江(束河古镇)</div>
+                </div>
+                <div class="activities">
+                    <div class="activity-item">上午:束河古镇游览(比丽江古城更清净)</div>
+                    <div class="activity-item">游览九鼎龙潭、四方听音广场</div>
+                    <div class="activity-item">中午:束河特色餐厅午餐</div>
+                    <div class="activity-item">下午:自由活动(可选择骑马、茶马古道徒步)</div>
+                    <div class="activity-item">傍晚:返回白沙古镇,酒店休息</div>
+                </div>
+            </div>
+
+            <div class="day-item">
+                <div class="day-header">
+                    <div class="day-title">Day 8 - 3月21日 星期六</div>
+                    <div class="day-location">丽江 → 昆明</div>
+                </div>
+                <div class="activities">
+                    <div class="activity-item">上午:退房,驾车返回昆明(约470公里,6小时车程)</div>
+                    <div class="activity-item">建议上午11:50前出发</div>
+                    <div class="activity-item">途中可在服务区用餐休息</div>
+                    <div class="activity-item">下午:抵达昆明机场附近</div>
+                    <div class="activity-item">14:00入住桔子昆明长水国际机场酒店</div>
+                    <div class="activity-item">晚上:酒店附近晚餐,整理行李</div>
+                </div>
+            </div>
+
+            <div class="day-item">
+                <div class="day-header">
+                    <div class="day-title">Day 9 - 3月22日 星期日</div>
+                    <div class="day-location">昆明 → 新加坡</div>
+                </div>
+                <div class="activities">
+                    <div class="activity-item">早上:酒店早餐,退房</div>
+                    <div class="activity-item">前往昆明长水国际机场(建议05:00-05:30到达)</div>
+                    <div class="activity-item">07:25乘坐东航航班返回新加坡</div>
+                    <div class="activity-item">11:40抵达新加坡樟宜机场</div>
+                    <div class="activity-item">结束愉快的云南之旅!</div>
+                </div>
+            </div>
+
+            <div class="tips-section">
+                <div class="tips-title">旅行贴士</div>
+                <div class="tip-item"><strong>最佳旅游时间:</strong> 3月是云南好天气,大理樱花盛开,苍洱大道开满樱花</div>
+                <div class="tip-item"><strong>高原反应:</strong> 玉龙雪山海拔较高,建议提前购买氧气瓶,不要剧烈运动</div>
+                <div class="tip-item"><strong>穿衣建议:</strong> 云南早晚温差大,需携带外套,白天可穿短袖</div>
+                <div class="tip-item"><strong>防晒:</strong> 紫外线强,务必做好防晒(防晒霜SPF50+、太阳镜、遮阳帽)</div>
+                <div class="tip-item"><strong>饮食:</strong> 云南菜偏辣,如不习惯请提前告知餐厅</div>
+                <div class="tip-item"><strong>集市时间:</strong> 沙溪古镇集市在农历初二、初九、十六、二十三</div>
+                <div class="tip-item"><strong>古城维护费:</strong> 大理古城免费,丽江古城免维护费</div>
+                <div class="tip-item"><strong>火把节:</strong> 农历6月24日(3月不在此期间),古城晚上8-9点有火把舞表演,每场20分钟</div>
+            </div>
+        </section>
+
+        <!-- Section 6: Cost Summary -->
+        <section id="costs" class="section">
+            <h2 class="section-title">费用汇总</h2>
+
+            <div class="cost-summary">
+                <div class="cost-category">
+                    <div class="cost-category-title">交通费用</div>
+                    <div class="cost-item">
+                        <div class="cost-description">往返机票 (新加坡 ⇄ 昆明) × 4人</div>
+                        <div class="cost-amount">S$ 3,167.25</div>
+                        <div class="payment-status paid">已付款</div>
+                    </div>
+                    <div class="cost-item">
+                        <div class="cost-description">租车费用(8天)</div>
+                        <div class="cost-amount">待确认</div>
+                        <div class="payment-status unpaid">待预订</div>
+                    </div>
+                    <div class="cost-item">
+                        <div class="cost-description">油费及过路费(预估)</div>
+                        <div class="cost-amount">¥ 800</div>
+                        <div class="payment-status unpaid">待支付</div>
+                    </div>
+                </div>
+
+                <div class="cost-category">
+                    <div class="cost-category-title">住宿费用</div>
+                    <div class="cost-item">
+                        <div class="cost-description">以山酒店(大理) - 2晚 (3月14-16日)</div>
+                        <div class="cost-amount">¥ 2,466.20</div>
+                        <div class="payment-status paid">已付款</div>
+                    </div>
+                    <div class="cost-item">
+                        <div class="cost-description">沙溪古镇住宿 - 2晚 (3月16-18日)</div>
+                        <div class="cost-amount">待预订</div>
+                        <div class="payment-status unpaid">待预订</div>
+                    </div>
+                    <div class="cost-item">
+                        <div class="cost-description">不晚单予酒店(白沙古镇) - 3晚 (3月18-21日)</div>
+                        <div class="cost-amount">¥ 551.08</div>
+                        <div class="payment-status unpaid">待付款</div>
+                    </div>
+                    <div class="cost-item">
+                        <div class="cost-description">桔子酒店(昆明机场) - 1晚 (3月21-22日)</div>
+                        <div class="cost-amount">¥ 551.08</div>
+                        <div class="payment-status paid">已付款</div>
+                    </div>
+                </div>
+
+                <div class="cost-category">
+                    <div class="cost-category-title">景点门票</div>
+                    <div class="cost-item">
+                        <div class="cost-description">玉龙雪山景区门票+大索道 × 4人</div>
+                        <div class="cost-amount">待预订</div>
+                        <div class="payment-status unpaid">待预订</div>
+                    </div>
+                    <div class="cost-item">
+                        <div class="cost-description">其他景点门票(预估)</div>
+                        <div class="cost-amount">¥ 500</div>
+                        <div class="payment-status unpaid">待支付</div>
+                    </div>
+                </div>
+
+                <div class="cost-category">
+                    <div class="cost-category-title">活动体验</div>
+                    <div class="cost-item">
+                        <div class="cost-description">扎染手工体验</div>
+                        <div class="cost-amount">待预订</div>
+                        <div class="payment-status unpaid">待预订</div>
+                    </div>
+                    <div class="cost-item">
+                        <div class="cost-description">鲜花饼制作体验</div>
+                        <div class="cost-amount">待预订</div>
+                        <div class="payment-status unpaid">待预订</div>
+                    </div>
+                    <div class="cost-item">
+                        <div class="cost-description">双廊木夕大里下午茶</div>
+                        <div class="cost-amount">待预订</div>
+                        <div class="payment-status unpaid">待预订</div>
+                    </div>
+                </div>
+
+                <div class="cost-total">
+                    <div class="cost-total-row">
+                        <span>已付款总额</span>
+                        <span>S$ 3,167.25 + ¥ 3,017.28</span>
+                    </div>
+                    <div class="cost-total-row">
+                        <span>待付款总额</span>
+                        <span>¥ 551.08 (酒店) + 其他待定项目</span>
+                    </div>
+                    <div class="cost-total-row grand-total">
+                        <span>预计总费用</span>
+                        <span>约 S$ 3,200 + ¥ 6,000</span>
+                    </div>
+                </div>
+
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 55%;">已完成支付 55%</div>
+                </div>
+            </div>
+
+            <div class="tips-section">
+                <div class="tips-title">费用说明</div>
+                <div class="tip-item">以上费用仅包含已确认的预订,不含餐饮、购物等其他开支</div>
+                <div class="tip-item">租车费用需根据车型和租赁天数另行计算,建议选择SUV</div>
+                <div class="tip-item">玉龙雪山门票+大索道约¥500-600/人,建议提前网上预订</div>
+                <div class="tip-item">餐饮预算建议:¥150-250/人/天</div>
+                <div class="tip-item">部分景点对儿童有优惠政策,购票时请出示相关证件</div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
