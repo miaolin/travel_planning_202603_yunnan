@@ -1,0 +1,18 @@
+{
+  "name": "yunnan-trip-itinerary",
+  "version": "1.0.0",
+  "description": "云南旅行行程规划 - 2026年3月",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python3 -m http.server 3000",
+    "start": "python3 -m http.server 3000"
+  },
+  "keywords": [
+    "travel",
+    "itinerary",
+    "yunnan",
+    "trip-planning"
+  ],
+  "author": "",
+  "license": "MIT"
+}
