@@ -1,22 +1,205 @@
-# travel_planning_202603_yunnan
+# Yunnan Trip Planning - March 2026
 
-## Prompt
-This is an expert trip information organization agent. 
-* The main task is to generate a trip itinerary in the format of an interactive web page to list out the detailed trip information based on user provided information.
-* To make the results accurate and reliable pls generate the web page in html format first for user to verify. Once user confirmed, pls create a folder to generate the code which is able to deploy using vercel to view in web browser.
-* The user given trip information is in the format of images, screenshot, text, etc., which indiates the booked airticket, hotels, activities, etc.
+**Version:** 1.0.0
+**Release Date:** January 9, 2026
+**Trip Dates:** March 14-22, 2026
 
-Details of the output
-* If the trip is going to China, pls generate the web page using Chinese. Otherwise, generate it in English.
-* The generated itinerary should include the following section
-  * 1 trip overview, 2. todo list, 3. flight information. 4. hotel information. 5. daily trip 6. cost
-* The following information should be included 
-  * trip overview, 
-  * booked information (ticket, hotels). For the hotel information should present in the calendar format, with details included paid or not.
-  * daily itinerary based on the booked hotels and other information, 
-  * todo list such as remaining hotels to book, transport 
-  * cost including paid ones and unpaid ones. 
+An interactive web-based trip itinerary generator for the 8-day Yunnan, China journey.
 
-## Method 1 Using single document exported from Mac Note.
+---
 
-## Method 2 Combine all the individual plans and information 
+## 📁 Project Structure
+
+```
+travel_planning_202603_yunnan/
+├── vercel-deploy/              # Vercel deployment package (Ready to deploy!)
+│   ├── index.html              # Main itinerary page
+│   ├── styles.css              # Stylesheet
+│   ├── script.js               # Interactive functionality
+│   ├── vercel.json             # Vercel configuration
+│   ├── package.json            # Project metadata
+│   ├── README.md               # Deployment documentation
+│   ├── DEPLOY.md               # Quick deployment guide
+│   ├── CHANGELOG.md            # Version history
+│   └── .gitignore              # Git ignore file
+├── trip_document/              # Source documents
+│   └── 2026 March云南游.pdf    # Original trip planning document
+├── yunnan_trip_itinerary.html  # Development version (single file)
+├── README.md                   # This file
+└── CHANGELOG.md                # Project changelog
+```
+
+---
+
+## 🎯 Project Overview
+
+This is an expert trip information organization system that generates interactive web-based itineraries from booking confirmations, reservations, and travel documents.
+
+### Key Features
+
+- 📱 **Responsive Design** - Works on mobile, tablet, and desktop
+- ✅ **Interactive Todo List** - Track tasks with checkboxes
+- 🗓️ **Calendar View** - Visual hotel booking timeline
+- 💰 **Payment Tracking** - Monitor expenses and payment status
+- 🎨 **Modern UI** - Beautiful gradients and smooth animations
+- 🖨️ **Print-Friendly** - Optimized for offline use
+
+---
+
+## 🚀 Quick Start
+
+### Option 1: View Local Version
+Simply open `yunnan_trip_itinerary.html` in your web browser.
+
+### Option 2: Deploy to Vercel
+```bash
+cd vercel-deploy
+npm install -g vercel
+vercel login
+vercel
+```
+
+See [`vercel-deploy/DEPLOY.md`](vercel-deploy/DEPLOY.md) for detailed deployment instructions.
+
+---
+
+## 📋 Itinerary Contents
+
+### 1. Trip Overview
+- Duration: 8 days, 7 nights
+- Travelers: 4 people
+- Route: Singapore → Kunming → Dali → Shaxi → Lijiang → Kunming → Singapore
+
+### 2. Todo List (Interactive Checklist)
+- High-priority urgent tasks (hotel payments, bookings)
+- Transportation arrangements (car rental, documents)
+- Ticket reservations (Jade Dragon Snow Mountain)
+- Activity bookings (tie-dye, flower cake making)
+- Travel preparation (insurance, packing, documents)
+
+### 3. Flight Information
+- **Outbound:** Singapore → Kunming (March 14, 02:40-06:55)
+- **Return:** Kunming → Singapore (March 22, 07:25-11:40)
+- **Cost:** S$3,167.25 ✓ Paid
+
+### 4. Hotel Accommodations
+- Yishan Guesthouse (Dali): ¥2,466.20 ✓ Paid
+- Shaxi Ancient Town: Not yet booked ⚠
+- Snowmountain View Hotel (Lijiang): ¥551.08 (pending)
+- Orange Hotel (Kunming): ¥551.08 ✓ Paid
+
+### 5. Daily Itinerary
+Complete 9-day schedule with activities, dining, and transportation details for:
+- Dali Ancient Town & Erhai Lake
+- Xizhou & Shaxi Ancient Towns
+- Jade Dragon Snow Mountain (4,680m elevation)
+- Baisha & Shuhe Ancient Towns
+
+### 6. Cost Summary
+- **Payment Progress:** 55% completed
+- **Total Paid:** S$3,167.25 + ¥3,017.28
+- **Pending:** ¥551.08 + additional expenses
+- **Estimated Total:** ~S$3,200 + ¥6,000
+
+---
+
+## 🛠️ Technical Details
+
+### Built With
+- **HTML5** - Semantic markup
+- **CSS3** - Custom properties, Grid, Flexbox
+- **Vanilla JavaScript** - No frameworks required
+- **Vercel** - Deployment platform
+
+### Browser Support
+- ✅ Chrome/Edge (recommended)
+- ✅ Firefox
+- ✅ Safari
+- ✅ Mobile browsers (iOS Safari, Chrome Mobile)
+
+---
+
+## 📖 How It Was Generated
+
+### Input Method
+This itinerary was generated from a comprehensive trip planning document (`trip_document/2026 March云南游.pdf`) containing:
+- Flight booking confirmations
+- Hotel reservations
+- Activity plans
+- Budget information
+
+### Generation Process
+1. **Extract Information** - Parse PDF for bookings, dates, costs
+2. **Organize Data** - Structure into logical sections
+3. **Generate HTML** - Create interactive web page
+4. **Apply Styling** - Add responsive design and animations
+5. **Package for Deployment** - Prepare Vercel-ready files
+
+### Language Selection
+✓ Chinese (Simplified) - Automatically selected for China destinations
+
+---
+
+## 🎨 Customization
+
+### Update Trip Information
+Edit the HTML content in `vercel-deploy/index.html` or `yunnan_trip_itinerary.html`
+
+### Change Theme Colors
+Modify CSS variables in `vercel-deploy/styles.css`:
+```css
+:root {
+    --primary-color: #2C5F8D;    /* Main blue */
+    --accent-color: #E67E22;     /* Orange highlights */
+    --success-color: #27AE60;    /* Green for paid items */
+    /* ... more colors ... */
+}
+```
+
+### Add Features
+Extend functionality in `vercel-deploy/script.js`
+
+---
+
+## 📝 Version History
+
+See [CHANGELOG.md](CHANGELOG.md) for detailed version history.
+
+- **v1.0.0** (2026-01-09) - Initial release
+  - Complete 9-day itinerary
+  - Interactive todo list
+  - Payment tracking (55% paid)
+  - Responsive design
+  - Vercel deployment package
+
+---
+
+## 🤝 Usage Rights
+
+This trip itinerary generator is for personal use. The template structure can be adapted for other trips.
+
+**License:** MIT
+
+---
+
+## 📞 Support
+
+For issues or questions about:
+- **Deployment:** See [`vercel-deploy/README.md`](vercel-deploy/README.md)
+- **Quick Deploy:** See [`vercel-deploy/DEPLOY.md`](vercel-deploy/DEPLOY.md)
+- **Changes:** See [`CHANGELOG.md`](CHANGELOG.md)
+
+---
+
+## 🗺️ Trip Highlights
+
+- 🏔️ Jade Dragon Snow Mountain (4,680m)
+- 🌊 Erhai Lake ecological corridor
+- 🏛️ Ancient towns: Dali, Xizhou, Shaxi, Baisha, Shuhe
+- 🎨 Cultural experiences: Tie-dye workshops, flower cake making
+- 🍜 Yunnan cuisine: Cross-bridge noodles, Xizhou baba
+- 🏨 Scenic accommodations: Lake views & mountain vistas
+
+---
+
+**祝旅途愉快！Have a wonderful trip!** 🎉
