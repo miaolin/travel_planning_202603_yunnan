@@ -1,7 +1,7 @@
 {
   "name": "yunnan-trip-itinerary",
-  "version": "1.0.0",
-  "description": "云南旅行行程规划 - 2026年3月",
+  "version": "2.0.0",
+  "description": "云南旅行行程规划 - 2026年3月 - 包含完整酒店预订和延期支付信息",
   "main": "index.html",
   "scripts": {
     "dev": "python3 -m http.server 3000",
