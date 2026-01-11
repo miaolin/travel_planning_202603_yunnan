@@ -23,7 +23,7 @@ backup/
 
 # HTML files (keep locally only)
 /*.html
-yunnan_trip_*.html
+yunnan_trip*.html
 
 # Trip documents (personal)
 trip_document/
