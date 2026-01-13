@@ -5,6 +5,40 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.2.0] - 2026-01-13
+
+### Changed
+- **🚄 Optimized Train Recommendation**: Changed from D8672 (09:00) to **C9506 (09:48)** based on realistic timing
+  - **Key improvement**: Now accounts for complete immigration process (60 min) + baggage claim + actual distance (27km)
+  - Previous recommendation (D8672 09:00) was too tight - only 2h5min from landing to departure
+  - New recommendation (C9506 09:48) provides comfortable 63-minute buffer
+
+### Added
+- **Detailed Time Breakdown**:
+  - 06:55: Plane lands
+  - 07:55: Complete immigration + baggage (60 min allocated)
+  - 08:00: Taxi departs to Kunming Station
+  - 08:50: Arrive at station (27km, 50 min drive)
+  - 09:30: Complete ticketing + security + boarding (40 min allocated)
+  - 09:48: Board train C9506
+- **Alternative Train Options**: D8692 (09:37), D8684 (10:04), D8696 (10:21)
+- **Risk Assessment**: Clear indication that trains before 09:30 are too risky
+
+### Financial Impact
+- **Train ticket cost**: ¥137/person → **¥106/person** (saves ¥31/person)
+- **Total transportation**: ¥1,948 → ¥1,824 (saves ¥124)
+- **Total trip cost**: ¥24,944.20 → **¥24,820.20** (saves ¥124)
+- **Total SGD**: ~S$8,156.09 → **~S$8,131.29** (saves ~S$24.80)
+- **Per person**: ~S$2,039.02 → **~S$2,032.82** (saves ~S$6.20/person)
+- **Cumulative savings from original budget**: ~S$55.20 (¥276)
+
+### Benefits
+- ✅ More realistic and achievable timing
+- ✅ Cheaper ticket price
+- ✅ Less stress and rush
+- ✅ Better travel experience
+- ✅ Still arrives in time for 12:00 hotel check-in
+
 ## [2.1.0] - 2026-01-13
 
 ### Added
