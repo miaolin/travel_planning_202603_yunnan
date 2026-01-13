@@ -577,7 +577,7 @@
                     <ul class="todo-list">
                         <li class="todo-item">
                             <input type="checkbox" onclick="this.parentElement.classList.toggle('completed')">
-                            <span>预订昆明机场到大理的交通 (3月14日) - <strong>紧急</strong></span>
+                            <span>预订昆明→大理高铁票 (3月14日) - 推荐09:00 D8672次 ¥137/人×4人 - <strong>紧急</strong></span>
                         </li>
                         <li class="todo-item">
                             <input type="checkbox" onclick="this.parentElement.classList.toggle('completed')">
@@ -911,16 +911,37 @@
                     <h3>🚗 酒店间交通方案</h3>
 
                     <h4>路线1：昆明机场 → 大理西山酒店 (3月14日)</h4>
+
+                    <div class="alert alert-info" style="margin-bottom: 20px;">
+                        <span class="alert-icon">🚄</span>
+                        <div>
+                            <strong>推荐路线：高铁09:00发车</strong><br>
+                            06:55抵达昆明机场 → 机场大巴/出租车到昆明站 → 09:00乘坐D8672次列车 → 11:09抵达大理站 → 打车到酒店<br>
+                            给予充足的转换时间，避免赶车压力
+                        </div>
+                    </div>
+
                     <div class="transport-options">
-                        <div class="transport-card">
-                            <h4>🚄 方案A：高铁（推荐）</h4>
+                        <div class="transport-card" style="border-color: #28a745;">
+                            <h4>🚄 方案A：高铁（强烈推荐）</h4>
                             <ul>
-                                <li>机场→昆明站：机场大巴或地铁（约1小时）</li>
-                                <li>昆明→大理：高铁约2小时</li>
-                                <li>大理站→酒店：打车约30分钟</li>
-                                <li><strong>总时长：</strong>约4小时</li>
-                                <li><strong>费用：</strong>约200-250元/人</li>
-                                <li><strong>优点：</strong>快捷舒适，准点率高</li>
+                                <li><strong>Step 1：</strong>昆明机场→昆明站</li>
+                                <li style="margin-left: 20px;">• 机场大巴：¥25-30，约40-60分钟</li>
+                                <li style="margin-left: 20px;">• 出租车：¥80-100，约40分钟</li>
+                                <li style="margin-left: 20px;">• 建议07:30-08:00出发</li>
+
+                                <li><strong>Step 2：</strong>昆明→大理 高铁班次选择</li>
+                                <li style="margin-left: 20px;">• <strong>09:00-11:09</strong> D8672次 ¥137/人 (2h9min) ✅ 推荐</li>
+                                <li style="margin-left: 20px;">• 08:28-10:37 C9502次 ¥106/人 (2h9min) - 较早，时间紧张</li>
+                                <li style="margin-left: 20px;">• 11:46-13:53 D3932次 ¥137/人 (2h7min) - 较晚备选</li>
+
+                                <li><strong>Step 3：</strong>大理站→西山酒店</li>
+                                <li style="margin-left: 20px;">• 出租车/滴滴：约30分钟，¥40-60</li>
+                                <li style="margin-left: 20px;">• 12:00前可顺利抵达酒店办理入住</li>
+
+                                <li><strong>总时长：</strong>约5-5.5小时（含转换时间）</li>
+                                <li><strong>总费用：</strong>约¥200-250/人</li>
+                                <li><strong>优点：</strong>快捷舒适、准点率高、时间充裕</li>
                             </ul>
                         </div>
                         <div class="transport-card">
@@ -929,8 +950,9 @@
                                 <li>机场直接出发→大理酒店</li>
                                 <li><strong>距离：</strong>约330公里</li>
                                 <li><strong>时长：</strong>约4-5小时</li>
-                                <li><strong>费用：</strong>600-800元（全车）</li>
-                                <li><strong>优点：</strong>直达酒店，适合早班机</li>
+                                <li><strong>费用：</strong>¥600-800（全车4人）</li>
+                                <li><strong>优点：</strong>直达酒店，适合早班机，可沿途休息</li>
+                                <li><strong>缺点：</strong>长途车程较累</li>
                             </ul>
                         </div>
                     </div>
@@ -1268,11 +1290,18 @@
                             </tr>
 
                             <tr>
-                                <td rowspan="4"><strong>交通</strong></td>
-                                <td>昆明→大理（高铁）</td>
-                                <td>¥200/人</td>
+                                <td rowspan="5"><strong>交通</strong></td>
+                                <td>昆明机场→昆明站（机场大巴）</td>
+                                <td>¥25/人</td>
                                 <td>4人</td>
-                                <td>¥800</td>
+                                <td>¥100</td>
+                                <td><span class="status-badge status-unpaid">现场购买</span></td>
+                            </tr>
+                            <tr>
+                                <td>昆明→大理（高铁D8672次）</td>
+                                <td>¥137/人</td>
+                                <td>4人</td>
+                                <td>¥548</td>
                                 <td><span class="status-badge status-unpaid">待预订</span></td>
                             </tr>
                             <tr>
@@ -1291,7 +1320,7 @@
                             </tr>
                             <tr>
                                 <td colspan="4" style="background: #f8f9fa;">
-                                    <strong>交通小计：</strong>¥2,100 (不含当地打车和租车)
+                                    <strong>交通小计：</strong>¥1,948 (不含当地打车和租车)
                                 </td>
                                 <td></td>
                             </tr>
@@ -1410,7 +1439,7 @@
 
                             <tr class="total-row">
                                 <td colspan="4">总计（人民币部分）</td>
-                                <td colspan="2">¥25,096.20</td>
+                                <td colspan="2">¥24,944.20</td>
                             </tr>
                             <tr class="total-row">
                                 <td colspan="4">总计（新币部分）</td>
@@ -1418,11 +1447,11 @@
                             </tr>
                             <tr class="total-row">
                                 <td colspan="4">合计（按1:5汇率估算）</td>
-                                <td colspan="2">约 S$ 8,186.49</td>
+                                <td colspan="2">约 S$ 8,156.09</td>
                             </tr>
                             <tr class="total-row">
                                 <td colspan="4">人均费用（4人）</td>
-                                <td colspan="2">约 S$ 2,046.62/人</td>
+                                <td colspan="2">约 S$ 2,039.02/人</td>
                             </tr>
                         </tbody>
                     </table>

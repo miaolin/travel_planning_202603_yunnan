@@ -5,6 +5,37 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.1.0] - 2026-01-13
+
+### Added
+- **Detailed Train Route from Kunming Airport to Dali**: Complete step-by-step guide
+  - Recommended train: D8672 (09:00-11:09), ¥137/person
+  - Alternative trains documented: C9502, D8676, D8692, D3932
+  - Full timing breakdown from airport arrival (06:55) to hotel check-in (12:00)
+  - Airport shuttle and taxi information included
+- **Train Timetable Analysis**: Based on actual train schedules for March 14, 2026
+- **Transportation Cost Optimization**: Reduced from ¥2,100 to ¥1,948
+- **Enhanced Route 1 Section**: Detailed 3-step process with buffer times
+  - Step 1: Airport to Railway Station (machine shuttle/taxi)
+  - Step 2: Railway journey with multiple train options
+  - Step 3: Dali Station to hotel transfer
+
+### Changed
+- **Transportation Costs Updated**:
+  - Added: Airport shuttle ¥100 (4 people)
+  - Updated: High-speed rail ¥548 (4 people on D8672)
+  - Transportation subtotal: ¥2,100 → ¥1,948
+- **Total Budget Reduced**:
+  - Total (RMB): ¥25,096.20 → ¥24,944.20
+  - Total (SGD): ~S$8,186.49 → ~S$8,156.09
+  - Per person: ~S$2,046.62 → ~S$2,039.02
+  - **Savings: ~S$30.40**
+- **Todo List Updated**: Train booking task now specifies D8672 train with timing
+
+### Documentation
+- Added `TRAIN_ROUTE_KUNMING_TO_SHAXI.md` with comprehensive route analysis
+- Enhanced transportation section with visual highlighting of recommended option
+
 ## [2.0.0] - 2026-01-11
 
 ### Added
