@@ -5,6 +5,123 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.3.0] - 2026-01-13
+
+### Added
+- **🏔️ 玉龙雪山亲子游详细攻略（3月19日）**:
+  - **人员配置**: 2大2小，专为不易长途行走的孩子设计
+  - **路线优化**: 选择云杉坪索道（海拔3205米）替代大索道（4680米）
+  - **原因**: 云杉坪海拔低1400米，几乎全平地，孩子不会累，高反风险更小
+  - **完整时间表**: 07:00出发 → 14:00返回，共7小时（含午休）
+  - **详细景点安排**:
+    - 09:00-10:15 云杉坪游览（木栈道+草甸+雪山背景拍照）
+    - 10:45-12:30 蓝月谷四湖游览（玉液湖→镜潭湖→蓝月湖→听涛湖）
+    - 12:30-13:30 午餐（建议自带野餐）
+  - **高反预防指南**:
+    - 提前3天给孩子吃红景天口服液
+    - 准备氧气瓶×4（必备）
+    - 不要剧烈运动，随时观察孩子状态
+  - **必备物品清单**: 氧气瓶、羽绒服、手套、帽子、墨镜、防晒霜SPF50+、零食、热水
+  - **穿衣建议**: 洋葱式穿搭（长袖+抓绒+羽绒服），云杉坪5-10°C，蓝月谷10-15°C
+  - **亲子活动建议**: 湖边找石头、观察水鸟、拍家庭照、玩雪（如有）
+  - **费用明细**: 门票+索道+车 ¥580（2大2小）+ 氧气¥240 + 包车¥300 = ¥1,120-1,470
+
+### Changed
+- **玉龙雪山门票费用优化**:
+  - **旧方案**: 大索道 ¥450/人×4 = ¥1,800（需爬台阶，孩子累）
+  - **新方案**: 云杉坪 ¥300+¥280 = ¥580（2大2小，全平地）
+  - **节省**: ¥1,220，且更适合孩子游玩
+- **景点门票总预算**: ¥2,400 → ¥1,420（含氧气瓶）
+- **Day 6行程重写**: 从简单描述改为超详细的分时段亲子游攻略
+- **待办事项更新**: 改为预订云杉坪索道票，明确标注亲子游路线
+
+### Financial Impact
+- **门票费用**: ¥2,400 → ¥1,420 (saves ¥980)
+- **总费用（RMB）**: ¥24,820.20 → **¥23,840.20** (saves ¥980)
+- **总费用（SGD）**: ~S$8,131.29 → **~S$7,935.29** (saves ~S$196)
+- **人均费用**: ~S$2,032.82 → **~S$1,983.82** (saves ~S$49/person)
+- **累计节省**: 从原始预算节省 ~S$251.20 (¥1,256)
+
+### Benefits
+- ✅ 更适合2大2小的亲子游安排
+- ✅ 降低高原反应风险（海拔低1400米）
+- ✅ 减少孩子体力消耗（全平地，无需爬台阶）
+- ✅ 更经济实惠（节省¥980）
+- ✅ 超详细攻略（时间表、物品清单、注意事项）
+- ✅ 包含蓝月谷完整游览方案
+- ✅ 增加午休时间（14:00-16:00），孩子充分休息
+
+### Recommendations
+- 🎫 **预订建议**: 云杉坪索道票（门票¥100/成人+¥50/儿童，索道¥65/成人+¥35/儿童）
+- 🚗 **交通建议**: 包车往返¥300（酒店→景区，约30分钟）
+- 🍱 **午餐建议**: 自带三明治、面包、水果在蓝月谷野餐（省钱+体验好）
+- 🏔️ **电瓶车可选**: 蓝月谷¥50/人（孩子累了可坐，不累可走）
+
+## [2.2.0] - 2026-01-13
+
+### Changed
+- **🚄 Optimized Train Recommendation**: Changed from D8672 (09:00) to **C9506 (09:48)** based on realistic timing
+  - **Key improvement**: Now accounts for complete immigration process (60 min) + baggage claim + actual distance (27km)
+  - Previous recommendation (D8672 09:00) was too tight - only 2h5min from landing to departure
+  - New recommendation (C9506 09:48) provides comfortable 63-minute buffer
+
+### Added
+- **Detailed Time Breakdown**:
+  - 06:55: Plane lands
+  - 07:55: Complete immigration + baggage (60 min allocated)
+  - 08:00: Taxi departs to Kunming Station
+  - 08:50: Arrive at station (27km, 50 min drive)
+  - 09:30: Complete ticketing + security + boarding (40 min allocated)
+  - 09:48: Board train C9506
+- **Alternative Train Options**: D8692 (09:37), D8684 (10:04), D8696 (10:21)
+- **Risk Assessment**: Clear indication that trains before 09:30 are too risky
+
+### Financial Impact
+- **Train ticket cost**: ¥137/person → **¥106/person** (saves ¥31/person)
+- **Total transportation**: ¥1,948 → ¥1,824 (saves ¥124)
+- **Total trip cost**: ¥24,944.20 → **¥24,820.20** (saves ¥124)
+- **Total SGD**: ~S$8,156.09 → **~S$8,131.29** (saves ~S$24.80)
+- **Per person**: ~S$2,039.02 → **~S$2,032.82** (saves ~S$6.20/person)
+- **Cumulative savings from original budget**: ~S$55.20 (¥276)
+
+### Benefits
+- ✅ More realistic and achievable timing
+- ✅ Cheaper ticket price
+- ✅ Less stress and rush
+- ✅ Better travel experience
+- ✅ Still arrives in time for 12:00 hotel check-in
+
+## [2.1.0] - 2026-01-13
+
+### Added
+- **Detailed Train Route from Kunming Airport to Dali**: Complete step-by-step guide
+  - Recommended train: D8672 (09:00-11:09), ¥137/person
+  - Alternative trains documented: C9502, D8676, D8692, D3932
+  - Full timing breakdown from airport arrival (06:55) to hotel check-in (12:00)
+  - Airport shuttle and taxi information included
+- **Train Timetable Analysis**: Based on actual train schedules for March 14, 2026
+- **Transportation Cost Optimization**: Reduced from ¥2,100 to ¥1,948
+- **Enhanced Route 1 Section**: Detailed 3-step process with buffer times
+  - Step 1: Airport to Railway Station (machine shuttle/taxi)
+  - Step 2: Railway journey with multiple train options
+  - Step 3: Dali Station to hotel transfer
+
+### Changed
+- **Transportation Costs Updated**:
+  - Added: Airport shuttle ¥100 (4 people)
+  - Updated: High-speed rail ¥548 (4 people on D8672)
+  - Transportation subtotal: ¥2,100 → ¥1,948
+- **Total Budget Reduced**:
+  - Total (RMB): ¥25,096.20 → ¥24,944.20
+  - Total (SGD): ~S$8,186.49 → ~S$8,156.09
+  - Per person: ~S$2,046.62 → ~S$2,039.02
+  - **Savings: ~S$30.40**
+- **Todo List Updated**: Train booking task now specifies D8672 train with timing
+
+### Documentation
+- Added `TRAIN_ROUTE_KUNMING_TO_SHAXI.md` with comprehensive route analysis
+- Enhanced transportation section with visual highlighting of recommended option
+
 ## [2.0.0] - 2026-01-11
 
 ### Added
