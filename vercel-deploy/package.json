@@ -1,7 +1,7 @@
 {
   "name": "yunnan-trip-itinerary",
-  "version": "2.3.0",
-  "description": "云南旅行行程规划 - 2026年3月 - 玉龙雪山亲子游详细攻略（2大2小）+ 优化火车路线",
+  "version": "2.6.0",
+  "description": "云南旅行行程规划 - 2026年3月 - 简化酒店交通 + 独立标签页 + 玉龙雪山亲子游详细攻略（2大2小）+ 优化火车路线",
   "main": "index.html",
   "scripts": {
     "dev": "python3 -m http.server 3000",
