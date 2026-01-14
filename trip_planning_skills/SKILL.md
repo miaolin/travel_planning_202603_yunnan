@@ -1,28 +1,125 @@
 ---
 name: trip-itinerary-generator
-description: generate trip html file from given information. The main task is to generate a trip itinerary in the format of an interative web page to list out the detailed trip information based on user provided information.
+description: Generate comprehensive trip itinerary HTML with detailed planning, train routes, family-friendly options, and cost optimization for trips to China and worldwide.
 ---
 
-# Trip itinerary generation
+# Trip Itinerary Generation
 
-Inputs: 
+## Overview
+Generate a detailed, interactive trip itinerary web page based on user-provided information including booked tickets, hotels, blog posts, images, and preferences. Optimize for families with children when specified.
 
-user can provide various types of information indicating trip related information such as booked airticket, booked hotels, interested hotels, relevant blog post, etc. These types of information can be in the format of images, screenshot, text, etc.
+## Inputs
 
-Outputs:
+User can provide various types of information:
+- **Booking confirmations**: Flight tickets, hotels, train tickets (images/screenshots/text)
+- **Preferences**: Family-friendly routes, budget constraints, special needs (e.g., children, elderly)
+- **Research**: Blog posts, travel guides, attraction information
+- **Documents**: Train timetables, maps, price lists
 
-If the trip is going to China, pls generate the web page using Chinese. Otherwise generate it in English.
-The output page must have the following tabs, including trip overview, todo list, flight information, hotel information, daily trip, cost, etc.
-* Trip overview: provides a general overview 
-* Todo list: it is generated based on planned trip routine and the provided booked information. 
-  * For the flight, if the flight is only booked and not paid pls list pay the flight in the todo list. 
-  * For the hotel, if some of the days no confirmed booking information is provided, please list book the hotels at those dates in the todo list.
-  * For transport, pls figure out the gaps between hotels and generate at least two transport options. For each option, pls provide the details. 
-* Flight information: the detailed flight information and things to take care. 
-* Hotel information: pls present the daily stay in the calendar format, with details included paid or not. And also provides two transportation options between hotels.
-* Daily itinerary: based on the booked hotels and other information list a detailed routine for each day
-* Cost: estimate the individual cost and total cost including paid ones and unpaid ones. 
+## Outputs
 
-## Additional resources
+**Language**: Use Chinese for trips to China, English for other destinations.
 
-- Example of the generated HTML file [yunnan_trip_itinerary.html](yunnan_trip_itinerary.html)
+**Required Sections**:
+
+### 1. Trip Overview
+- Destination and dates
+- Travel party composition (e.g., 2 adults + 2 children)
+- Key highlights and route summary
+- Weather and best time to visit
+
+### 2. Todo List
+Generate actionable tasks with priority:
+- **Flights**: Mark "pay for flight" if booked but not paid
+- **Hotels**: List "book hotel" for dates without confirmed bookings
+- **Transportation**: Identify gaps between hotels and provide 2+ transport options with:
+  - Detailed timing (considering immigration, baggage claim, transfers)
+  - Cost breakdown
+  - Pros/cons for each option
+  - Family-friendly considerations
+- **Tickets**: Scenic area tickets, cable cars, etc.
+- **Special preparations**: Altitude sickness prevention, weather gear, etc.
+
+### 3. Flight Information
+- Detailed flight schedule with actual arrival/departure times
+- Airport transfer options with realistic timing
+- Check-in requirements
+- Baggage allowance
+- Things to prepare
+
+### 4. Hotel Information
+- **Visual calendar** showing daily accommodations
+- Payment status: Paid ✓ / Deferred Payment ⏱ / Unpaid
+- Check-in/check-out times
+- Cancellation policies
+- Hotel amenities
+- **Transportation between hotels**: 2+ options with details
+
+### 5. Daily Itinerary
+For each day, provide:
+- **Time-blocked schedule** (e.g., 09:00-12:00 Activity)
+- **Activity details** with addresses and tips
+- **Family-friendly notes** when applicable:
+  - Suitable for children ages
+  - Walking distance and difficulty
+  - Altitude considerations
+  - Rest breaks
+- **Meal suggestions**
+- **Photos/visual aids** when relevant
+
+### 6. Cost Breakdown
+Detailed budget table with:
+- **Categories**: Flights, hotels, transportation, tickets, meals, miscellaneous
+- **Itemized costs**: Individual items with quantities
+- **Payment status**: Paid/Unpaid/Deferred
+- **Currency conversion**: Show both local currency and home currency
+- **Per-person cost**: Total divided by number of travelers
+- **Cost optimization notes**: Savings achieved, budget-friendly tips
+
+## Special Considerations
+
+### Family Travel (with children)
+When user indicates traveling with children:
+- **Route optimization**: Choose lower altitudes, shorter walks, flat terrain
+- **Timing**: Include rest periods, avoid rushing
+- **Safety**: Altitude sickness prevention, emergency contacts
+- **Activities**: Kid-friendly attractions, interactive experiences
+- **Packing**: Additional items for children (warm clothes, snacks, medicine)
+- **Cost**: Child ticket prices, family packages
+
+### Transportation Planning
+- **Realistic timing**: Include immigration (60 min), baggage claim, transfers
+- **Buffer time**: Add safety margins for connections
+- **Multiple options**: Compare train/bus/car/taxi with pros/cons
+- **Train timetables**: Analyze actual schedules, recommend optimal trains
+- **Family logistics**: Consider luggage, children's comfort
+
+### High-Altitude Destinations
+- Altitude sickness prevention guide
+- Oxygen requirements
+- Gradual acclimatization schedule
+- Emergency procedures
+- Suitable routes for families/elderly
+
+## Output Format
+
+Generate an interactive HTML page with:
+- **Responsive design**: Works on desktop and mobile
+- **Tab navigation**: Easy switching between sections
+- **Visual elements**: Icons, color coding, progress indicators
+- **Interactive features**: Clickable checkboxes, collapsible sections
+- **Print-friendly**: Can be printed as PDF for offline use
+
+## Quality Standards
+
+- **Accurate timing**: Always include realistic buffers and transfer times
+- **Cost transparency**: Show both estimates and confirmed costs
+- **Safety first**: Highlight important warnings and precautions
+- **Practical tips**: Include insider knowledge and optimization suggestions
+- **Family-focused**: When applicable, prioritize comfort and safety for children
+
+## Additional Resources
+
+- **Example**: See [yunnan_trip_itinerary.html](yunnan_trip_itinerary.html) for reference
+- **Style guide**: Follow the same HTML structure and CSS styling
+- **Icons**: Use emoji for quick visual recognition (✓ ⏱ ❌ ⚠️ 🏨 ✈️ 🚄)
