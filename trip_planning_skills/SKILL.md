@@ -12,9 +12,9 @@ Generate a detailed, interactive trip itinerary web page based on user-provided 
 
 User can provide various types of information:
 - **Booking confirmations**: Flight tickets, hotels, train tickets (images/screenshots/text)
+- **Documents**: Train timetables, maps, price lists
 - **Preferences**: Family-friendly routes, budget constraints, special needs (e.g., children, elderly)
 - **Research**: Blog posts, travel guides, attraction information
-- **Documents**: Train timetables, maps, price lists
 
 ## Outputs
 
@@ -53,9 +53,47 @@ Generate actionable tasks with priority:
 - Check-in/check-out times
 - Cancellation policies
 - Hotel amenities
-- **Transportation between hotels**: 2+ options with details
 
-### 5. Daily Itinerary
+### 5. Hotel Transit (Inter-Hotel Transportation)
+
+For each hotel transition (e.g., Hotel A → Hotel B), provide detailed route analysis:
+
+**Multiple Transport Options** (minimum 2-3 per route):
+- **Option A**: Private car/包车 (recommended for families/groups)
+- **Option B**: Public transportation (train/bus)
+- **Option C**: Taxi/ride-sharing or alternative
+
+**Required Details for Each Option**:
+- **Route Description**: Step-by-step directions with landmarks
+- **Distance**: Exact kilometers (e.g., 233km)
+- **Travel Duration**: Realistic timing including:
+  - Hotel check-out → departure time
+  - Actual travel time
+  - Rest stops (for journeys >2 hours)
+  - Arrival → hotel check-in time
+- **Cost Breakdown**:
+  - Per person cost
+  - Total cost for group
+  - Additional costs (tolls, parking, etc.)
+- **Booking Information**: How to arrange (app name, phone, hotel concierge)
+- **Pros & Cons**: Clear comparison points
+
+**Special Considerations**:
+- **Luggage**: Mention trunk space for families with children
+- **Comfort Level**: Rate suitability for children/elderly
+- **Scenic Value**: Highlight if route has good views
+- **Season/Weather**: Note any seasonal restrictions
+- **Flexibility**: Which option allows stops for photos/restroom
+
+**Priority Rules** (in order):
+1. **User-provided information**: If user specifies transportation, use that first
+2. **Family-friendly**: Prioritize comfort and safety when traveling with children
+3. **Cost-effective**: Show budget-conscious options
+4. **Convenience**: Direct routes vs. transfers
+
+**Visual Format**: Use comparison cards showing options side-by-side
+
+### 6. Daily Itinerary
 For each day, provide:
 - **Time-blocked schedule** (e.g., 09:00-12:00 Activity)
 - **Activity details** with addresses and tips
@@ -67,7 +105,7 @@ For each day, provide:
 - **Meal suggestions**
 - **Photos/visual aids** when relevant
 
-### 6. Cost Breakdown
+### 7. Cost Breakdown
 Detailed budget table with:
 - **Categories**: Flights, hotels, transportation, tickets, meals, miscellaneous
 - **Itemized costs**: Individual items with quantities
