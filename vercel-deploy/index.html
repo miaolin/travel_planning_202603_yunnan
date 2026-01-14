@@ -456,6 +456,7 @@
             <button class="tab" onclick="openTab(event, 'todo')">✅ 待办事项</button>
             <button class="tab" onclick="openTab(event, 'flights')">✈️ 航班信息</button>
             <button class="tab" onclick="openTab(event, 'hotels')">🏨 酒店住宿</button>
+            <button class="tab" onclick="openTab(event, 'transit')">🚗 酒店交通</button>
             <button class="tab" onclick="openTab(event, 'daily')">📅 每日行程</button>
             <button class="tab" onclick="openTab(event, 'cost')">💰 费用预算</button>
             <button class="tab" onclick="openTab(event, 'tips')">💡 旅行贴士</button>
@@ -907,8 +908,24 @@
                             <li><strong>状态：</strong><span class="status-badge status-paid">已付款</span></li>
                         </ul>
                     </div>
+                </div>
+            </div>
 
-                    <h3>🚗 酒店间交通方案</h3>
+            <!-- 酒店交通 -->
+            <div id="transit" class="tab-content">
+                <div class="card">
+                    <h2><span class="icon">🚗</span>酒店间交通方案 (Hotel Transit)</h2>
+
+                    <div class="alert alert-warning" style="margin-bottom: 20px;">
+                        <span class="alert-icon">ℹ️</span>
+                        <div>
+                            <strong>路线选择优先级：</strong><br>
+                            1️⃣ 用户指定的交通方式（最优先）<br>
+                            2️⃣ 亲子友好（2大2小，考虑舒适度和安全性）<br>
+                            3️⃣ 性价比（合理预算控制）<br>
+                            4️⃣ 便利性（直达 vs 转车）
+                        </div>
+                    </div>
 
                     <h4>路线1：昆明机场 → 大理西山酒店 (3月14日)</h4>
 
@@ -924,15 +941,34 @@
                     <div class="transport-options">
                         <div class="transport-card" style="border-color: #28a745;">
                             <h4>🚄 方案A：打车+高铁（强烈推荐）</h4>
-                            <ul>
-                                <li><strong>完整时间线（考虑入境+取行李）：</strong></li>
-                                <li style="margin-left: 20px;">• 06:55 飞机降落昆明机场</li>
-                                <li style="margin-left: 20px;">• 07:55 完成入境+取行李（约60分钟）</li>
-                                <li style="margin-left: 20px;">• 08:00 打车前往昆明站（¥100全车，50分钟）</li>
-                                <li style="margin-left: 20px;">• 08:50 抵达昆明站</li>
-                                <li style="margin-left: 20px;">• 09:30 完成取票+安检+候车（40分钟）</li>
 
-                                <li><strong>推荐火车班次（按优先级）：</strong></li>
+                            <p><strong>📍 路线描述：</strong></p>
+                            <ul>
+                                <li>昆明长水国际机场（T2航站楼）→ 出境大厅 → 机场大巴或出租车 → 昆明站 → C9506高铁 → 大理站 → 出租车 → 西山酒店</li>
+                            </ul>
+
+                            <p><strong>📏 距离与时长：</strong></p>
+                            <ul>
+                                <li><strong>总距离：</strong>机场到昆明站27公里 + 昆明到大理高铁333公里 = 约360公里</li>
+                                <li><strong>总时长：</strong>约5.5小时（含所有环节）</li>
+                            </ul>
+
+                            <p><strong>⏰ 完整时间线（考虑入境+取行李）：</strong></p>
+                            <ul>
+                                <li style="margin-left: 20px;">• <strong>06:55</strong> 飞机降落昆明机场</li>
+                                <li style="margin-left: 20px;">• <strong>07:00-07:55</strong> 下机 → 入境检查 → 取行李 → 到达接机大厅（预留60分钟）</li>
+                                <li style="margin-left: 20px;">• <strong>08:00</strong> 打车/机场大巴出发前往昆明站</li>
+                                <li style="margin-left: 20px;">• <strong>08:00-08:50</strong> 行驶至昆明站（27公里，约50分钟）</li>
+                                <li style="margin-left: 20px;">• <strong>08:50-09:30</strong> 到达车站 → 取票/刷身份证 → 安检 → 候车（预留40分钟）</li>
+                                <li style="margin-left: 20px;">• <strong>09:48</strong> 登上C9506次列车（63分钟缓冲时间）</li>
+                                <li style="margin-left: 20px;">• <strong>09:48-11:59</strong> 高铁行驶（2小时11分钟）</li>
+                                <li style="margin-left: 20px;">• <strong>11:59</strong> 抵达大理站</li>
+                                <li style="margin-left: 20px;">• <strong>12:00-12:30</strong> 出站 → 打车至西山酒店（约30分钟）</li>
+                                <li style="margin-left: 20px;">• <strong>12:30</strong> 抵达酒店办理入住（酒店14:00入住，可寄存行李）</li>
+                            </ul>
+
+                            <p><strong>推荐火车班次（按优先级）：</strong></p>
+                            <ul>
                                 <li style="margin-left: 20px;">• <strong>09:48-11:59</strong> C9506次 ¥106/人 (2h11min) ⭐⭐⭐⭐⭐ <strong>最推荐</strong></li>
                                 <li style="margin-left: 20px;">&nbsp;&nbsp;→ 时间最充裕（63分钟缓冲）+ 价格最便宜</li>
                                 <li style="margin-left: 20px;">• <strong>09:37-11:50</strong> D8692次 ¥137/人 (2h13min) ⭐⭐⭐⭐ 备选</li>
@@ -940,96 +976,388 @@
                                 <li style="margin-left: 20px;">• <strong>10:04-12:17</strong> D8684次 ¥137/人 (2h13min) ⭐⭐⭐⭐⭐ 最保险</li>
                                 <li style="margin-left: 20px;">&nbsp;&nbsp;→ 即使航班延误也来得及</li>
                                 <li style="margin-left: 20px;">• 10:21-12:29 D8696次 ¥137/人 (2h8min) - 备选</li>
+                            </ul>
 
-                                <li><strong>Step 3：</strong>大理站→西山酒店</li>
-                                <li style="margin-left: 20px;">• 出租车/滴滴：约30分钟，¥40-60</li>
-                                <li style="margin-left: 20px;">• 12:30前可顺利抵达酒店办理入住</li>
+                            <p><strong>💰 费用明细：</strong></p>
+                            <ul>
+                                <li><strong>机场到昆明站：</strong>出租车¥100（全车4人）= ¥25/人，或机场大巴¥25/人</li>
+                                <li><strong>高铁票（C9506）：</strong>¥106/人 × 4人 = ¥424</li>
+                                <li><strong>大理站到酒店：</strong>出租车¥50（全车）= ¥12.5/人</li>
+                                <li><strong>总费用：</strong>¥574（全家4人）= <strong>¥143.5/人</strong></li>
+                                <li style="margin-left: 20px;">• 儿童票可能有优惠（具体以12306为准）</li>
+                            </ul>
 
-                                <li><strong>总时长：</strong>约5.5小时（含所有环节）</li>
-                                <li><strong>总费用（C9506）：</strong>¥25/人 + ¥106/人 = ¥131/人</li>
-                                <li><strong>优点：</strong>时间安排合理、价格便宜、准点率高</li>
+                            <p><strong>📱 预订方式：</strong></p>
+                            <ul>
+                                <li><strong>高铁票：</strong>12306官网/App、携程、飞猪</li>
+                                <li><strong>出租车：</strong>滴滴出行、高德打车、机场出租车候车点</li>
+                                <li><strong>机场大巴：</strong>机场到达层有售票柜台（空港快线）</li>
+                            </ul>
+
+                            <p><strong>👨‍👩‍👧‍👦 亲子友好指数：⭐⭐⭐⭐⭐</strong></p>
+                            <ul>
+                                <li><strong>行李空间：</strong>高铁有专门行李架，无需担心</li>
+                                <li><strong>舒适度：</strong>高铁座椅宽敞，孩子可自由活动、吃零食</li>
+                                <li><strong>风景：</strong>途径云南山区，风景优美</li>
+                                <li><strong>灵活性：</strong>中途无法停车，但高铁有洗手间和餐车</li>
+                                <li><strong>安全性：</strong>高铁非常安全，适合家庭出行</li>
                             </ul>
                         </div>
+
                         <div class="transport-card">
                             <h4>🚗 方案B：包车直达</h4>
+
+                            <p><strong>📍 路线描述：</strong></p>
                             <ul>
-                                <li>机场直接出发→大理酒店</li>
-                                <li><strong>距离：</strong>约330公里</li>
-                                <li><strong>时长：</strong>约4-5小时</li>
-                                <li><strong>费用：</strong>¥600-800（全车4人）</li>
-                                <li><strong>优点：</strong>直达酒店，适合早班机，可沿途休息</li>
-                                <li><strong>缺点：</strong>长途车程较累</li>
+                                <li>昆明长水国际机场（T2航站楼）→ 杭瑞高速 → 大理高速 → 大理市区 → 西山酒店</li>
+                                <li>途径：楚雄服务区（可休息），适合中途停车拍照</li>
+                            </ul>
+
+                            <p><strong>📏 距离与时长：</strong></p>
+                            <ul>
+                                <li><strong>总距离：</strong>约330公里</li>
+                                <li><strong>总时长：</strong>约4.5-5小时（含休息站停留15分钟）</li>
+                            </ul>
+
+                            <p><strong>⏰ 时间安排：</strong></p>
+                            <ul>
+                                <li style="margin-left: 20px;">• <strong>06:55</strong> 飞机降落</li>
+                                <li style="margin-left: 20px;">• <strong>07:55</strong> 完成入境+取行李，在接机大厅与司机会合</li>
+                                <li style="margin-left: 20px;">• <strong>08:00</strong> 出发前往大理</li>
+                                <li style="margin-left: 20px;">• <strong>10:30</strong> 楚雄服务区休息15分钟（上厕所、买零食）</li>
+                                <li style="margin-left: 20px;">• <strong>12:30-13:00</strong> 抵达西山酒店</li>
+                            </ul>
+
+                            <p><strong>💰 费用明细：</strong></p>
+                            <ul>
+                                <li><strong>包车费：</strong>¥600-800（全车4人）= <strong>¥150-200/人</strong></li>
+                                <li><strong>过路费：</strong>已含在包车费中（约¥150）</li>
+                                <li><strong>油费：</strong>已含在包车费中（约¥200）</li>
+                                <li style="margin-left: 20px;">• 比高铁方案贵¥50-100/人</li>
+                            </ul>
+
+                            <p><strong>📱 预订方式：</strong></p>
+                            <ul>
+                                <li><strong>滴滴出行：</strong>App内选择"城际拼车"或"包车"</li>
+                                <li><strong>携程/飞猪：</strong>搜索"昆明机场包车到大理"</li>
+                                <li><strong>酒店代订：</strong>提前联系西山酒店前台，他们可帮忙安排可靠司机</li>
+                                <li style="margin-left: 20px;">• 建议提前1-2天预订，避免临时找不到车</li>
+                            </ul>
+
+                            <p><strong>👨‍👩‍👧‍👦 亲子友好指数：⭐⭐⭐⭐</strong></p>
+                            <ul>
+                                <li><strong>行李空间：</strong>SUV或商务车后备箱充足</li>
+                                <li><strong>舒适度：</strong>私密空间，但长时间坐车孩子可能不耐烦</li>
+                                <li><strong>风景：</strong>途径云南高原，风景绝佳，可随时停车拍照</li>
+                                <li><strong>灵活性：</strong>可随时停车休息、上厕所、买零食</li>
+                                <li><strong>安全性：</strong>需确认司机资质，选择正规平台</li>
                             </ul>
                         </div>
                     </div>
 
                     <h4>路线2：大理西山 → 沙溪古镇 (3月16日)</h4>
                     <div class="transport-options">
-                        <div class="transport-card">
-                            <h4>🚗 方案A：包车</h4>
+                        <div class="transport-card" style="border-color: #28a745;">
+                            <h4>🚗 方案A：包车（强烈推荐）</h4>
+
+                            <p><strong>📍 路线描述：</strong></p>
                             <ul>
-                                <li><strong>距离：</strong>约233公里</li>
-                                <li><strong>时长：</strong>约3小时11分钟</li>
-                                <li><strong>路线：</strong>途经11个服务区，4个加油站</li>
-                                <li><strong>过路费：</strong>约126元</li>
-                                <li><strong>费用：</strong>500-700元（全车）</li>
-                                <li><strong>优点：</strong>灵活便捷，可沿途停靠</li>
+                                <li>西山酒店 → 大理市区 → G56杭瑞高速 → 剑川县 → 沙溪古镇听雨小栈</li>
+                                <li>途径景点：剑川石宝山（可选择停车游览30分钟）</li>
+                            </ul>
+
+                            <p><strong>📏 距离与时长：</strong></p>
+                            <ul>
+                                <li><strong>总距离：</strong>约115公里（不是233公里，那是到丽江的距离）</li>
+                                <li><strong>总时长：</strong>约2小时（含服务区休息15分钟）</li>
+                            </ul>
+
+                            <p><strong>⏰ 时间安排：</strong></p>
+                            <ul>
+                                <li style="margin-left: 20px;">• <strong>10:00</strong> 酒店退房（check-out 12:00前）</li>
+                                <li style="margin-left: 20px;">• <strong>10:00</strong> 出发前往沙溪</li>
+                                <li style="margin-left: 20px;">• <strong>11:00</strong> 途经服务区休息（上厕所、买零食）</li>
+                                <li style="margin-left: 20px;">• <strong>12:00</strong> 抵达沙溪古镇听雨小栈，办理入住</li>
+                                <li style="margin-left: 20px;">• <strong>12:30</strong> 午餐（在古镇品尝白族美食）</li>
+                            </ul>
+
+                            <p><strong>💰 费用明细：</strong></p>
+                            <ul>
+                                <li><strong>包车费：</strong>¥400-500（全车4人）= <strong>¥100-125/人</strong></li>
+                                <li><strong>过路费：</strong>约¥60（已含在包车费中）</li>
+                                <li><strong>油费：</strong>约¥80（已含在包车费中）</li>
+                                <li style="margin-left: 20px;">• 建议价格：¥450合理</li>
+                            </ul>
+
+                            <p><strong>📱 预订方式：</strong></p>
+                            <ul>
+                                <li><strong>西山酒店前台：</strong>退房时请前台帮忙联系包车司机（最可靠）</li>
+                                <li><strong>滴滴出行：</strong>"城际快车"选项（大理→沙溪）</li>
+                                <li><strong>听雨小栈：</strong>提前联系酒店，他们也可安排接送</li>
+                                <li style="margin-left: 20px;">• 建议提前1天预订</li>
+                            </ul>
+
+                            <p><strong>👨‍👩‍👧‍👦 亲子友好指数：⭐⭐⭐⭐⭐</strong></p>
+                            <ul>
+                                <li><strong>行李空间：</strong>SUV后备箱足够放4人行李</li>
+                                <li><strong>舒适度：</strong>2小时车程适中，孩子可接受</li>
+                                <li><strong>风景：</strong>途经云南乡村风光，风景优美</li>
+                                <li><strong>灵活性：</strong>可随时停车拍照、上厕所</li>
+                                <li><strong>安全性：</strong>酒店推荐司机最可靠</li>
                             </ul>
                         </div>
+
                         <div class="transport-card">
-                            <h4>🚌 方案B：大巴转车</h4>
+                            <h4>🚌 方案B：公共交通（大巴转车）</h4>
+
+                            <p><strong>📍 路线描述：</strong></p>
                             <ul>
-                                <li>大理→丽江：大巴约2.5小时</li>
-                                <li>丽江→白沙古镇：公交或打车30分钟</li>
-                                <li><strong>总时长：</strong>约3.5-4小时</li>
-                                <li><strong>费用：</strong>约80-100元/人</li>
-                                <li><strong>优点：</strong>经济实惠</li>
+                                <li>西山酒店 → 打车到大理客运站 → 大理→剑川班车 → 剑川→沙溪班车 → 听雨小栈</li>
+                            </ul>
+
+                            <p><strong>📏 距离与时长：</strong></p>
+                            <ul>
+                                <li><strong>总时长：</strong>约3.5-4小时（含等车、转车）</li>
+                            </ul>
+
+                            <p><strong>⏰ 时间安排：</strong></p>
+                            <ul>
+                                <li style="margin-left: 20px;">• <strong>09:00</strong> 打车到大理客运北站（¥30，30分钟）</li>
+                                <li style="margin-left: 20px;">• <strong>10:00</strong> 乘大理→剑川班车（约1.5小时，¥35/人）</li>
+                                <li style="margin-left: 20px;">• <strong>11:30</strong> 抵达剑川，转乘剑川→沙溪班车（约30分钟，¥10/人）</li>
+                                <li style="margin-left: 20px;">• <strong>12:30</strong> 抵达沙溪，打车到听雨小栈（¥10）</li>
+                            </ul>
+
+                            <p><strong>💰 费用明细：</strong></p>
+                            <ul>
+                                <li><strong>大理市区→客运站：</strong>¥30（全车）= ¥7.5/人</li>
+                                <li><strong>大理→剑川：</strong>¥35/人 × 4 = ¥140（儿童可能半价）</li>
+                                <li><strong>剑川→沙溪：</strong>¥10/人 × 4 = ¥40</li>
+                                <li><strong>沙溪→酒店：</strong>¥10（全车）= ¥2.5/人</li>
+                                <li><strong>总费用：</strong>¥220（全家4人）= <strong>¥55/人</strong></li>
+                                <li style="margin-left: 20px;">• 比包车省¥230（但费时费力）</li>
+                            </ul>
+
+                            <p><strong>📱 预订方式：</strong></p>
+                            <ul>
+                                <li><strong>大理客运北站：</strong>现场买票（班次较多，无需提前）</li>
+                                <li><strong>班车时刻：</strong>大理→剑川（09:00/10:00/11:00/13:00/15:00）</li>
+                                <li style="margin-left: 20px;">• 建议坐10:00班次，时间最合适</li>
+                            </ul>
+
+                            <p><strong>👨‍👩‍👧‍👦 亲子友好指数：⭐⭐</strong></p>
+                            <ul>
+                                <li><strong>行李空间：</strong>需自己搬运行李上下车，不便</li>
+                                <li><strong>舒适度：</strong>班车空间小，4小时对孩子来说太累</li>
+                                <li><strong>风景：</strong>与包车路线相同</li>
+                                <li><strong>灵活性：</strong>无法停车，受班次限制</li>
+                                <li><strong>安全性：</strong>正规班车，安全无忧</li>
                             </ul>
                         </div>
                     </div>
 
                     <h4>路线3：沙溪古镇 → 丽江白沙古镇 (3月18日)</h4>
                     <div class="transport-options">
-                        <div class="transport-card">
-                            <h4>🚗 方案A：包车直达（推荐）</h4>
+                        <div class="transport-card" style="border-color: #28a745;">
+                            <h4>🚗 方案A：包车直达（强烈推荐）</h4>
+
+                            <p><strong>📍 路线描述：</strong></p>
                             <ul>
-                                <li><strong>距离：</strong>约60公里</li>
-                                <li><strong>时长：</strong>约1.5小时</li>
-                                <li><strong>费用：</strong>300-400元（全车）</li>
-                                <li><strong>优点：</strong>距离近，直达酒店</li>
+                                <li>沙溪听雨小栈 → 剑川县城 → S221省道 → 丽江白沙古镇白沙悦榕庄酒店</li>
+                                <li>途径景点：可顺路经过玉龙雪山远景观景台拍照</li>
+                            </ul>
+
+                            <p><strong>📏 距离与时长：</strong></p>
+                            <ul>
+                                <li><strong>总距离：</strong>约60公里</li>
+                                <li><strong>总时长：</strong>约1.5小时（含中途拍照10分钟）</li>
+                            </ul>
+
+                            <p><strong>⏰ 时间安排：</strong></p>
+                            <ul>
+                                <li style="margin-left: 20px;">• <strong>10:00</strong> 酒店退房（check-out 12:00前）</li>
+                                <li style="margin-left: 20px;">• <strong>10:00</strong> 出发前往白沙</li>
+                                <li style="margin-left: 20px;">• <strong>10:45</strong> 途经观景台拍照（10分钟）</li>
+                                <li style="margin-left: 20px;">• <strong>11:30</strong> 抵达白沙悦榕庄，办理入住</li>
+                                <li style="margin-left: 20px;">• <strong>12:00</strong> 酒店内午餐或白沙古镇用餐</li>
+                            </ul>
+
+                            <p><strong>💰 费用明细：</strong></p>
+                            <ul>
+                                <li><strong>包车费：</strong>¥300-400（全车4人）= <strong>¥75-100/人</strong></li>
+                                <li><strong>过路费：</strong>无（省道免费）</li>
+                                <li><strong>油费：</strong>约¥40（已含在包车费中）</li>
+                                <li style="margin-left: 20px;">• 建议价格：¥350合理（距离短）</li>
+                            </ul>
+
+                            <p><strong>📱 预订方式：</strong></p>
+                            <ul>
+                                <li><strong>听雨小栈前台：</strong>退房时请前台帮忙联系包车司机（最推荐）</li>
+                                <li><strong>白沙悦榕庄：</strong>提前联系酒店安排接送服务</li>
+                                <li><strong>滴滴出行：</strong>"城际快车"选项（沙溪→白沙）</li>
+                                <li style="margin-left: 20px;">• 建议提前1天预订</li>
+                            </ul>
+
+                            <p><strong>👨‍👩‍👧‍👦 亲子友好指数：⭐⭐⭐⭐⭐</strong></p>
+                            <ul>
+                                <li><strong>行李空间：</strong>SUV后备箱充足</li>
+                                <li><strong>舒适度：</strong>1.5小时车程短，孩子完全不会累</li>
+                                <li><strong>风景：</strong>途经玉龙雪山远景，风景绝佳</li>
+                                <li><strong>灵活性：</strong>可随时停车拍照、休息</li>
+                                <li><strong>安全性：</strong>酒店推荐司机最可靠</li>
                             </ul>
                         </div>
+
                         <div class="transport-card">
                             <h4>🚌 方案B：公共交通</h4>
+
+                            <p><strong>📍 路线描述：</strong></p>
                             <ul>
-                                <li>沙溪→剑川：当地班车30分钟</li>
-                                <li>剑川→丽江：班车约2小时</li>
-                                <li>丽江→白沙：公交或打车30分钟</li>
-                                <li><strong>总时长：</strong>约3-4小时</li>
-                                <li><strong>费用：</strong>约50-80元/人</li>
+                                <li>沙溪听雨小栈 → 打车到沙溪路口 → 沙溪→剑川班车 → 剑川→丽江班车 → 丽江市区→白沙公交/打车 → 白沙悦榕庄</li>
+                            </ul>
+
+                            <p><strong>📏 距离与时长：</strong></p>
+                            <ul>
+                                <li><strong>总时长：</strong>约3.5-4小时（含等车、转车）</li>
+                            </ul>
+
+                            <p><strong>⏰ 时间安排：</strong></p>
+                            <ul>
+                                <li style="margin-left: 20px;">• <strong>08:30</strong> 打车到沙溪路口（¥10，10分钟）</li>
+                                <li style="margin-left: 20px;">• <strong>09:00</strong> 乘沙溪→剑川班车（约30分钟，¥10/人）</li>
+                                <li style="margin-left: 20px;">• <strong>09:30</strong> 抵达剑川，等候剑川→丽江班车</li>
+                                <li style="margin-left: 20px;">• <strong>10:00</strong> 乘剑川→丽江班车（约2小时，¥45/人）</li>
+                                <li style="margin-left: 20px;">• <strong>12:00</strong> 抵达丽江客运站，转6路公交到白沙（50分钟，¥2/人）</li>
+                                <li style="margin-left: 20px;">• <strong>13:00</strong> 白沙路口下车，打车到悦榕庄（¥10）</li>
+                            </ul>
+
+                            <p><strong>💰 费用明细：</strong></p>
+                            <ul>
+                                <li><strong>沙溪→剑川：</strong>¥10/人 × 4 = ¥40</li>
+                                <li><strong>剑川→丽江：</strong>¥45/人 × 4 = ¥180（儿童可能半价）</li>
+                                <li><strong>丽江→白沙：</strong>6路公交¥2/人 × 4 = ¥8</li>
+                                <li><strong>白沙→酒店：</strong>¥10（全车）</li>
+                                <li><strong>总费用：</strong>¥238（全家4人）= <strong>¥59.5/人</strong></li>
+                                <li style="margin-left: 20px;">• 比包车省¥110-160（但费时费力）</li>
+                            </ul>
+
+                            <p><strong>📱 预订方式：</strong></p>
+                            <ul>
+                                <li><strong>班车：</strong>现场买票（无需提前预订）</li>
+                                <li><strong>班车时刻：</strong>沙溪→剑川（07:00/09:00/11:00），剑川→丽江（08:00/10:00/13:00/15:00）</li>
+                                <li style="margin-left: 20px;">• 需要合理衔接班次时间</li>
+                            </ul>
+
+                            <p><strong>👨‍👩‍👧‍👦 亲子友好指数：⭐</strong></p>
+                            <ul>
+                                <li><strong>行李空间：</strong>需自己搬运行李，转车3次非常累</li>
+                                <li><strong>舒适度：</strong>4小时车程+3次转车，孩子会很疲惫</li>
+                                <li><strong>风景：</strong>与包车路线相同</li>
+                                <li><strong>灵活性：</strong>完全受班次限制，无法停车</li>
+                                <li><strong>安全性：</strong>正规班车，安全无忧</li>
                             </ul>
                         </div>
                     </div>
 
                     <h4>路线4：丽江白沙古镇 → 昆明机场酒店 (3月21日)</h4>
                     <div class="transport-options">
-                        <div class="transport-card">
-                            <h4>🚗 方案A：包车直达（推荐）</h4>
+                        <div class="transport-card" style="border-color: #28a745;">
+                            <h4>🚗 方案A：包车直达（强烈推荐）</h4>
+
+                            <p><strong>📍 路线描述：</strong></p>
                             <ul>
-                                <li><strong>距离：</strong>约233公里</li>
-                                <li><strong>时长：</strong>约3小时11分钟</li>
-                                <li><strong>费用：</strong>600-800元（全车）</li>
-                                <li><strong>优点：</strong>直达机场酒店，省心</li>
+                                <li>白沙悦榕庄 → 丽江市区 → G5611大丽高速 → G56杭瑞高速 → 昆明长水机场 → 桔子机场酒店</li>
+                                <li>途径：楚雄服务区（可休息），景色优美</li>
+                            </ul>
+
+                            <p><strong>📏 距离与时长：</strong></p>
+                            <ul>
+                                <li><strong>总距离：</strong>约530公里（白沙→丽江10km + 丽江→昆明机场520km）</li>
+                                <li><strong>总时长：</strong>约6-6.5小时（含休息站停留20分钟）</li>
+                            </ul>
+
+                            <p><strong>⏰ 时间安排：</strong></p>
+                            <ul>
+                                <li style="margin-left: 20px;">• <strong>08:00</strong> 酒店退房（check-out 12:00前，提早退房）</li>
+                                <li style="margin-left: 20px;">• <strong>08:00</strong> 出发前往昆明机场</li>
+                                <li style="margin-left: 20px;">• <strong>11:30</strong> 途经楚雄服务区休息（20分钟，午餐+上厕所）</li>
+                                <li style="margin-left: 20px;">• <strong>14:00-14:30</strong> 抵达昆明机场桔子酒店，办理入住</li>
+                                <li style="margin-left: 20px;">• <strong>15:00-19:00</strong> 酒店休息，准备次日早班机</li>
+                            </ul>
+
+                            <p><strong>💰 费用明细：</strong></p>
+                            <ul>
+                                <li><strong>包车费：</strong>¥700-900（全车4人）= <strong>¥175-225/人</strong></li>
+                                <li><strong>过路费：</strong>约¥250（已含在包车费中）</li>
+                                <li><strong>油费：</strong>约¥350（已含在包车费中）</li>
+                                <li style="margin-left: 20px;">• 建议价格：¥800合理（长途路线）</li>
+                            </ul>
+
+                            <p><strong>📱 预订方式：</strong></p>
+                            <ul>
+                                <li><strong>白沙悦榕庄前台：</strong>提前1-2天请酒店帮忙联系可靠司机（最推荐）</li>
+                                <li><strong>滴滴出行：</strong>"城际快车"选项（丽江→昆明机场）</li>
+                                <li><strong>桔子酒店：</strong>提前联系酒店，他们也可安排接送</li>
+                                <li style="margin-left: 20px;">• 长途包车需提前2天预订</li>
+                            </ul>
+
+                            <p><strong>👨‍👩‍👧‍👦 亲子友好指数：⭐⭐⭐⭐</strong></p>
+                            <ul>
+                                <li><strong>行李空间：</strong>SUV后备箱充足，无需搬运</li>
+                                <li><strong>舒适度：</strong>6小时车程较长，但可中途休息，孩子可睡觉</li>
+                                <li><strong>风景：</strong>途经云南高原，风景绝佳</li>
+                                <li><strong>灵活性：</strong>可随时停车休息、拍照、上厕所</li>
+                                <li><strong>安全性：</strong>酒店推荐司机最可靠，高速路况良好</li>
                             </ul>
                         </div>
+
                         <div class="transport-card">
-                            <h4>🚄 方案B：丽江高铁</h4>
+                            <h4>🚄 方案B：高铁</h4>
+
+                            <p><strong>📍 路线描述：</strong></p>
                             <ul>
-                                <li>白沙→丽江站：打车约40分钟</li>
-                                <li>丽江→昆明：高铁约2.5小时</li>
-                                <li>昆明站→机场：机场大巴1小时</li>
-                                <li><strong>总时长：</strong>约4.5-5小时</li>
-                                <li><strong>费用：</strong>约250-300元/人</li>
+                                <li>白沙悦榕庄 → 打车到丽江站 → 高铁到昆明站 → 机场大巴到机场 → 桔子机场酒店</li>
+                            </ul>
+
+                            <p><strong>📏 距离与时长：</strong></p>
+                            <ul>
+                                <li><strong>总时长：</strong>约5小时（含转车）</li>
+                            </ul>
+
+                            <p><strong>⏰ 时间安排：</strong></p>
+                            <ul>
+                                <li style="margin-left: 20px;">• <strong>09:00</strong> 打车到丽江站（40分钟，¥80）</li>
+                                <li style="margin-left: 20px;">• <strong>10:00</strong> 候车、安检</li>
+                                <li style="margin-left: 20px;">• <strong>10:30</strong> 乘高铁到昆明（约3小时，¥220/人）</li>
+                                <li style="margin-left: 20px;">• <strong>13:30</strong> 抵达昆明站</li>
+                                <li style="margin-left: 20px;">• <strong>13:45</strong> 乘机场大巴（约1小时，¥25/人）</li>
+                                <li style="margin-left: 20px;">• <strong>14:45</strong> 抵达机场，步行至桔子酒店（5分钟）</li>
+                            </ul>
+
+                            <p><strong>💰 费用明细：</strong></p>
+                            <ul>
+                                <li><strong>白沙→丽江站：</strong>打车¥80（全车）= ¥20/人</li>
+                                <li><strong>丽江→昆明高铁：</strong>¥220/人 × 4 = ¥880（儿童可能有优惠）</li>
+                                <li><strong>昆明站→机场大巴：</strong>¥25/人 × 4 = ¥100</li>
+                                <li><strong>总费用：</strong>¥1,060（全家4人）= <strong>¥265/人</strong></li>
+                                <li style="margin-left: 20px;">• 比包车贵¥260，但时间短1小时</li>
+                            </ul>
+
+                            <p><strong>📱 预订方式：</strong></p>
+                            <ul>
+                                <li><strong>高铁票：</strong>12306官网/App、携程、飞猪</li>
+                                <li><strong>打车：</strong>滴滴出行、高德打车</li>
+                                <li><strong>机场大巴：</strong>昆明站出站后现场买票</li>
+                                <li style="margin-left: 20px;">• 建议提前3天订高铁票（旺季票紧张）</li>
+                            </ul>
+
+                            <p><strong>👨‍👩‍👧‍👦 亲子友好指数：⭐⭐⭐</strong></p>
+                            <ul>
+                                <li><strong>行李空间：</strong>需搬运行李3次（打车、高铁、大巴），不便</li>
+                                <li><strong>舒适度：</strong>高铁座椅舒适，但转车麻烦</li>
+                                <li><strong>风景：</strong>高铁沿途风景优美</li>
+                                <li><strong>灵活性：</strong>受班次限制，无法随时停车</li>
+                                <li><strong>安全性：</strong>高铁和大巴均安全可靠</li>
                             </ul>
                         </div>
                     </div>
