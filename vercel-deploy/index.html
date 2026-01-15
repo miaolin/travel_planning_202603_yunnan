@@ -502,6 +502,65 @@
             font-weight: 600;
             margin-left: 10px;
         }
+
+        /* Collapsible Details Styles */
+        .transport-card details {
+            margin-top: 15px;
+        }
+
+        .transport-card summary {
+            cursor: pointer;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            list-style: none;
+            user-select: none;
+            transition: all 0.3s ease;
+        }
+
+        .transport-card summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .transport-card summary:hover {
+            background: #e9ecef;
+        }
+
+        .transport-card summary::after {
+            content: '▼ 展开详情';
+            float: right;
+            color: #6c757d;
+            font-size: 0.9em;
+            font-weight: 600;
+        }
+
+        .transport-card details[open] summary::after {
+            content: '▲ 收起详情';
+        }
+
+        .transport-card .summary-title {
+            font-size: 1.1em;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .transport-card .summary-info {
+            font-size: 0.95em;
+            color: #495057;
+            line-height: 1.6;
+            margin-top: 8px;
+        }
+
+        .transport-card .summary-info strong {
+            color: #2c3e50;
+            font-weight: 600;
+        }
+
+        .transport-card details .detailed-content {
+            padding: 20px 0 0 0;
+        }
     </style>
 </head>
 <body>
@@ -1021,9 +1080,18 @@
                                 <span class="selection-status" style="display: none;">已选择此方案</span>
                             </div>
 
-                            <h4>🚄 方案A：打车+高铁（推荐）</h4>
+                            <details>
+                                <summary>
+                                    <span class="summary-title">🚄 方案A：打车+高铁（推荐）</span>
+                                    <div class="summary-info">
+                                        06:55抵达昆明机场 → 入境取行李(60分钟) → 打车到昆明站(50分钟) → 09:48乘C9506列车 → 11:59抵达大理站 → 12:30抵达酒店
+                                        <br>
+                                        <strong>费用：</strong>¥574全家（¥143.5/人） • <strong>时长：</strong>5.5小时 • <strong>亲子指数：</strong>⭐⭐⭐⭐⭐
+                                    </div>
+                                </summary>
 
-                            <p><strong>📍 路线描述：</strong></p>
+                                <div class="detailed-content">
+                                    <p><strong>📍 路线描述：</strong></p>
                             <ul>
                                 <li>昆明长水国际机场（T2航站楼）→ 出境大厅 → 机场大巴或出租车 → 昆明站 → C9506高铁 → 大理站 → 出租车 → 西山酒店</li>
                             </ul>
@@ -1083,6 +1151,8 @@
                                 <li><strong>灵活性：</strong>中途无法停车，但高铁有洗手间和餐车</li>
                                 <li><strong>安全性：</strong>高铁非常安全，适合家庭出行</li>
                             </ul>
+                                </div>
+                            </details>
                         </div>
 
                         <div class="transport-card" data-route="route1" data-option="car">
@@ -1095,9 +1165,18 @@
                                 <span class="selection-status" style="display: none;">已选择此方案</span>
                             </div>
 
-                            <h4>🚗 方案B：包车直达</h4>
+                            <details>
+                                <summary>
+                                    <span class="summary-title">🚗 方案B：包车直达</span>
+                                    <div class="summary-info">
+                                        06:55抵达机场 → 入境取行李(60分钟) → 08:00包车直达大理 → 途经楚雄服务区休息 → 12:30-13:00抵达西山酒店
+                                        <br>
+                                        <strong>费用：</strong>¥600-800全家（¥150-200/人） • <strong>时长：</strong>4.5-5小时 • <strong>亲子指数：</strong>⭐⭐⭐⭐
+                                    </div>
+                                </summary>
 
-                            <p><strong>📍 路线描述：</strong></p>
+                                <div class="detailed-content">
+                                    <p><strong>📍 路线描述：</strong></p>
                             <ul>
                                 <li>昆明长水国际机场（T2航站楼）→ 杭瑞高速 → 大理高速 → 大理市区 → 西山酒店</li>
                                 <li>途径：楚雄服务区（可休息），适合中途停车拍照</li>
@@ -1142,6 +1221,8 @@
                                 <li><strong>灵活性：</strong>可随时停车休息、上厕所、买零食</li>
                                 <li><strong>安全性：</strong>需确认司机资质，选择正规平台</li>
                             </ul>
+                                </div>
+                            </details>
                         </div>
                     </div>
 
@@ -1374,9 +1455,18 @@
                                 <span class="selection-status" style="display: none;">已选择此方案</span>
                             </div>
 
-                            <h4>🚄 方案A：高铁（下午出发，推荐）</h4>
+                            <details>
+                                <summary>
+                                    <span class="summary-title">🚄 方案A：高铁（下午出发，推荐）</span>
+                                    <div class="summary-info">
+                                        11:00酒店退房 → 打车到丽江站 → 13:01乘C456高铁 → 17:01抵达昆明站 → 机场大巴919路 → 18:30抵达桔子酒店
+                                        <br>
+                                        <strong>费用：</strong>¥908-1,010全家（¥227-252/人） • <strong>时长：</strong>7小时 • <strong>亲子指数：</strong>⭐⭐⭐⭐⭐
+                                    </div>
+                                </summary>
 
-                            <p><strong>📍 路线描述：</strong></p>
+                                <div class="detailed-content">
+                                    <p><strong>📍 路线描述：</strong></p>
                             <ul>
                                 <li>白沙悦榕庄 → 打车到丽江站 → 高铁C456到昆明站 → 机场大巴到机场 → 桔子机场酒店</li>
                                 <li><strong>推荐车次：</strong>C456（13:01-17:01），4小时整点，二等座¥182/人</li>
@@ -1432,6 +1522,8 @@
                                 <li><strong>灵活性：</strong>受班次限制，但C456下午出发时间合适，17:01到站不赶不晚</li>
                                 <li><strong>安全性：</strong>高铁非常安全，准点率高，机场大巴也很可靠</li>
                             </ul>
+                                </div>
+                            </details>
                         </div>
 
                         <!-- Option B: Car Rental -->
@@ -1445,9 +1537,18 @@
                                 <span class="selection-status" style="display: none;">已选择此方案</span>
                             </div>
 
-                            <h4>🚗 方案B：包车直达</h4>
+                            <details>
+                                <summary>
+                                    <span class="summary-title">🚗 方案B：包车直达</span>
+                                    <div class="summary-info">
+                                        10:00酒店退房，包车直达昆明 → 12:30楚雄/大理服务区休息 → 16:00-16:30抵达昆明机场桔子酒店
+                                        <br>
+                                        <strong>费用：</strong>¥700-900全家（¥175-225/人） • <strong>时长：</strong>6-6.5小时 • <strong>亲子指数：</strong>⭐⭐⭐⭐
+                                    </div>
+                                </summary>
 
-                            <p><strong>📍 路线描述：</strong></p>
+                                <div class="detailed-content">
+                                    <p><strong>📍 路线描述：</strong></p>
                             <ul>
                                 <li>白沙悦榕庄 → 直达昆明长水机场桔子酒店</li>
                                 <li>全程高速，无需转车，一车到底</li>
@@ -1496,6 +1597,8 @@
                                 <li><strong>灵活性：</strong>可随时停车休息、上厕所，时间自由掌控</li>
                                 <li><strong>安全性：</strong>全程高速，正规包车司机经验丰富，安全可靠</li>
                             </ul>
+                                </div>
+                            </details>
                         </div>
                     </div>
                 </div>
