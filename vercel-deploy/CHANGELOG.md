@@ -5,6 +5,36 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.9.0] - 2026-01-15
+
+### Removed
+- **路线1（昆明机场→大理）删除包车方案**：
+  - 仅保留高铁推荐方案（C9506 09:48-11:59）
+  - 删除方案B：包车直达
+  - 标题改为"🚄 推荐方案：打车+高铁"
+
+- **路线4（白沙→昆明机场）删除包车方案**：
+  - 仅保留高铁推荐方案（C456 13:01-17:01）
+  - 删除方案B：包车直达
+  - 标题改为"🚄 推荐方案：高铁（下午出发）"
+
+### Changed
+- **简化方案展示**：
+  - 路线1和路线4从双方案改为单一推荐方案
+  - 去掉"方案A"、"方案B"编号
+  - 直接显示"推荐方案"，更清晰明确
+
+### Benefits
+- ✅ 更简洁：页面内容减少约100行，阅读更流畅
+- ✅ 更明确：高铁是唯一推荐，避免选择困难
+- ✅ 更聚焦：符合用户已选择高铁的决策
+- ✅ 更高效：减少不必要的方案对比信息
+
+### Technical Details
+- 文件大小：118KB → 约110KB（减少约8KB）
+- 删除内容：路线1方案B（49行）+ 路线4方案B（49行）
+- 标题更新：去掉"方案A"编号，改为"推荐方案"
+
 ## [2.8.0] - 2026-01-14
 
 ### Changed
