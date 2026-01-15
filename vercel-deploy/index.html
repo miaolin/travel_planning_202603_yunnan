@@ -1227,11 +1227,42 @@
                     </div>
 
                     <h4>路线2：大理西山 → 沙溪古镇 (3月16日)</h4>
-                    <div class="transport-options">
-                        <div class="transport-card" style="border-color: #28a745;">
-                            <h4>🚗 方案A：包车（强烈推荐）</h4>
 
-                            <p><strong>📍 路线描述：</strong></p>
+                    <!-- Selection Instructions and Reset Button -->
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                        <div>
+                            <p style="margin: 0; color: #666; font-size: 0.95em;">
+                                💡 <strong>请对比两个方案</strong>，然后勾选适合您的出行方式（勾选后自动隐藏另一个方案）
+                            </p>
+                        </div>
+                        <button class="reset-selection-btn" onclick="resetRouteSelection('route2')" style="flex-shrink: 0;">
+                            🔄 重新对比
+                        </button>
+                    </div>
+
+                    <div class="transport-options">
+                        <div class="transport-card" data-route="route2" data-option="car" style="border-color: #28a745;">
+                            <!-- Checkbox Selector -->
+                            <div class="route-selector">
+                                <label>
+                                    <input type="checkbox" data-route="route2" data-option="car">
+                                    <span>✅ 选择包车方案</span>
+                                </label>
+                                <span class="selection-status" style="display: none;">已选择此方案</span>
+                            </div>
+
+                            <details>
+                                <summary>
+                                    <span class="summary-title">🚗 方案A：包车（强烈推荐）</span>
+                                    <div class="summary-info">
+                                        10:00西山酒店退房 → 途经剑川石宝山 → 服务区休息 → 12:00抵达沙溪听雨小栈
+                                        <br>
+                                        <strong>费用：</strong>¥400-500全家（¥100-125/人） • <strong>时长：</strong>2小时 • <strong>亲子指数：</strong>⭐⭐⭐⭐⭐
+                                    </div>
+                                </summary>
+
+                                <div class="detailed-content">
+                                    <p><strong>📍 路线描述：</strong></p>
                             <ul>
                                 <li>西山酒店 → 大理市区 → G56杭瑞高速 → 剑川县 → 沙溪古镇听雨小栈</li>
                                 <li>途径景点：剑川石宝山（可选择停车游览30分钟）</li>
@@ -1276,12 +1307,32 @@
                                 <li><strong>灵活性：</strong>可随时停车拍照、上厕所</li>
                                 <li><strong>安全性：</strong>酒店推荐司机最可靠</li>
                             </ul>
+                                </div>
+                            </details>
                         </div>
 
-                        <div class="transport-card">
-                            <h4>🚌 方案B：公共交通（大巴转车）</h4>
+                        <div class="transport-card" data-route="route2" data-option="bus">
+                            <!-- Checkbox Selector -->
+                            <div class="route-selector">
+                                <label>
+                                    <input type="checkbox" data-route="route2" data-option="bus">
+                                    <span>✅ 选择公共交通方案</span>
+                                </label>
+                                <span class="selection-status" style="display: none;">已选择此方案</span>
+                            </div>
 
-                            <p><strong>📍 路线描述：</strong></p>
+                            <details>
+                                <summary>
+                                    <span class="summary-title">🚌 方案B：公共交通（大巴转车）</span>
+                                    <div class="summary-info">
+                                        09:00打车到大理客运站 → 10:00大理→剑川班车 → 11:30转剑川→沙溪班车 → 12:30抵达听雨小栈
+                                        <br>
+                                        <strong>费用：</strong>¥220全家（¥55/人） • <strong>时长：</strong>3.5-4小时 • <strong>亲子指数：</strong>⭐⭐
+                                    </div>
+                                </summary>
+
+                                <div class="detailed-content">
+                                    <p><strong>📍 路线描述：</strong></p>
                             <ul>
                                 <li>西山酒店 → 打车到大理客运站 → 大理→剑川班车 → 剑川→沙溪班车 → 听雨小栈</li>
                             </ul>
@@ -1324,15 +1375,48 @@
                                 <li><strong>灵活性：</strong>无法停车，受班次限制</li>
                                 <li><strong>安全性：</strong>正规班车，安全无忧</li>
                             </ul>
+                                </div>
+                            </details>
                         </div>
                     </div>
 
                     <h4>路线3：沙溪古镇 → 丽江白沙古镇 (3月18日)</h4>
-                    <div class="transport-options">
-                        <div class="transport-card" style="border-color: #28a745;">
-                            <h4>🚗 方案A：包车直达（强烈推荐）</h4>
 
-                            <p><strong>📍 路线描述：</strong></p>
+                    <!-- Selection Instructions and Reset Button -->
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                        <div>
+                            <p style="margin: 0; color: #666; font-size: 0.95em;">
+                                💡 <strong>请对比两个方案</strong>，然后勾选适合您的出行方式（勾选后自动隐藏另一个方案）
+                            </p>
+                        </div>
+                        <button class="reset-selection-btn" onclick="resetRouteSelection('route3')" style="flex-shrink: 0;">
+                            🔄 重新对比
+                        </button>
+                    </div>
+
+                    <div class="transport-options">
+                        <div class="transport-card" data-route="route3" data-option="car" style="border-color: #28a745;">
+                            <!-- Checkbox Selector -->
+                            <div class="route-selector">
+                                <label>
+                                    <input type="checkbox" data-route="route3" data-option="car">
+                                    <span>✅ 选择包车方案</span>
+                                </label>
+                                <span class="selection-status" style="display: none;">已选择此方案</span>
+                            </div>
+
+                            <details>
+                                <summary>
+                                    <span class="summary-title">🚗 方案A：包车直达（强烈推荐）</span>
+                                    <div class="summary-info">
+                                        10:00听雨小栈退房 → 途经玉龙雪山远景观景台拍照 → 11:30抵达白沙悦榕庄
+                                        <br>
+                                        <strong>费用：</strong>¥300-400全家（¥75-100/人） • <strong>时长：</strong>1.5小时 • <strong>亲子指数：</strong>⭐⭐⭐⭐⭐
+                                    </div>
+                                </summary>
+
+                                <div class="detailed-content">
+                                    <p><strong>📍 路线描述：</strong></p>
                             <ul>
                                 <li>沙溪听雨小栈 → 剑川县城 → S221省道 → 丽江白沙古镇白沙悦榕庄酒店</li>
                                 <li>途径景点：可顺路经过玉龙雪山远景观景台拍照</li>
@@ -1377,12 +1461,32 @@
                                 <li><strong>灵活性：</strong>可随时停车拍照、休息</li>
                                 <li><strong>安全性：</strong>酒店推荐司机最可靠</li>
                             </ul>
+                                </div>
+                            </details>
                         </div>
 
-                        <div class="transport-card">
-                            <h4>🚌 方案B：公共交通</h4>
+                        <div class="transport-card" data-route="route3" data-option="bus">
+                            <!-- Checkbox Selector -->
+                            <div class="route-selector">
+                                <label>
+                                    <input type="checkbox" data-route="route3" data-option="bus">
+                                    <span>✅ 选择公共交通方案</span>
+                                </label>
+                                <span class="selection-status" style="display: none;">已选择此方案</span>
+                            </div>
 
-                            <p><strong>📍 路线描述：</strong></p>
+                            <details>
+                                <summary>
+                                    <span class="summary-title">🚌 方案B：公共交通</span>
+                                    <div class="summary-info">
+                                        08:30打车到沙溪路口 → 09:00沙溪→剑川班车 → 10:00剑川→丽江班车 → 12:00转6路公交 → 13:00抵达白沙悦榕庄
+                                        <br>
+                                        <strong>费用：</strong>¥238全家（¥59.5/人） • <strong>时长：</strong>3.5-4小时 • <strong>亲子指数：</strong>⭐
+                                    </div>
+                                </summary>
+
+                                <div class="detailed-content">
+                                    <p><strong>📍 路线描述：</strong></p>
                             <ul>
                                 <li>沙溪听雨小栈 → 打车到沙溪路口 → 沙溪→剑川班车 → 剑川→丽江班车 → 丽江市区→白沙公交/打车 → 白沙悦榕庄</li>
                             </ul>
@@ -1427,6 +1531,8 @@
                                 <li><strong>灵活性：</strong>完全受班次限制，无法停车</li>
                                 <li><strong>安全性：</strong>正规班车，安全无忧</li>
                             </ul>
+                                </div>
+                            </details>
                         </div>
                     </div>
 
