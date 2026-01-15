@@ -5,6 +5,37 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.8.0] - 2026-01-14
+
+### Changed
+- **🚄 白沙→昆明高铁方案设为首选推荐**：
+  - 路线4方案A改为高铁（推荐，下午出发）
+  - 路线4方案B改为包车直达
+  - 高铁方案带绿色边框（推荐标识）
+  - 亲子友好指数：⭐⭐⭐⭐⭐（5星满分）
+  - 强调"下午出发"优势（C456 13:01发车）
+
+### Added
+- **⚠️ 统一高铁票购买提醒（高优先级）**：
+  - 在待办事项最上方新增黄色高亮提醒框
+  - 集中显示两次高铁行程：
+    - 3月14日：昆明机场→大理 C9506 (09:48-11:57) ¥106/人×4人
+    - 3月21日：丽江→昆明 C456 (13:01-17:01) ¥182/人×4人
+  - 明确建议：提前7天购买（3月7日前完成）
+  - 购票渠道：12306官网/App（推荐）、携程、飞猪
+
+### Benefits
+- ✅ 高铁方案优先：符合用户"下午乘坐高铁"的偏好
+- ✅ 统一购票提醒：避免忘记购票，两次高铁信息集中显示
+- ✅ 视觉突出：黄色背景+橙色边框，高优先级一目了然
+- ✅ 亲子友好度提升：高铁方案5星评级，更适合家庭出行
+- ✅ 时间合适：下午13:01出发，不用早起，行程更轻松
+
+### Technical Details
+- 高铁方案调整为方案A（绿色边框）
+- 待办事项新增样式：`background-color: #fff3cd; border-left: 4px solid #ffc107;`
+- 亲子友好指数：⭐⭐⭐⭐ → ⭐⭐⭐⭐⭐
+
 ## [2.7.0] - 2026-01-14
 
 ### Changed
