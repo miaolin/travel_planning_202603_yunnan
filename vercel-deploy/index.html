@@ -1350,9 +1350,31 @@
                     </div>
 
                     <h4>路线4：丽江白沙古镇 → 昆明机场酒店 (3月21日)</h4>
+
+                    <!-- Selection Instructions and Reset Button -->
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                        <div>
+                            <p style="margin: 0; color: #666; font-size: 0.95em;">
+                                💡 <strong>请对比两个方案</strong>，然后勾选适合您的出行方式（勾选后自动隐藏另一个方案）
+                            </p>
+                        </div>
+                        <button class="reset-selection-btn" onclick="resetRouteSelection('route4')" style="flex-shrink: 0;">
+                            🔄 重新对比
+                        </button>
+                    </div>
+
                     <div class="transport-options">
-                        <div class="transport-card" style="border-color: #28a745;">
-                            <h4>🚄 推荐方案：高铁（下午出发）</h4>
+                        <div class="transport-card" data-route="route4" data-option="train" style="border-color: #28a745;">
+                            <!-- Checkbox Selector -->
+                            <div class="route-selector">
+                                <label>
+                                    <input type="checkbox" data-route="route4" data-option="train">
+                                    <span>✅ 选择高铁方案</span>
+                                </label>
+                                <span class="selection-status" style="display: none;">已选择此方案</span>
+                            </div>
+
+                            <h4>🚄 方案A：高铁（下午出发，推荐）</h4>
 
                             <p><strong>📍 路线描述：</strong></p>
                             <ul>
@@ -1409,6 +1431,70 @@
                                 <li><strong>风景：</strong>高铁沿途经过云南高原，风景优美，车窗大视野好</li>
                                 <li><strong>灵活性：</strong>受班次限制，但C456下午出发时间合适，17:01到站不赶不晚</li>
                                 <li><strong>安全性：</strong>高铁非常安全，准点率高，机场大巴也很可靠</li>
+                            </ul>
+                        </div>
+
+                        <!-- Option B: Car Rental -->
+                        <div class="transport-card" data-route="route4" data-option="car">
+                            <!-- Checkbox Selector -->
+                            <div class="route-selector">
+                                <label>
+                                    <input type="checkbox" data-route="route4" data-option="car">
+                                    <span>✅ 选择包车方案</span>
+                                </label>
+                                <span class="selection-status" style="display: none;">已选择此方案</span>
+                            </div>
+
+                            <h4>🚗 方案B：包车直达</h4>
+
+                            <p><strong>📍 路线描述：</strong></p>
+                            <ul>
+                                <li>白沙悦榕庄 → 直达昆明长水机场桔子酒店</li>
+                                <li>全程高速，无需转车，一车到底</li>
+                            </ul>
+
+                            <p><strong>📏 距离与时长：</strong></p>
+                            <ul>
+                                <li><strong>距离：</strong>约530公里（全程高速）</li>
+                                <li><strong>时长：</strong>约6-6.5小时（含休息）</li>
+                                <li><strong>路线：</strong>丽江 → 大理 → 楚雄 → 昆明机场</li>
+                            </ul>
+
+                            <p><strong>⏰ 完整时间线：</strong></p>
+                            <ul>
+                                <li style="margin-left: 20px;">• <strong>10:00</strong> 酒店退房，包车出发</li>
+                                <li style="margin-left: 20px;">• <strong>12:30</strong> 楚雄/大理服务区休息（30分钟）</li>
+                                <li style="margin-left: 20px;">• <strong>16:00-16:30</strong> 抵达昆明长水机场桔子酒店</li>
+                                <li style="margin-left: 20px;">• <strong>16:30</strong> 办理酒店入住</li>
+                                <li style="margin-left: 20px;">• <strong>剩余时间：</strong>可在机场附近休息或购物</li>
+                            </ul>
+
+                            <p><strong>💰 费用明细：</strong></p>
+                            <ul>
+                                <li><strong>包车费用：</strong>¥700-900（全车4人，含过路费）</li>
+                                <li><strong>人均费用：</strong>¥175-225/人</li>
+                                <li><strong>总费用：</strong>¥700-900（全家4人）</li>
+                                <li style="margin-left: 20px;">• 比高铁便宜¥8-310，且无需转车更省心</li>
+                            </ul>
+
+                            <p><strong>📱 预订方式：</strong></p>
+                            <ul>
+                                <li><strong>包车平台：</strong>滴滴出行（跨城）、携程/飞猪（包车服务）、途牛</li>
+                                <li><strong>酒店前台：</strong>白沙悦榕庄前台可帮忙预约靠谱包车</li>
+                                <li><strong>预订时间：</strong>建议提前3-5天预订，确保有车</li>
+                                <li><strong>注意事项：</strong></li>
+                                <li style="margin-left: 40px;">• 确认车型（7座商务车，确保行李空间充足）</li>
+                                <li style="margin-left: 40px;">• 确认价格是否含过路费和油费</li>
+                                <li style="margin-left: 40px;">• 确认司机联系方式，出发前一天再次确认</li>
+                            </ul>
+
+                            <p><strong>👨‍👩‍👧‍👦 亲子友好指数：⭐⭐⭐⭐</strong></p>
+                            <ul>
+                                <li><strong>行李空间：</strong>7座商务车空间充足，行李直接放车里无需搬运</li>
+                                <li><strong>舒适度：</strong>6小时车程较长，但无需转车，孩子可睡觉休息</li>
+                                <li><strong>风景：</strong>高速路段风景一般，但可在服务区休息放松</li>
+                                <li><strong>灵活性：</strong>可随时停车休息、上厕所，时间自由掌控</li>
+                                <li><strong>安全性：</strong>全程高速，正规包车司机经验丰富，安全可靠</li>
                             </ul>
                         </div>
                     </div>
