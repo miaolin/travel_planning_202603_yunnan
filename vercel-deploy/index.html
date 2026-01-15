@@ -989,6 +989,18 @@
 
                     <h4>路线1：昆明机场 → 大理西山酒店 (3月14日)</h4>
 
+                    <!-- Selection Instructions and Reset Button -->
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                        <div>
+                            <p style="margin: 0; color: #666; font-size: 0.95em;">
+                                💡 <strong>请对比两个方案</strong>，然后勾选适合您的出行方式（勾选后自动隐藏另一个方案）
+                            </p>
+                        </div>
+                        <button class="reset-selection-btn" onclick="resetRouteSelection('route1')" style="flex-shrink: 0;">
+                            🔄 重新对比
+                        </button>
+                    </div>
+
                     <div class="alert alert-info" style="margin-bottom: 20px;">
                         <span class="alert-icon">🚄</span>
                         <div>
@@ -999,8 +1011,17 @@
                     </div>
 
                     <div class="transport-options">
-                        <div class="transport-card" style="border-color: #28a745;">
-                            <h4>🚄 推荐方案：打车+高铁</h4>
+                        <div class="transport-card" data-route="route1" data-option="train" style="border-color: #28a745;">
+                            <!-- Checkbox Selector -->
+                            <div class="route-selector">
+                                <label>
+                                    <input type="checkbox" data-route="route1" data-option="train">
+                                    <span>✅ 选择高铁方案</span>
+                                </label>
+                                <span class="selection-status" style="display: none;">已选择此方案</span>
+                            </div>
+
+                            <h4>🚄 方案A：打车+高铁（推荐）</h4>
 
                             <p><strong>📍 路线描述：</strong></p>
                             <ul>
@@ -1061,6 +1082,65 @@
                                 <li><strong>风景：</strong>途径云南山区，风景优美</li>
                                 <li><strong>灵活性：</strong>中途无法停车，但高铁有洗手间和餐车</li>
                                 <li><strong>安全性：</strong>高铁非常安全，适合家庭出行</li>
+                            </ul>
+                        </div>
+
+                        <div class="transport-card" data-route="route1" data-option="car">
+                            <!-- Checkbox Selector -->
+                            <div class="route-selector">
+                                <label>
+                                    <input type="checkbox" data-route="route1" data-option="car">
+                                    <span>✅ 选择包车方案</span>
+                                </label>
+                                <span class="selection-status" style="display: none;">已选择此方案</span>
+                            </div>
+
+                            <h4>🚗 方案B：包车直达</h4>
+
+                            <p><strong>📍 路线描述：</strong></p>
+                            <ul>
+                                <li>昆明长水国际机场（T2航站楼）→ 杭瑞高速 → 大理高速 → 大理市区 → 西山酒店</li>
+                                <li>途径：楚雄服务区（可休息），适合中途停车拍照</li>
+                            </ul>
+
+                            <p><strong>📏 距离与时长：</strong></p>
+                            <ul>
+                                <li><strong>总距离：</strong>约330公里</li>
+                                <li><strong>总时长：</strong>约4.5-5小时（含休息站停留15分钟）</li>
+                            </ul>
+
+                            <p><strong>⏰ 时间安排：</strong></p>
+                            <ul>
+                                <li style="margin-left: 20px;">• <strong>06:55</strong> 飞机降落</li>
+                                <li style="margin-left: 20px;">• <strong>07:55</strong> 完成入境+取行李，在接机大厅与司机会合</li>
+                                <li style="margin-left: 20px;">• <strong>08:00</strong> 出发前往大理</li>
+                                <li style="margin-left: 20px;">• <strong>10:30</strong> 楚雄服务区休息15分钟（上厕所、买零食）</li>
+                                <li style="margin-left: 20px;">• <strong>12:30-13:00</strong> 抵达西山酒店</li>
+                            </ul>
+
+                            <p><strong>💰 费用明细：</strong></p>
+                            <ul>
+                                <li><strong>包车费：</strong>¥600-800（全车4人）= <strong>¥150-200/人</strong></li>
+                                <li><strong>过路费：</strong>已含在包车费中（约¥150）</li>
+                                <li><strong>油费：</strong>已含在包车费中（约¥200）</li>
+                                <li style="margin-left: 20px;">• 比高铁方案贵¥6.5-56.5/人，但更方便直达</li>
+                            </ul>
+
+                            <p><strong>📱 预订方式：</strong></p>
+                            <ul>
+                                <li><strong>滴滴出行：</strong>App内选择"城际拼车"或"包车"</li>
+                                <li><strong>携程/飞猪：</strong>搜索"昆明机场包车到大理"</li>
+                                <li><strong>酒店代订：</strong>提前联系西山酒店前台，他们可帮忙安排可靠司机</li>
+                                <li style="margin-left: 20px;">• 建议提前1-2天预订，避免临时找不到车</li>
+                            </ul>
+
+                            <p><strong>👨‍👩‍👧‍👦 亲子友好指数：⭐⭐⭐⭐</strong></p>
+                            <ul>
+                                <li><strong>行李空间：</strong>SUV或商务车后备箱充足，无需搬运</li>
+                                <li><strong>舒适度：</strong>私密空间，但长时间坐车孩子可能不耐烦</li>
+                                <li><strong>风景：</strong>途径云南高原，风景绝佳，可随时停车拍照</li>
+                                <li><strong>灵活性：</strong>可随时停车休息、上厕所、买零食</li>
+                                <li><strong>安全性：</strong>需确认司机资质，选择正规平台</li>
                             </ul>
                         </div>
                     </div>
