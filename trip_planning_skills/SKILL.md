@@ -54,44 +54,71 @@ Generate actionable tasks with priority:
 - Hotel amenities
 - **Note**: This tab should NOT include transportation between hotels
 
-### 5. Hotel Transit (酒店交通) - **INDEPENDENT TAB**
+### 5. Hotel Transit (酒店交通) - **INDEPENDENT TAB WITH INTERACTIVE SELECTION**
 
 **IMPORTANT**: This should be a separate, independent tab in the navigation, NOT embedded in the Hotel Information tab.
 
-For each hotel transition (e.g., Hotel A → Hotel B), provide detailed route analysis:
+For each hotel transition (e.g., Hotel A → Hotel B), provide detailed route analysis with **interactive selection features**:
 
-**Multiple Transport Options** (minimum 2-3 per route):
+#### Interactive Route Selection (v3.0.0+)
+
+Each route should include:
+
+**Selection UI Header**:
+- 💡 Instructions: "请对比两个方案，然后勾选适合您的出行方式（勾选后自动隐藏另一个方案）"
+- 🔄 Reset button: `<button onclick="resetRouteSelection('routeX')">🔄 重新对比</button>`
+
+**Multiple Transport Options** (minimum 2 per route):
 - **Option A**: Private car/包车 (recommended for families/groups)
 - **Option B**: Public transportation (train/bus)
-- **Option C**: Taxi/ride-sharing or alternative
 
-**Required Details for Each Option**:
-1. **📍 Route Description**: Step-by-step directions with landmarks and scenic spots
-2. **📏 Distance & Duration**:
-   - Exact kilometers (e.g., 115km, 530km)
-   - Realistic total duration (including all stops)
-3. **⏰ Complete Timeline**: Full time breakdown including:
-   - Hotel check-out time
-   - Departure time
-   - Travel time with rest stops (for journeys >2 hours)
-   - Arrival time
-   - Hotel check-in time
-4. **💰 Cost Breakdown**:
-   - Per person cost
-   - Total cost for group (4 people)
-   - Additional costs (tolls, parking, fuel if applicable)
-   - Comparison note (e.g., "比包车省¥230")
-5. **📱 Booking Information**:
-   - Specific platforms/apps (滴滴出行, 携程, 12306, etc.)
-   - Hotel concierge service
-   - Phone numbers if available
-   - Advance booking recommendations
-6. **👨‍👩‍👧‍👦 Family-Friendly Rating**: ⭐⭐⭐⭐⭐ (1-5 stars)
-   - **Luggage Space**: Trunk capacity, ease of handling
-   - **Comfort Level**: Suitability for children/elderly
-   - **Scenic Value**: Photo opportunities, views
-   - **Flexibility**: Ability to stop for restroom/photos
-   - **Safety**: Driver reliability, vehicle standards
+Each option must have:
+
+1. **Checkbox Selector**:
+   ```html
+   <div class="route-selector">
+       <label>
+           <input type="checkbox" data-route="routeX" data-option="train|car|bus">
+           <span>✅ 选择[方案名称]</span>
+       </label>
+   </div>
+   ```
+
+2. **Collapsible Summary with Details**:
+   - Use HTML `<details>` and `<summary>` elements
+   - **Summary (collapsed by default)**: Shows essential info at a glance
+     - Route title with emoji (🚄/🚗/🚌)
+     - Brief timeline: `出发时间 → 关键点 → 抵达时间`
+     - One-line stats: `费用：¥XXX • 时长：X小时 • 亲子指数：⭐⭐⭐⭐⭐`
+   - **Details (expandable)**: Full information when clicked
+
+3. **Required Details for Each Option** (inside expandable section):
+   1. **📍 Route Description**: Step-by-step directions with landmarks and scenic spots
+   2. **📏 Distance & Duration**:
+      - Exact kilometers (e.g., 115km, 530km)
+      - Realistic total duration (including all stops)
+   3. **⏰ Complete Timeline**: Full time breakdown including:
+      - Hotel check-out time
+      - Departure time
+      - Travel time with rest stops (for journeys >2 hours)
+      - Arrival time
+      - Hotel check-in time
+   4. **💰 Cost Breakdown**:
+      - Per person cost
+      - Total cost for group (4 people)
+      - Additional costs (tolls, parking, fuel if applicable)
+      - Comparison note (e.g., "比包车省¥230")
+   5. **📱 Booking Information**:
+      - Specific platforms/apps (滴滴出行, 携程, 12306, etc.)
+      - Hotel concierge service
+      - Phone numbers if available
+      - Advance booking recommendations
+   6. **👨‍👩‍👧‍👦 Family-Friendly Rating**: ⭐⭐⭐⭐⭐ (1-5 stars)
+      - **Luggage Space**: Trunk capacity, ease of handling
+      - **Comfort Level**: Suitability for children/elderly
+      - **Scenic Value**: Photo opportunities, views
+      - **Flexibility**: Ability to stop for restroom/photos
+      - **Safety**: Driver reliability, vehicle standards
 
 **Priority Rules Banner** (display at top of section):
 1. **User-provided information**: If user specifies transportation, use that first
@@ -99,7 +126,7 @@ For each hotel transition (e.g., Hotel A → Hotel B), provide detailed route an
 3. **Cost-effective**: Show budget-conscious options
 4. **Convenience**: Direct routes vs. transfers
 
-**Visual Format**: Use comparison cards with clear formatting
+**Visual Format**: Use comparison cards with clear formatting and interactive elements
 
 ### 6. Daily Itinerary (每日行程)
 For each day, provide:
@@ -182,16 +209,40 @@ Generate an interactive HTML page with **8 independent tab sections**:
   - Progress indicators for todo items and payments
 - **Interactive features**:
   - Clickable checkboxes for todo list
-  - Collapsible sections where appropriate
+  - **Route selection** (v3.0.0+):
+    - Checkbox selection for each transport option
+    - Data attributes: `data-route="routeX"` and `data-option="train|car|bus"`
+    - Auto-hide unselected options when user makes selection
+    - Reset button to show all options again
+    - LocalStorage persistence across page reloads
+  - **Collapsible details** (v3.0.0+):
+    - Use HTML `<details>` and `<summary>` for expandable content
+    - Summary shows: title + timeline + cost/duration/rating
+    - Details contain full route information
+    - "▼ 展开详情" / "▲ 收起详情" indicators
   - Sticky navigation bar
+- **JavaScript Functions** (v3.0.0+):
+  ```javascript
+  initRouteSelection()           // Initialize on page load
+  selectRoute(routeId, optionId) // Handle selection
+  applyRouteSelection()          // Apply visual changes
+  resetRouteSelection(routeId)   // Reset to show all options
+  ```
 - **Print-friendly**: Can be printed as PDF for offline use
-- **File size**: Aim for 100-120KB for optimal loading
+- **File size**: Aim for 110-125KB for optimal loading (with interactive features)
 
 ### Styling Guidelines
 - Use card-based layout with shadows
 - Recommended color for transport options: Green border (`style="border-color: #28a745;"`) for recommended options
 - Star ratings for family-friendly index: ⭐⭐⭐⭐⭐ (1-5 stars)
 - Alert boxes for important notices with appropriate icons
+- **Route selection styles** (v3.0.0+):
+  - `.route-selector`: Gray background (#f8f9fa) checkbox container
+  - `.route-selected`: Green border (3px solid #28a745) for selected option
+  - `.route-hidden`: Hide unselected options (display: none)
+  - `.reset-selection-btn`: Gray button (#6c757d) for reset action
+  - `summary`: Clickable area with hover effect, gray background
+  - `summary::after`: "▼ 展开详情" / "▲ 收起详情" indicator
 
 ## Quality Standards
 
@@ -224,8 +275,22 @@ Generate an interactive HTML page with **8 independent tab sections**:
 ## Additional Resources
 
 - **Example**: See [yunnan_trip_itinerary.html](yunnan_trip_itinerary.html) for reference
-- **Current version**: v2.6.0 (2026-01-14) - Simplified, concise format
-- **File size**: Target 100-120KB for optimal performance
+- **Current version**: v3.0.0 (2026-01-15) - Interactive route selection with collapsible details
+- **File size**: Target 110-125KB for optimal performance
 - **Icons**: Use emoji for quick visual recognition:
   - Status: ✓ (Paid) ⏱ (Deferred) ❌ (Unpaid) ⚠️ (Warning)
   - Categories: 🏨 (Hotel) ✈️ (Flight) 🚄 (Train) 🚗 (Car) 📅 (Calendar) 💰 (Cost)
+  - Actions: 🔄 (Reset) ✅ (Select) 💡 (Tip)
+
+## Version History
+
+- **v3.0.0** (2026-01-15): Added interactive route selection with collapsible details
+  - Checkbox selection for transport options
+  - Expandable/collapsible route details using `<details>` + `<summary>`
+  - LocalStorage persistence for user selections
+  - Reset functionality to restore all options
+- **v2.9.0** (2026-01-14): Simplified route presentation (single recommended option)
+- **v2.8.0** (2026-01-14): High-speed train prioritization with unified booking reminder
+- **v2.7.0** (2026-01-14): Added specific train routes with detailed timetables
+- **v2.6.0** (2026-01-14): Independent hotel transit tab, removed pros/cons sections
+- **v2.5.0** (2026-01-13): Separated hotel transit from accommodation tab
