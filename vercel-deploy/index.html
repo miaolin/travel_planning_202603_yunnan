@@ -441,6 +441,126 @@
             font-size: 1.5em;
             margin-right: 15px;
         }
+
+        /* Route Selection Styles */
+        .route-selector {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .route-selector label {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .route-selector input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        .route-selector input[type="checkbox"]:checked + span {
+            color: #28a745;
+        }
+
+        .transport-card.route-selected {
+            border: 3px solid #28a745;
+            box-shadow: 0 4px 12px rgba(40, 167, 69, 0.2);
+        }
+
+        .transport-card.route-hidden {
+            display: none;
+        }
+
+        .reset-selection-btn {
+            background: #6c757d;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.9em;
+            margin-left: 10px;
+        }
+
+        .reset-selection-btn:hover {
+            background: #5a6268;
+        }
+
+        .selection-status {
+            font-size: 0.9em;
+            color: #28a745;
+            font-weight: 600;
+            margin-left: 10px;
+        }
+
+        /* Collapsible Details Styles */
+        .transport-card details {
+            margin-top: 15px;
+        }
+
+        .transport-card summary {
+            cursor: pointer;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            list-style: none;
+            user-select: none;
+            transition: all 0.3s ease;
+        }
+
+        .transport-card summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .transport-card summary:hover {
+            background: #e9ecef;
+        }
+
+        .transport-card summary::after {
+            content: '▼ 展开详情';
+            float: right;
+            color: #6c757d;
+            font-size: 0.9em;
+            font-weight: 600;
+        }
+
+        .transport-card details[open] summary::after {
+            content: '▲ 收起详情';
+        }
+
+        .transport-card .summary-title {
+            font-size: 1.1em;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .transport-card .summary-info {
+            font-size: 0.95em;
+            color: #495057;
+            line-height: 1.6;
+            margin-top: 8px;
+        }
+
+        .transport-card .summary-info strong {
+            color: #2c3e50;
+            font-weight: 600;
+        }
+
+        .transport-card details .detailed-content {
+            padding: 20px 0 0 0;
+        }
     </style>
 </head>
 <body>
@@ -928,6 +1048,18 @@
 
                     <h4>路线1：昆明机场 → 大理西山酒店 (3月14日)</h4>
 
+                    <!-- Selection Instructions and Reset Button -->
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                        <div>
+                            <p style="margin: 0; color: #666; font-size: 0.95em;">
+                                💡 <strong>请对比两个方案</strong>，然后勾选适合您的出行方式（勾选后自动隐藏另一个方案）
+                            </p>
+                        </div>
+                        <button class="reset-selection-btn" onclick="resetRouteSelection('route1')" style="flex-shrink: 0;">
+                            🔄 重新对比
+                        </button>
+                    </div>
+
                     <div class="alert alert-info" style="margin-bottom: 20px;">
                         <span class="alert-icon">🚄</span>
                         <div>
@@ -938,10 +1070,28 @@
                     </div>
 
                     <div class="transport-options">
-                        <div class="transport-card" style="border-color: #28a745;">
-                            <h4>🚄 推荐方案：打车+高铁</h4>
+                        <div class="transport-card" data-route="route1" data-option="train" style="border-color: #28a745;">
+                            <!-- Checkbox Selector -->
+                            <div class="route-selector">
+                                <label>
+                                    <input type="checkbox" data-route="route1" data-option="train">
+                                    <span>✅ 选择高铁方案</span>
+                                </label>
+                                <span class="selection-status" style="display: none;">已选择此方案</span>
+                            </div>
 
-                            <p><strong>📍 路线描述：</strong></p>
+                            <details>
+                                <summary>
+                                    <span class="summary-title">🚄 方案A：打车+高铁（推荐）</span>
+                                    <div class="summary-info">
+                                        06:55抵达昆明机场 → 入境取行李(60分钟) → 打车到昆明站(50分钟) → 09:48乘C9506列车 → 11:59抵达大理站 → 12:30抵达酒店
+                                        <br>
+                                        <strong>费用：</strong>¥574全家（¥143.5/人） • <strong>时长：</strong>5.5小时 • <strong>亲子指数：</strong>⭐⭐⭐⭐⭐
+                                    </div>
+                                </summary>
+
+                                <div class="detailed-content">
+                                    <p><strong>📍 路线描述：</strong></p>
                             <ul>
                                 <li>昆明长水国际机场（T2航站楼）→ 出境大厅 → 机场大巴或出租车 → 昆明站 → C9506高铁 → 大理站 → 出租车 → 西山酒店</li>
                             </ul>
@@ -1001,15 +1151,118 @@
                                 <li><strong>灵活性：</strong>中途无法停车，但高铁有洗手间和餐车</li>
                                 <li><strong>安全性：</strong>高铁非常安全，适合家庭出行</li>
                             </ul>
+                                </div>
+                            </details>
+                        </div>
+
+                        <div class="transport-card" data-route="route1" data-option="car">
+                            <!-- Checkbox Selector -->
+                            <div class="route-selector">
+                                <label>
+                                    <input type="checkbox" data-route="route1" data-option="car">
+                                    <span>✅ 选择包车方案</span>
+                                </label>
+                                <span class="selection-status" style="display: none;">已选择此方案</span>
+                            </div>
+
+                            <details>
+                                <summary>
+                                    <span class="summary-title">🚗 方案B：包车直达</span>
+                                    <div class="summary-info">
+                                        06:55抵达机场 → 入境取行李(60分钟) → 08:00包车直达大理 → 途经楚雄服务区休息 → 12:30-13:00抵达西山酒店
+                                        <br>
+                                        <strong>费用：</strong>¥600-800全家（¥150-200/人） • <strong>时长：</strong>4.5-5小时 • <strong>亲子指数：</strong>⭐⭐⭐⭐
+                                    </div>
+                                </summary>
+
+                                <div class="detailed-content">
+                                    <p><strong>📍 路线描述：</strong></p>
+                            <ul>
+                                <li>昆明长水国际机场（T2航站楼）→ 杭瑞高速 → 大理高速 → 大理市区 → 西山酒店</li>
+                                <li>途径：楚雄服务区（可休息），适合中途停车拍照</li>
+                            </ul>
+
+                            <p><strong>📏 距离与时长：</strong></p>
+                            <ul>
+                                <li><strong>总距离：</strong>约330公里</li>
+                                <li><strong>总时长：</strong>约4.5-5小时（含休息站停留15分钟）</li>
+                            </ul>
+
+                            <p><strong>⏰ 时间安排：</strong></p>
+                            <ul>
+                                <li style="margin-left: 20px;">• <strong>06:55</strong> 飞机降落</li>
+                                <li style="margin-left: 20px;">• <strong>07:55</strong> 完成入境+取行李，在接机大厅与司机会合</li>
+                                <li style="margin-left: 20px;">• <strong>08:00</strong> 出发前往大理</li>
+                                <li style="margin-left: 20px;">• <strong>10:30</strong> 楚雄服务区休息15分钟（上厕所、买零食）</li>
+                                <li style="margin-left: 20px;">• <strong>12:30-13:00</strong> 抵达西山酒店</li>
+                            </ul>
+
+                            <p><strong>💰 费用明细：</strong></p>
+                            <ul>
+                                <li><strong>包车费：</strong>¥600-800（全车4人）= <strong>¥150-200/人</strong></li>
+                                <li><strong>过路费：</strong>已含在包车费中（约¥150）</li>
+                                <li><strong>油费：</strong>已含在包车费中（约¥200）</li>
+                                <li style="margin-left: 20px;">• 比高铁方案贵¥6.5-56.5/人，但更方便直达</li>
+                            </ul>
+
+                            <p><strong>📱 预订方式：</strong></p>
+                            <ul>
+                                <li><strong>滴滴出行：</strong>App内选择"城际拼车"或"包车"</li>
+                                <li><strong>携程/飞猪：</strong>搜索"昆明机场包车到大理"</li>
+                                <li><strong>酒店代订：</strong>提前联系西山酒店前台，他们可帮忙安排可靠司机</li>
+                                <li style="margin-left: 20px;">• 建议提前1-2天预订，避免临时找不到车</li>
+                            </ul>
+
+                            <p><strong>👨‍👩‍👧‍👦 亲子友好指数：⭐⭐⭐⭐</strong></p>
+                            <ul>
+                                <li><strong>行李空间：</strong>SUV或商务车后备箱充足，无需搬运</li>
+                                <li><strong>舒适度：</strong>私密空间，但长时间坐车孩子可能不耐烦</li>
+                                <li><strong>风景：</strong>途径云南高原，风景绝佳，可随时停车拍照</li>
+                                <li><strong>灵活性：</strong>可随时停车休息、上厕所、买零食</li>
+                                <li><strong>安全性：</strong>需确认司机资质，选择正规平台</li>
+                            </ul>
+                                </div>
+                            </details>
                         </div>
                     </div>
 
                     <h4>路线2：大理西山 → 沙溪古镇 (3月16日)</h4>
-                    <div class="transport-options">
-                        <div class="transport-card" style="border-color: #28a745;">
-                            <h4>🚗 方案A：包车（强烈推荐）</h4>
 
-                            <p><strong>📍 路线描述：</strong></p>
+                    <!-- Selection Instructions and Reset Button -->
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                        <div>
+                            <p style="margin: 0; color: #666; font-size: 0.95em;">
+                                💡 <strong>请对比两个方案</strong>，然后勾选适合您的出行方式（勾选后自动隐藏另一个方案）
+                            </p>
+                        </div>
+                        <button class="reset-selection-btn" onclick="resetRouteSelection('route2')" style="flex-shrink: 0;">
+                            🔄 重新对比
+                        </button>
+                    </div>
+
+                    <div class="transport-options">
+                        <div class="transport-card" data-route="route2" data-option="car" style="border-color: #28a745;">
+                            <!-- Checkbox Selector -->
+                            <div class="route-selector">
+                                <label>
+                                    <input type="checkbox" data-route="route2" data-option="car">
+                                    <span>✅ 选择包车方案</span>
+                                </label>
+                                <span class="selection-status" style="display: none;">已选择此方案</span>
+                            </div>
+
+                            <details>
+                                <summary>
+                                    <span class="summary-title">🚗 方案A：包车（强烈推荐）</span>
+                                    <div class="summary-info">
+                                        10:00西山酒店退房 → 途经剑川石宝山 → 服务区休息 → 12:00抵达沙溪听雨小栈
+                                        <br>
+                                        <strong>费用：</strong>¥400-500全家（¥100-125/人） • <strong>时长：</strong>2小时 • <strong>亲子指数：</strong>⭐⭐⭐⭐⭐
+                                    </div>
+                                </summary>
+
+                                <div class="detailed-content">
+                                    <p><strong>📍 路线描述：</strong></p>
                             <ul>
                                 <li>西山酒店 → 大理市区 → G56杭瑞高速 → 剑川县 → 沙溪古镇听雨小栈</li>
                                 <li>途径景点：剑川石宝山（可选择停车游览30分钟）</li>
@@ -1054,12 +1307,32 @@
                                 <li><strong>灵活性：</strong>可随时停车拍照、上厕所</li>
                                 <li><strong>安全性：</strong>酒店推荐司机最可靠</li>
                             </ul>
+                                </div>
+                            </details>
                         </div>
 
-                        <div class="transport-card">
-                            <h4>🚌 方案B：公共交通（大巴转车）</h4>
+                        <div class="transport-card" data-route="route2" data-option="bus">
+                            <!-- Checkbox Selector -->
+                            <div class="route-selector">
+                                <label>
+                                    <input type="checkbox" data-route="route2" data-option="bus">
+                                    <span>✅ 选择公共交通方案</span>
+                                </label>
+                                <span class="selection-status" style="display: none;">已选择此方案</span>
+                            </div>
 
-                            <p><strong>📍 路线描述：</strong></p>
+                            <details>
+                                <summary>
+                                    <span class="summary-title">🚌 方案B：公共交通（大巴转车）</span>
+                                    <div class="summary-info">
+                                        09:00打车到大理客运站 → 10:00大理→剑川班车 → 11:30转剑川→沙溪班车 → 12:30抵达听雨小栈
+                                        <br>
+                                        <strong>费用：</strong>¥220全家（¥55/人） • <strong>时长：</strong>3.5-4小时 • <strong>亲子指数：</strong>⭐⭐
+                                    </div>
+                                </summary>
+
+                                <div class="detailed-content">
+                                    <p><strong>📍 路线描述：</strong></p>
                             <ul>
                                 <li>西山酒店 → 打车到大理客运站 → 大理→剑川班车 → 剑川→沙溪班车 → 听雨小栈</li>
                             </ul>
@@ -1102,15 +1375,48 @@
                                 <li><strong>灵活性：</strong>无法停车，受班次限制</li>
                                 <li><strong>安全性：</strong>正规班车，安全无忧</li>
                             </ul>
+                                </div>
+                            </details>
                         </div>
                     </div>
 
                     <h4>路线3：沙溪古镇 → 丽江白沙古镇 (3月18日)</h4>
-                    <div class="transport-options">
-                        <div class="transport-card" style="border-color: #28a745;">
-                            <h4>🚗 方案A：包车直达（强烈推荐）</h4>
 
-                            <p><strong>📍 路线描述：</strong></p>
+                    <!-- Selection Instructions and Reset Button -->
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                        <div>
+                            <p style="margin: 0; color: #666; font-size: 0.95em;">
+                                💡 <strong>请对比两个方案</strong>，然后勾选适合您的出行方式（勾选后自动隐藏另一个方案）
+                            </p>
+                        </div>
+                        <button class="reset-selection-btn" onclick="resetRouteSelection('route3')" style="flex-shrink: 0;">
+                            🔄 重新对比
+                        </button>
+                    </div>
+
+                    <div class="transport-options">
+                        <div class="transport-card" data-route="route3" data-option="car" style="border-color: #28a745;">
+                            <!-- Checkbox Selector -->
+                            <div class="route-selector">
+                                <label>
+                                    <input type="checkbox" data-route="route3" data-option="car">
+                                    <span>✅ 选择包车方案</span>
+                                </label>
+                                <span class="selection-status" style="display: none;">已选择此方案</span>
+                            </div>
+
+                            <details>
+                                <summary>
+                                    <span class="summary-title">🚗 方案A：包车直达（强烈推荐）</span>
+                                    <div class="summary-info">
+                                        10:00听雨小栈退房 → 途经玉龙雪山远景观景台拍照 → 11:30抵达白沙悦榕庄
+                                        <br>
+                                        <strong>费用：</strong>¥300-400全家（¥75-100/人） • <strong>时长：</strong>1.5小时 • <strong>亲子指数：</strong>⭐⭐⭐⭐⭐
+                                    </div>
+                                </summary>
+
+                                <div class="detailed-content">
+                                    <p><strong>📍 路线描述：</strong></p>
                             <ul>
                                 <li>沙溪听雨小栈 → 剑川县城 → S221省道 → 丽江白沙古镇白沙悦榕庄酒店</li>
                                 <li>途径景点：可顺路经过玉龙雪山远景观景台拍照</li>
@@ -1155,12 +1461,32 @@
                                 <li><strong>灵活性：</strong>可随时停车拍照、休息</li>
                                 <li><strong>安全性：</strong>酒店推荐司机最可靠</li>
                             </ul>
+                                </div>
+                            </details>
                         </div>
 
-                        <div class="transport-card">
-                            <h4>🚌 方案B：公共交通</h4>
+                        <div class="transport-card" data-route="route3" data-option="bus">
+                            <!-- Checkbox Selector -->
+                            <div class="route-selector">
+                                <label>
+                                    <input type="checkbox" data-route="route3" data-option="bus">
+                                    <span>✅ 选择公共交通方案</span>
+                                </label>
+                                <span class="selection-status" style="display: none;">已选择此方案</span>
+                            </div>
 
-                            <p><strong>📍 路线描述：</strong></p>
+                            <details>
+                                <summary>
+                                    <span class="summary-title">🚌 方案B：公共交通</span>
+                                    <div class="summary-info">
+                                        08:30打车到沙溪路口 → 09:00沙溪→剑川班车 → 10:00剑川→丽江班车 → 12:00转6路公交 → 13:00抵达白沙悦榕庄
+                                        <br>
+                                        <strong>费用：</strong>¥238全家（¥59.5/人） • <strong>时长：</strong>3.5-4小时 • <strong>亲子指数：</strong>⭐
+                                    </div>
+                                </summary>
+
+                                <div class="detailed-content">
+                                    <p><strong>📍 路线描述：</strong></p>
                             <ul>
                                 <li>沙溪听雨小栈 → 打车到沙溪路口 → 沙溪→剑川班车 → 剑川→丽江班车 → 丽江市区→白沙公交/打车 → 白沙悦榕庄</li>
                             </ul>
@@ -1205,15 +1531,48 @@
                                 <li><strong>灵活性：</strong>完全受班次限制，无法停车</li>
                                 <li><strong>安全性：</strong>正规班车，安全无忧</li>
                             </ul>
+                                </div>
+                            </details>
                         </div>
                     </div>
 
                     <h4>路线4：丽江白沙古镇 → 昆明机场酒店 (3月21日)</h4>
-                    <div class="transport-options">
-                        <div class="transport-card" style="border-color: #28a745;">
-                            <h4>🚄 推荐方案：高铁（下午出发）</h4>
 
-                            <p><strong>📍 路线描述：</strong></p>
+                    <!-- Selection Instructions and Reset Button -->
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                        <div>
+                            <p style="margin: 0; color: #666; font-size: 0.95em;">
+                                💡 <strong>请对比两个方案</strong>，然后勾选适合您的出行方式（勾选后自动隐藏另一个方案）
+                            </p>
+                        </div>
+                        <button class="reset-selection-btn" onclick="resetRouteSelection('route4')" style="flex-shrink: 0;">
+                            🔄 重新对比
+                        </button>
+                    </div>
+
+                    <div class="transport-options">
+                        <div class="transport-card" data-route="route4" data-option="train" style="border-color: #28a745;">
+                            <!-- Checkbox Selector -->
+                            <div class="route-selector">
+                                <label>
+                                    <input type="checkbox" data-route="route4" data-option="train">
+                                    <span>✅ 选择高铁方案</span>
+                                </label>
+                                <span class="selection-status" style="display: none;">已选择此方案</span>
+                            </div>
+
+                            <details>
+                                <summary>
+                                    <span class="summary-title">🚄 方案A：高铁（下午出发，推荐）</span>
+                                    <div class="summary-info">
+                                        11:00酒店退房 → 打车到丽江站 → 13:01乘C456高铁 → 17:01抵达昆明站 → 机场大巴919路 → 18:30抵达桔子酒店
+                                        <br>
+                                        <strong>费用：</strong>¥908-1,010全家（¥227-252/人） • <strong>时长：</strong>7小时 • <strong>亲子指数：</strong>⭐⭐⭐⭐⭐
+                                    </div>
+                                </summary>
+
+                                <div class="detailed-content">
+                                    <p><strong>📍 路线描述：</strong></p>
                             <ul>
                                 <li>白沙悦榕庄 → 打车到丽江站 → 高铁C456到昆明站 → 机场大巴到机场 → 桔子机场酒店</li>
                                 <li><strong>推荐车次：</strong>C456（13:01-17:01），4小时整点，二等座¥182/人</li>
@@ -1269,6 +1628,83 @@
                                 <li><strong>灵活性：</strong>受班次限制，但C456下午出发时间合适，17:01到站不赶不晚</li>
                                 <li><strong>安全性：</strong>高铁非常安全，准点率高，机场大巴也很可靠</li>
                             </ul>
+                                </div>
+                            </details>
+                        </div>
+
+                        <!-- Option B: Car Rental -->
+                        <div class="transport-card" data-route="route4" data-option="car">
+                            <!-- Checkbox Selector -->
+                            <div class="route-selector">
+                                <label>
+                                    <input type="checkbox" data-route="route4" data-option="car">
+                                    <span>✅ 选择包车方案</span>
+                                </label>
+                                <span class="selection-status" style="display: none;">已选择此方案</span>
+                            </div>
+
+                            <details>
+                                <summary>
+                                    <span class="summary-title">🚗 方案B：包车直达</span>
+                                    <div class="summary-info">
+                                        10:00酒店退房，包车直达昆明 → 12:30楚雄/大理服务区休息 → 16:00-16:30抵达昆明机场桔子酒店
+                                        <br>
+                                        <strong>费用：</strong>¥700-900全家（¥175-225/人） • <strong>时长：</strong>6-6.5小时 • <strong>亲子指数：</strong>⭐⭐⭐⭐
+                                    </div>
+                                </summary>
+
+                                <div class="detailed-content">
+                                    <p><strong>📍 路线描述：</strong></p>
+                            <ul>
+                                <li>白沙悦榕庄 → 直达昆明长水机场桔子酒店</li>
+                                <li>全程高速，无需转车，一车到底</li>
+                            </ul>
+
+                            <p><strong>📏 距离与时长：</strong></p>
+                            <ul>
+                                <li><strong>距离：</strong>约530公里（全程高速）</li>
+                                <li><strong>时长：</strong>约6-6.5小时（含休息）</li>
+                                <li><strong>路线：</strong>丽江 → 大理 → 楚雄 → 昆明机场</li>
+                            </ul>
+
+                            <p><strong>⏰ 完整时间线：</strong></p>
+                            <ul>
+                                <li style="margin-left: 20px;">• <strong>10:00</strong> 酒店退房，包车出发</li>
+                                <li style="margin-left: 20px;">• <strong>12:30</strong> 楚雄/大理服务区休息（30分钟）</li>
+                                <li style="margin-left: 20px;">• <strong>16:00-16:30</strong> 抵达昆明长水机场桔子酒店</li>
+                                <li style="margin-left: 20px;">• <strong>16:30</strong> 办理酒店入住</li>
+                                <li style="margin-left: 20px;">• <strong>剩余时间：</strong>可在机场附近休息或购物</li>
+                            </ul>
+
+                            <p><strong>💰 费用明细：</strong></p>
+                            <ul>
+                                <li><strong>包车费用：</strong>¥700-900（全车4人，含过路费）</li>
+                                <li><strong>人均费用：</strong>¥175-225/人</li>
+                                <li><strong>总费用：</strong>¥700-900（全家4人）</li>
+                                <li style="margin-left: 20px;">• 比高铁便宜¥8-310，且无需转车更省心</li>
+                            </ul>
+
+                            <p><strong>📱 预订方式：</strong></p>
+                            <ul>
+                                <li><strong>包车平台：</strong>滴滴出行（跨城）、携程/飞猪（包车服务）、途牛</li>
+                                <li><strong>酒店前台：</strong>白沙悦榕庄前台可帮忙预约靠谱包车</li>
+                                <li><strong>预订时间：</strong>建议提前3-5天预订，确保有车</li>
+                                <li><strong>注意事项：</strong></li>
+                                <li style="margin-left: 40px;">• 确认车型（7座商务车，确保行李空间充足）</li>
+                                <li style="margin-left: 40px;">• 确认价格是否含过路费和油费</li>
+                                <li style="margin-left: 40px;">• 确认司机联系方式，出发前一天再次确认</li>
+                            </ul>
+
+                            <p><strong>👨‍👩‍👧‍👦 亲子友好指数：⭐⭐⭐⭐</strong></p>
+                            <ul>
+                                <li><strong>行李空间：</strong>7座商务车空间充足，行李直接放车里无需搬运</li>
+                                <li><strong>舒适度：</strong>6小时车程较长，但无需转车，孩子可睡觉休息</li>
+                                <li><strong>风景：</strong>高速路段风景一般，但可在服务区休息放松</li>
+                                <li><strong>灵活性：</strong>可随时停车休息、上厕所，时间自由掌控</li>
+                                <li><strong>安全性：</strong>全程高速，正规包车司机经验丰富，安全可靠</li>
+                            </ul>
+                                </div>
+                            </details>
                         </div>
                     </div>
                 </div>
@@ -2122,7 +2558,86 @@
                     localStorage.setItem('todo-' + index, this.checked);
                 });
             });
+
+            // Route Selection Functionality
+            initRouteSelection();
         });
+
+        function initRouteSelection() {
+            const routes = ['route1', 'route2', 'route3', 'route4'];
+
+            routes.forEach(routeId => {
+                const routeCheckboxes = document.querySelectorAll(`input[data-route="${routeId}"]`);
+                const routeCards = document.querySelectorAll(`.transport-card[data-route="${routeId}"]`);
+
+                // Load saved selection
+                const savedSelection = localStorage.getItem(`selected-${routeId}`);
+                if (savedSelection) {
+                    applyRouteSelection(routeId, savedSelection);
+                }
+
+                // Add event listeners
+                routeCheckboxes.forEach(checkbox => {
+                    checkbox.addEventListener('change', function() {
+                        if (this.checked) {
+                            const optionId = this.dataset.option;
+                            selectRoute(routeId, optionId);
+                        }
+                    });
+                });
+            });
+        }
+
+        function selectRoute(routeId, optionId) {
+            // Save selection
+            localStorage.setItem(`selected-${routeId}`, optionId);
+
+            // Apply visual changes
+            applyRouteSelection(routeId, optionId);
+        }
+
+        function applyRouteSelection(routeId, optionId) {
+            const routeCheckboxes = document.querySelectorAll(`input[data-route="${routeId}"]`);
+            const routeCards = document.querySelectorAll(`.transport-card[data-route="${routeId}"]`);
+
+            routeCheckboxes.forEach(checkbox => {
+                const checkboxOption = checkbox.dataset.option;
+                if (checkboxOption === optionId) {
+                    checkbox.checked = true;
+                } else {
+                    checkbox.checked = false;
+                }
+            });
+
+            routeCards.forEach(card => {
+                const cardOption = card.dataset.option;
+                if (cardOption === optionId) {
+                    card.classList.add('route-selected');
+                    card.classList.remove('route-hidden');
+                } else {
+                    card.classList.add('route-hidden');
+                    card.classList.remove('route-selected');
+                }
+            });
+        }
+
+        function resetRouteSelection(routeId) {
+            // Clear localStorage
+            localStorage.removeItem(`selected-${routeId}`);
+
+            // Uncheck all checkboxes
+            const routeCheckboxes = document.querySelectorAll(`input[data-route="${routeId}"]`);
+            routeCheckboxes.forEach(checkbox => {
+                checkbox.checked = false;
+            });
+
+            // Show all cards
+            const routeCards = document.querySelectorAll(`.transport-card[data-route="${routeId}"]`);
+            routeCards.forEach(card => {
+                card.classList.remove('route-hidden');
+                card.classList.remove('route-selected');
+            });
+        }
     </script>
 </body>
 </html>
