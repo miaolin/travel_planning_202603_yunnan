@@ -274,7 +274,7 @@ Generate an interactive HTML page with **8 independent tab sections**:
 
 ## Additional Resources
 
-- **Example**: See [yunnan_trip_itinerary.html](yunnan_trip_itinerary.html) for reference
+- **Example**: See [vercel-deploy/index.html](../vercel-deploy/index.html) for v3.0.0 reference with interactive features
 - **Current version**: v3.0.0 (2026-01-15) - Interactive route selection with collapsible details
 - **File size**: Target 110-125KB for optimal performance
 - **Icons**: Use emoji for quick visual recognition:

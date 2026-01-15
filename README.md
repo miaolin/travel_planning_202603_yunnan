@@ -1,10 +1,10 @@
 # Yunnan Trip Planning - March 2026
 
-**Version:** 1.0.0
-**Release Date:** January 9, 2026
+**Version:** 3.0.0
+**Release Date:** January 15, 2026
 **Trip Dates:** March 14-22, 2026
 
-An interactive web-based trip itinerary generator for the 8-day Yunnan, China journey.
+An interactive web-based trip itinerary with route selection and collapsible details for the 8-day Yunnan, China journey.
 
 ---
 
@@ -12,19 +12,15 @@ An interactive web-based trip itinerary generator for the 8-day Yunnan, China jo
 
 ```
 travel_planning_202603_yunnan/
-├── vercel-deploy/              # Vercel deployment package (Ready to deploy!)
-│   ├── index.html              # Main itinerary page
-│   ├── styles.css              # Stylesheet
-│   ├── script.js               # Interactive functionality
-│   ├── vercel.json             # Vercel configuration
+├── vercel-deploy/              # Vercel deployment package (v3.0.0 with interactive features)
+│   ├── index.html              # Main itinerary page with route selection
 │   ├── package.json            # Project metadata
-│   ├── README.md               # Deployment documentation
-│   ├── DEPLOY.md               # Quick deployment guide
 │   ├── CHANGELOG.md            # Version history
 │   └── .gitignore              # Git ignore file
+├── trip_planning_skills/       # Trip planning skill definition
+│   └── SKILL.md                # Skill documentation (v3.0.0)
 ├── trip_document/              # Source documents
 │   └── 2026 March云南游.pdf    # Original trip planning document
-├── yunnan_trip_itinerary.html  # Development version (single file)
 ├── README.md                   # This file
 └── CHANGELOG.md                # Project changelog
 ```
@@ -39,6 +35,9 @@ This is an expert trip information organization system that generates interactiv
 
 - 📱 **Responsive Design** - Works on mobile, tablet, and desktop
 - ✅ **Interactive Todo List** - Track tasks with checkboxes
+- 🚗 **Route Selection** (v3.0.0) - Compare and select transport options with checkboxes
+- 📋 **Collapsible Details** (v3.0.0) - Expandable route information for cleaner view
+- 💾 **Persistent Selection** (v3.0.0) - Saves choices via localStorage across reloads
 - 🗓️ **Calendar View** - Visual hotel booking timeline
 - 💰 **Payment Tracking** - Monitor expenses and payment status
 - 🎨 **Modern UI** - Beautiful gradients and smooth animations
@@ -48,10 +47,10 @@ This is an expert trip information organization system that generates interactiv
 
 ## 🚀 Quick Start
 
-### Option 1: View Local Version
-Simply open `yunnan_trip_itinerary.html` in your web browser.
+### View Local Version
+Simply open `vercel-deploy/index.html` in your web browser to see the v3.0.0 version with interactive route selection.
 
-### Option 2: Deploy to Vercel
+### Deploy to Vercel
 ```bash
 cd vercel-deploy
 npm install -g vercel
@@ -59,7 +58,7 @@ vercel login
 vercel
 ```
 
-See [`vercel-deploy/DEPLOY.md`](vercel-deploy/DEPLOY.md) for detailed deployment instructions.
+See [`vercel-deploy/README.md`](vercel-deploy/README.md) for detailed deployment instructions.
 
 ---
 
@@ -143,34 +142,43 @@ This itinerary was generated from a comprehensive trip planning document (`trip_
 ## 🎨 Customization
 
 ### Update Trip Information
-Edit the HTML content in `vercel-deploy/index.html` or `yunnan_trip_itinerary.html`
+Edit the HTML content in `vercel-deploy/index.html`
 
 ### Change Theme Colors
-Modify CSS variables in `vercel-deploy/styles.css`:
+Modify CSS styles in the `<style>` section of `vercel-deploy/index.html`:
 ```css
-:root {
-    --primary-color: #2C5F8D;    /* Main blue */
-    --accent-color: #E67E22;     /* Orange highlights */
-    --success-color: #27AE60;    /* Green for paid items */
-    /* ... more colors ... */
+body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.route-selected {
+    border: 3px solid #28a745;  /* Green for selected routes */
 }
 ```
 
 ### Add Features
-Extend functionality in `vercel-deploy/script.js`
+The interactive features are built with vanilla JavaScript in the `<script>` section
 
 ---
 
 ## 📝 Version History
 
-See [CHANGELOG.md](CHANGELOG.md) for detailed version history.
+See [CHANGELOG.md](CHANGELOG.md) and [vercel-deploy/CHANGELOG.md](vercel-deploy/CHANGELOG.md) for detailed version history.
 
+- **v3.0.0** (2026-01-15) - Interactive route selection
+  - Checkbox selection for all 4 hotel transit routes
+  - Collapsible details with compact summaries
+  - LocalStorage persistence for user selections
+  - Reset functionality to compare all options
+  - Updated trip planning skill documentation
+- **v2.9.0** (2026-01-14) - Simplified route presentation
+- **v2.8.0** (2026-01-14) - High-speed train prioritization
+- **v2.7.0** (2026-01-14) - Added specific train routes
 - **v1.0.0** (2026-01-09) - Initial release
   - Complete 9-day itinerary
   - Interactive todo list
-  - Payment tracking (55% paid)
+  - Payment tracking
   - Responsive design
-  - Vercel deployment package
 
 ---
 
@@ -185,8 +193,8 @@ This trip itinerary generator is for personal use. The template structure can be
 ## 📞 Support
 
 For issues or questions about:
-- **Deployment:** See [`vercel-deploy/README.md`](vercel-deploy/README.md)
-- **Quick Deploy:** See [`vercel-deploy/DEPLOY.md`](vercel-deploy/DEPLOY.md)
+- **Features:** See [`vercel-deploy/CHANGELOG.md`](vercel-deploy/CHANGELOG.md)
+- **Trip Planning Skill:** See [`trip_planning_skills/SKILL.md`](trip_planning_skills/SKILL.md)
 - **Changes:** See [`CHANGELOG.md`](CHANGELOG.md)
 
 ---
