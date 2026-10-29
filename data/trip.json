@@ -1,0 +1,2484 @@
+{
+  "meta": {
+    "lang": "zh-CN",
+    "title": "2026年3月云南游 - 行程规划",
+    "header": {
+      "title": "🌄 2026年3月云南游",
+      "lines": [
+        "3月14日 - 3月22日 | 9天8晚 | 4人同行",
+        "昆明 · 大理 · 沙溪 · 丽江"
+      ]
+    },
+    "startDate": "2026-03-14",
+    "endDate": "2026-03-22",
+    "party": {
+      "adults": 2,
+      "children": 2
+    },
+    "pinGate": {
+      "emoji": "🌄",
+      "title": "2026年3月云南游"
+    },
+    "theme": {
+      "bg": [
+        "#667eea",
+        "#764ba2"
+      ],
+      "header": [
+        "#f093fb",
+        "#f5576c"
+      ]
+    }
+  },
+  "stays": [
+    {
+      "id": "dali",
+      "name": "西山酒店 - 复式榻榻米二楼房",
+      "calendarLabel": "西山酒店 · ✓ 已付款",
+      "calendarClass": "c4",
+      "checkIn": "2026-03-14",
+      "checkOut": "2026-03-16",
+      "status": "paid"
+    },
+    {
+      "id": "shaxi",
+      "name": "沙溪听雨小筑民宿",
+      "calendarLabel": "沙溪听雨 · ✓ 已付款",
+      "calendarClass": "c2",
+      "checkIn": "2026-03-16",
+      "checkOut": "2026-03-18",
+      "status": "paid"
+    },
+    {
+      "id": "baisha",
+      "name": "不晚里予·日照金山 | 雪山全景度假酒店（白沙古镇店）",
+      "calendarLabel": "白沙古镇 · ⏱ 延期支付",
+      "calendarClass": "c6",
+      "checkIn": "2026-03-18",
+      "checkOut": "2026-03-21",
+      "status": "booked"
+    },
+    {
+      "id": "kunming",
+      "name": "桔子昆明长水国际机场酒店",
+      "calendarLabel": "昆明机场 · ✓ 已付款",
+      "calendarClass": "c3",
+      "checkIn": "2026-03-21",
+      "checkOut": "2026-03-22",
+      "status": "paid"
+    }
+  ],
+  "flights": [
+    {
+      "id": "out",
+      "headerClass": "china-eastern",
+      "airline": "✈️ 中国东方航空",
+      "flightNo": "🛫 去程航班 · 直飞",
+      "status": "confirmed",
+      "statusText": "✓ 已确认",
+      "from": {
+        "code": "SIN",
+        "name": "新加坡",
+        "time": "02:40",
+        "date": "2026-03-14"
+      },
+      "duration": "约4小时15分钟 · 直飞",
+      "to": {
+        "code": "KMG",
+        "name": "昆明长水国际机场",
+        "time": "06:55",
+        "date": "2026-03-14"
+      },
+      "details": [
+        {
+          "label": "航班类型",
+          "value": "直飞"
+        },
+        {
+          "label": "总费用",
+          "value": "S$ 3,167.25 (4人)"
+        },
+        {
+          "label": "状态",
+          "value": "航班已确认并付款"
+        }
+      ]
+    },
+    {
+      "id": "ret",
+      "headerClass": "china-eastern",
+      "airline": "✈️ 中国东方航空",
+      "flightNo": "🛬 回程航班 · 直飞",
+      "status": "confirmed",
+      "statusText": "✓ 已确认",
+      "from": {
+        "code": "KMG",
+        "name": "昆明长水国际机场",
+        "time": "07:25",
+        "date": "2026-03-22"
+      },
+      "duration": "约4小时15分钟 · 直飞",
+      "to": {
+        "code": "SIN",
+        "name": "新加坡",
+        "time": "11:40",
+        "date": "2026-03-22"
+      },
+      "details": [
+        {
+          "label": "航班类型",
+          "value": "直飞"
+        },
+        {
+          "label": "总费用",
+          "value": "S$ 3,167.25 (4人)"
+        },
+        {
+          "label": "状态",
+          "value": "航班已确认并付款"
+        }
+      ]
+    }
+  ],
+  "budget": {
+    "currencies": {
+      "local": {
+        "code": "CNY",
+        "symbol": "¥",
+        "unit": "元",
+        "flag": "🇨🇳"
+      },
+      "home": {
+        "code": "SGD",
+        "symbol": "S$",
+        "flag": "🇸🇬"
+      }
+    },
+    "fx": 5,
+    "categories": [
+      {
+        "id": "flights",
+        "title": "✈️ 机票",
+        "legend": "机票",
+        "color": "#4a90e2",
+        "currencyLabel": "long",
+        "subtotal": {
+          "label": "机票 小计",
+          "style": "dual",
+          "note": "中国东方航空直飞，含往返"
+        },
+        "lines": [
+          {
+            "id": "flight",
+            "label": "新加坡 ⇄ 昆明",
+            "amount": 3167.25,
+            "currency": "SGD",
+            "status": "paid",
+            "note": "S$ 791.81/人 × 4人 · 已付款",
+            "display": "S$ 3,167.25"
+          }
+        ]
+      },
+      {
+        "id": "lodging",
+        "title": "🏨 住宿",
+        "legend": "住宿",
+        "color": "#8e44ad",
+        "currencyLabel": "long",
+        "subtotal": {
+          "label": "住宿 小计",
+          "style": "approx",
+          "note": "住宿小计：¥8,716.20 (8晚)"
+        },
+        "lines": [
+          {
+            "id": "dali-hotel",
+            "label": "西山酒店（2晚）",
+            "amount": 2466.2,
+            "currency": "CNY",
+            "status": "paid",
+            "note": "¥1,233.10/晚 × 2晚 · 已付款",
+            "display": "2,466.20"
+          },
+          {
+            "id": "shaxi-hotel",
+            "label": "沙溪听雨小筑民宿（2晚）",
+            "amount": 1936,
+            "currency": "CNY",
+            "status": "paid",
+            "note": "¥968/晚 × 2晚 · 已付款"
+          },
+          {
+            "id": "baisha-hotel",
+            "label": "白沙古镇酒店（3晚）",
+            "amount": 3914,
+            "currency": "CNY",
+            "status": "pending",
+            "note": "¥1,304.67/晚 × 3晚 · 延期支付（3月17日支付宝自动扣款）"
+          },
+          {
+            "id": "kunming-hotel",
+            "label": "昆明机场酒店（1晚）",
+            "amount": 400,
+            "currency": "CNY",
+            "status": "paid",
+            "note": "¥400/晚（预估）× 1晚 · 已付款",
+            "approx": true
+          }
+        ]
+      },
+      {
+        "id": "transport",
+        "title": "🚄 交通",
+        "legend": "交通",
+        "color": "#11998e",
+        "currencyLabel": "long",
+        "subtotal": {
+          "label": "交通 小计",
+          "style": "approx",
+          "note": "交通小计：¥3,336 (不含当地打车和租车)"
+        },
+        "lines": [
+          {
+            "id": "airport-bus",
+            "label": "昆明机场→昆明站（机场大巴）",
+            "amount": 100,
+            "currency": "CNY",
+            "status": "pending",
+            "note": "¥25/人 × 4人 · 现场购买"
+          },
+          {
+            "id": "c9506",
+            "label": "昆明→大理（高铁C9506次）",
+            "amount": 402,
+            "currency": "CNY",
+            "status": "paid",
+            "note": "成人¥134/儿童¥67 × 4人 · 已购票"
+          },
+          {
+            "id": "charter",
+            "label": "大理→丽江（包车）",
+            "amount": 600,
+            "currency": "CNY",
+            "status": "pending",
+            "note": "¥600/车 × 1车 · 待预订"
+          },
+          {
+            "id": "c456",
+            "label": "丽江→昆明（高铁C456商务座+大巴）",
+            "amount": 2234,
+            "currency": "CNY",
+            "status": "paid",
+            "note": "打车¥90+高铁¥2,044+大巴¥25×4 · 4人 · 已购票"
+          }
+        ]
+      },
+      {
+        "id": "tickets",
+        "title": "🎫 景点门票",
+        "legend": "景点门票",
+        "color": "#e84393",
+        "currencyLabel": "short",
+        "subtotal": {
+          "label": "门票 小计",
+          "style": "approx",
+          "note": "门票小计：¥600"
+        },
+        "lines": [
+          {
+            "id": "santa",
+            "label": "崇圣寺三塔",
+            "amount": 400,
+            "currency": "CNY",
+            "status": "pending",
+            "note": "¥100/人 × 4人 · 待购买"
+          },
+          {
+            "id": "other-tickets",
+            "label": "其他景点门票",
+            "amount": 200,
+            "currency": "CNY",
+            "status": "pending",
+            "note": "¥50/人 × 4人 · 待购买"
+          }
+        ]
+      },
+      {
+        "id": "food",
+        "title": "🍜 餐饮",
+        "legend": "餐饮",
+        "color": "#f39c12",
+        "currencyLabel": "short",
+        "subtotal": {
+          "label": "餐饮 小计",
+          "style": "approx",
+          "note": "餐饮小计：¥7,760"
+        },
+        "lines": [
+          {
+            "id": "breakfast",
+            "label": "早餐",
+            "amount": 1600,
+            "currency": "CNY",
+            "status": "pending",
+            "note": "¥50/人/天 × 4人×8天 · 现场支付"
+          },
+          {
+            "id": "lunch",
+            "label": "午餐",
+            "amount": 2560,
+            "currency": "CNY",
+            "status": "pending",
+            "note": "¥80/人/天 × 4人×8天 · 现场支付"
+          },
+          {
+            "id": "dinner",
+            "label": "晚餐",
+            "amount": 3200,
+            "currency": "CNY",
+            "status": "pending",
+            "note": "¥100/人/天 × 4人×8天 · 现场支付"
+          },
+          {
+            "id": "snacks",
+            "label": "零食饮料",
+            "amount": 400,
+            "currency": "CNY",
+            "status": "pending",
+            "note": "¥50/天 × 8天 · 现场支付"
+          }
+        ]
+      },
+      {
+        "id": "activities",
+        "title": "🎨 活动体验",
+        "legend": "活动体验",
+        "color": "#c0392b",
+        "currencyLabel": "short",
+        "subtotal": {
+          "label": "活动 小计",
+          "style": "approx",
+          "note": "活动小计：¥1,120"
+        },
+        "lines": [
+          {
+            "id": "tie-dye",
+            "label": "扎染手工体验",
+            "amount": 400,
+            "currency": "CNY",
+            "status": "pending",
+            "note": "¥100/人 × 4人 · 待预约"
+          },
+          {
+            "id": "flower-cake",
+            "label": "做鲜花饼体验",
+            "amount": 320,
+            "currency": "CNY",
+            "status": "pending",
+            "note": "¥80/人 × 4人 · 待预约"
+          },
+          {
+            "id": "horse",
+            "label": "骑马、农场等活动",
+            "amount": 400,
+            "currency": "CNY",
+            "status": "pending",
+            "note": "¥100/人 × 4人 · 待预约"
+          }
+        ]
+      },
+      {
+        "id": "other",
+        "title": "🛍️ 购物预算 &amp; 应急备用金",
+        "legend": "购物 / 备用金",
+        "color": "#2d3436",
+        "currencyLabel": "short",
+        "subtotal": {
+          "label": "购物 + 备用金 小计",
+          "style": "approx",
+          "note": "预算"
+        },
+        "lines": [
+          {
+            "id": "shopping",
+            "label": "购物预算 · 特产、纪念品",
+            "amount": 2000,
+            "currency": "CNY",
+            "status": "pending",
+            "note": "预算"
+          },
+          {
+            "id": "emergency",
+            "label": "应急备用金 · 其他杂费",
+            "amount": 1000,
+            "currency": "CNY",
+            "status": "pending",
+            "note": "预算"
+          }
+        ]
+      }
+    ],
+    "kpis": [
+      {
+        "label": "🇨🇳 人民币合计",
+        "value": "{{local.total}}",
+        "sub": "人均 {{local.perPerson}}"
+      },
+      {
+        "label": "🇸🇬 新币合计",
+        "value": "S$ 3,167.25",
+        "sub": "机票（4人）· 已付款"
+      },
+      {
+        "label": "🧮 全程折合",
+        "value": "≈ {{equiv.home}}",
+        "sub": "按 1 SGD = {{fx}} CNY 估算"
+      }
+    ],
+    "payments": [
+      {
+        "currency": "CNY",
+        "label": "🇨🇳 CNY",
+        "paidText": "✅ 已付 {{local.paid}}",
+        "pendingText": "⏱ 待付 {{local.pending}}"
+      },
+      {
+        "currency": "SGD",
+        "label": "🇸🇬 SGD",
+        "paidText": "✅ 已付 S$ 3,167.25（机票）",
+        "pendingText": "待付 {{home.pending}}"
+      }
+    ],
+    "totalRows": [
+      {
+        "class": "total-row",
+        "cells": [
+          "🇨🇳 <strong>总计（人民币部分）</strong>",
+          "<strong>~{{local.total}}</strong>",
+          "🇨🇳",
+          "原页面标注：¥24,554.20"
+        ]
+      },
+      {
+        "class": "total-row",
+        "cells": [
+          "🇸🇬 <strong>总计（新币部分）</strong>",
+          "<strong>S$ 3,167.25</strong>",
+          "🇸🇬",
+          "机票"
+        ]
+      },
+      {
+        "class": "total-row",
+        "cells": [
+          "🧮 <strong>合计（按1:5汇率估算）</strong>",
+          "<strong>≈ {{equiv.home}}</strong>",
+          "—",
+          "原页面标注：约 S$ 8,078.09"
+        ]
+      },
+      {
+        "class": "total-row",
+        "cells": [
+          "👨‍👩‍👧‍👦 <strong>人均费用（4人）</strong>",
+          "—",
+          "—",
+          "原页面标注：约 S$ 1,953.72/人"
+        ]
+      },
+      {
+        "class": "total-row",
+        "style": "background: #d4edda;",
+        "cells": [
+          "✅ <strong>已支付</strong>",
+          "<strong>🇨🇳 {{local.paid}} &nbsp;+&nbsp; 🇸🇬 S$ 3,167.25</strong>",
+          "—",
+          "机票 + 西山 / 沙溪 / 昆明机场酒店 + C9506 + C456"
+        ]
+      },
+      {
+        "class": "total-row",
+        "style": "background: #fff3cd;",
+        "cells": [
+          "⏱ <strong>待支付</strong>",
+          "<strong>🇨🇳 {{local.pending}}</strong>",
+          "—",
+          "白沙古镇酒店（延期支付）+ 其余现场支付 / 待预订项"
+        ]
+      }
+    ]
+  },
+  "checklists": {
+    "todo": [
+      {
+        "id": "hotels",
+        "title": "🏨 酒店预订",
+        "items": [
+          {
+            "id": "hotels-01",
+            "html": "西山酒店 (3月14-16日) - 已付款 ¥2,466.20",
+            "done": true
+          },
+          {
+            "id": "hotels-02",
+            "html": "沙溪听雨小筑民宿 (3月16-18日) - 已付款 ¥1,936",
+            "done": true
+          },
+          {
+            "id": "hotels-03",
+            "html": "白沙古镇酒店 (3月18-21日) - 已预订，延期支付¥3,914（3月17日扣款）",
+            "done": true
+          },
+          {
+            "id": "hotels-04",
+            "html": "确保账户余额充足 - 3月17日前需有¥3,914（白沙）",
+            "done": false
+          },
+          {
+            "id": "hotels-05",
+            "html": "昆明机场酒店 (3月21-22日) - 已付款 ✓",
+            "done": true
+          }
+        ]
+      },
+      {
+        "id": "transport",
+        "title": "🚗 交通安排",
+        "items": [
+          {
+            "id": "transport-01",
+            "html": "<strong>✅ 3月14日昆明→大理 C9506 已购票</strong>（成人¥134×2 + 儿童¥67×2 = ¥402）<br>7车厢 2A/2B/2C/2D号 | 检票口：北京路昆明站 3B | 取票号：E8W4667802<br>• <strong>3月21日</strong>：丽江→昆明 C456 商务座 (13:01-17:01) 成人¥568×2+儿童¥454×2=¥2,044 <strong>✅ 已购票</strong>",
+            "done": true
+          },
+          {
+            "id": "transport-02",
+            "html": "预订大理到沙溪的交通 (3月16日)",
+            "done": false
+          },
+          {
+            "id": "transport-03",
+            "html": "预订沙溪到丽江白沙古镇的交通 (3月18日)",
+            "done": false
+          },
+          {
+            "id": "transport-04",
+            "html": "在大理租车（可选）- 方便游览周边景点",
+            "done": false
+          }
+        ]
+      },
+      {
+        "id": "tickets",
+        "title": "🎫 景点预订",
+        "items": [
+          {
+            "id": "tickets-01",
+            "html": "预订双廊木夕大理下午茶 C4或C5场次 (3月17日)",
+            "done": false
+          }
+        ]
+      },
+      {
+        "id": "kids",
+        "title": "👨‍👩‍👧‍👦 亲子活动",
+        "items": [
+          {
+            "id": "kids-01",
+            "html": "预约素方舟手工活动 - 扎染体验",
+            "done": false
+          },
+          {
+            "id": "kids-02",
+            "html": "预约鲜花饼制作体验",
+            "done": false
+          },
+          {
+            "id": "kids-03",
+            "html": "了解骑马活动安排",
+            "done": false
+          }
+        ]
+      },
+      {
+        "id": "prep",
+        "title": "📋 出行准备",
+        "items": [
+          {
+            "id": "prep-01",
+            "html": "检查护照有效期",
+            "done": false
+          },
+          {
+            "id": "prep-02",
+            "html": "购买旅行保险",
+            "done": false
+          },
+          {
+            "id": "prep-03",
+            "html": "准备防晒用品（云南紫外线强）",
+            "done": false
+          },
+          {
+            "id": "prep-04",
+            "html": "准备保暖衣物（丽江早晚温差大）",
+            "done": false
+          }
+        ]
+      }
+    ],
+    "packing": [
+      {
+        "id": "documents",
+        "title": "📄 证件类",
+        "items": [
+          {
+            "id": "documents-01",
+            "html": "护照/身份证"
+          },
+          {
+            "id": "documents-02",
+            "html": "机票确认单"
+          },
+          {
+            "id": "documents-03",
+            "html": "酒店预订单"
+          },
+          {
+            "id": "documents-04",
+            "html": "旅行保险单"
+          },
+          {
+            "id": "documents-05",
+            "html": "现金及银行卡"
+          }
+        ]
+      },
+      {
+        "id": "clothing",
+        "title": "👕 衣物类",
+        "items": [
+          {
+            "id": "clothing-01",
+            "html": "薄外套2-3件"
+          },
+          {
+            "id": "clothing-02",
+            "html": "T恤3-4件"
+          },
+          {
+            "id": "clothing-03",
+            "html": "长裤2-3条"
+          },
+          {
+            "id": "clothing-04",
+            "html": "薄羽绒服1件（高原早晚冷）"
+          },
+          {
+            "id": "clothing-05",
+            "html": "舒适徒步鞋"
+          },
+          {
+            "id": "clothing-06",
+            "html": "拖鞋、睡衣"
+          }
+        ]
+      },
+      {
+        "id": "protection",
+        "title": "🧴 防护类",
+        "items": [
+          {
+            "id": "protection-01",
+            "html": "防晒霜SPF50+"
+          },
+          {
+            "id": "protection-02",
+            "html": "晒后修复"
+          },
+          {
+            "id": "protection-03",
+            "html": "墨镜、帽子"
+          },
+          {
+            "id": "protection-04",
+            "html": "润唇膏"
+          },
+          {
+            "id": "protection-05",
+            "html": "保湿霜"
+          },
+          {
+            "id": "protection-06",
+            "html": "雨伞/雨衣"
+          }
+        ]
+      },
+      {
+        "id": "medicine",
+        "title": "💊 药品类",
+        "items": [
+          {
+            "id": "medicine-01",
+            "html": "感冒药"
+          },
+          {
+            "id": "medicine-02",
+            "html": "肠胃药"
+          },
+          {
+            "id": "medicine-03",
+            "html": "红景天（高反）"
+          },
+          {
+            "id": "medicine-04",
+            "html": "创可贴"
+          },
+          {
+            "id": "medicine-05",
+            "html": "个人常用药"
+          },
+          {
+            "id": "medicine-06",
+            "html": "防蚊液"
+          }
+        ]
+      },
+      {
+        "id": "electronics",
+        "title": "📱 电子类",
+        "items": [
+          {
+            "id": "electronics-01",
+            "html": "手机+充电器"
+          },
+          {
+            "id": "electronics-02",
+            "html": "充电宝"
+          },
+          {
+            "id": "electronics-03",
+            "html": "相机+存储卡"
+          },
+          {
+            "id": "electronics-04",
+            "html": "转换插头"
+          },
+          {
+            "id": "electronics-05",
+            "html": "耳机"
+          }
+        ]
+      },
+      {
+        "id": "toiletries",
+        "title": "🧴 洗漱类",
+        "items": [
+          {
+            "id": "toiletries-01",
+            "html": "牙刷牙膏"
+          },
+          {
+            "id": "toiletries-02",
+            "html": "洗面奶"
+          },
+          {
+            "id": "toiletries-03",
+            "html": "洗发水沐浴露"
+          },
+          {
+            "id": "toiletries-04",
+            "html": "毛巾"
+          },
+          {
+            "id": "toiletries-05",
+            "html": "化妆品"
+          },
+          {
+            "id": "toiletries-06",
+            "html": "湿纸巾"
+          }
+        ]
+      }
+    ]
+  },
+  "tabs": [
+    {
+      "id": "overview",
+      "label": "📋 行程概览",
+      "blocks": [
+        {
+          "type": "card",
+          "blocks": [
+            {
+              "type": "h2",
+              "icon": "🗺️",
+              "html": "行程概览"
+            },
+            {
+              "type": "infoGrid",
+              "items": [
+                {
+                  "label": "出行日期",
+                  "html": "2026年3月14日 - 3月22日"
+                },
+                {
+                  "label": "旅行天数",
+                  "html": "9天8晚"
+                },
+                {
+                  "label": "出行人数",
+                  "html": "4人"
+                },
+                {
+                  "label": "主要目的地",
+                  "html": "大理、沙溪古镇、丽江、昆明"
+                }
+              ]
+            },
+            {
+              "type": "h3",
+              "html": "🎯 行程亮点"
+            },
+            {
+              "type": "highlight",
+              "blocks": [
+                {
+                  "type": "ul",
+                  "items": [
+                    "游览大理古城、洱海生态走廊，体验白族文化",
+                    "探访沙溪古镇，茶马古道上唯一幸存的古集市",
+                    "参观兴教寺、寺登街，感受原始古镇的宁静",
+                    "漫步白沙古镇、束河古镇，感受纳西族风情",
+                    "亲子活动：扎染、做鲜花饼、骑马、农场体验",
+                    "赶集体验：农历初二、初九、十六、二十三"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "h3",
+              "html": "📍 行程路线"
+            },
+            {
+              "type": "timeline",
+              "items": [
+                {
+                  "title": "第1-3天：大理 (3月14日-16日)",
+                  "items": [
+                    "住宿：西山酒店（洱海附近）",
+                    "活动：大理古城、洱海生态走廊、兴盛夜市"
+                  ]
+                },
+                {
+                  "title": "第3-5天：沙溪古镇 (3月16日-18日)",
+                  "items": [
+                    "住宿：沙溪听雨小筑民宿",
+                    "活动：沙溪古镇、兴教寺、寺登街、古戏台"
+                  ]
+                },
+                {
+                  "title": "第5-8天：丽江 (3月18日-21日)",
+                  "items": [
+                    "住宿：白沙古镇雪山全景度假酒店",
+                    "活动：白沙古镇、束河古镇、丽江古城"
+                  ]
+                },
+                {
+                  "title": "第8-9天：昆明 (3月21日-22日)",
+                  "items": [
+                    "住宿：昆明机场酒店",
+                    "活动：休整准备返程"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "packing",
+      "label": "🎒 行李清单",
+      "blocks": [
+        {
+          "type": "card",
+          "blocks": [
+            {
+              "type": "h2",
+              "icon": "🎒",
+              "html": "行李打包清单"
+            },
+            {
+              "type": "p",
+              "html": "勾选已准备的物品，进度会自动保存到本地浏览器。",
+              "style": "color: #6c757d; margin-bottom: 20px;"
+            },
+            {
+              "type": "checklist",
+              "kind": "packing",
+              "ref": "documents"
+            },
+            {
+              "type": "checklist",
+              "kind": "packing",
+              "ref": "clothing"
+            },
+            {
+              "type": "checklist",
+              "kind": "packing",
+              "ref": "protection"
+            },
+            {
+              "type": "checklist",
+              "kind": "packing",
+              "ref": "medicine"
+            },
+            {
+              "type": "checklist",
+              "kind": "packing",
+              "ref": "electronics"
+            },
+            {
+              "type": "checklist",
+              "kind": "packing",
+              "ref": "toiletries"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "todo",
+      "label": "✅ 待办事项",
+      "blocks": [
+        {
+          "type": "card",
+          "blocks": [
+            {
+              "type": "h2",
+              "icon": "✅",
+              "html": "待办事项清单"
+            },
+            {
+              "type": "alert",
+              "variant": "info",
+              "icon": "✅",
+              "html": "<strong>所有酒店预订完成！</strong><br><strong>延期支付时间表：</strong><br>✓ 3月8日：沙溪听雨小筑民宿 ¥1,936（已付款）<br>• 3月17日：白沙古镇酒店 ¥3,914（支付宝自动扣款）<br><strong>重要提醒：</strong>请确保账户在扣款日前有足够余额"
+            },
+            {
+              "type": "checklist",
+              "kind": "todo",
+              "ref": "hotels"
+            },
+            {
+              "type": "checklist",
+              "kind": "todo",
+              "ref": "transport"
+            },
+            {
+              "type": "checklist",
+              "kind": "todo",
+              "ref": "tickets"
+            },
+            {
+              "type": "checklist",
+              "kind": "todo",
+              "ref": "kids"
+            },
+            {
+              "type": "checklist",
+              "kind": "todo",
+              "ref": "prep"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "flights",
+      "label": "✈️ 航班信息",
+      "blocks": [
+        {
+          "type": "card",
+          "blocks": [
+            {
+              "type": "h2",
+              "icon": "✈️",
+              "html": "航班信息"
+            },
+            {
+              "type": "alert",
+              "variant": "info",
+              "icon": "ℹ️",
+              "html": "<strong>航班已确认并付款</strong><br>总费用：S$ 3,167.25 (4人)"
+            },
+            {
+              "type": "h3",
+              "html": "🛫 去程航班"
+            }
+          ]
+        },
+        {
+          "type": "flight",
+          "ref": "out"
+        },
+        {
+          "type": "card",
+          "blocks": [
+            {
+              "type": "highlight",
+              "blocks": [
+                {
+                  "type": "h3",
+                  "html": "✓ 去程注意事项"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "凌晨航班，建议提前2-3小时到达机场（3月14日 00:30左右）",
+                    "到达昆明时间为早上6:55，需安排前往大理的交通",
+                    "昆明到大理距离约330公里，建议选择以下方式：<ul style=\"margin-left: 20px; margin-top: 5px;\"><li>高铁：约2小时，票价150-200元/人</li><li>包车：约4-5小时，可直达酒店，约600-800元</li><li>飞机：约40分钟，但需考虑候机时间</li></ul>"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "h3",
+              "html": "🛬 回程航班"
+            }
+          ]
+        },
+        {
+          "type": "flight",
+          "ref": "ret"
+        },
+        {
+          "type": "card",
+          "blocks": [
+            {
+              "type": "highlight",
+              "blocks": [
+                {
+                  "type": "h3",
+                  "html": "✓ 回程注意事项"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "早上7:25起飞，建议至少提前2小时到达机场（5:25之前）",
+                    "3月21日住宿选择昆明机场酒店，方便次日赶飞机",
+                    "酒店check-out时间通常为12:00，可在前一晚确认是否可延迟",
+                    "提前准备好退税文件（如有购物）",
+                    "确认随身行李规定，特产食品需符合入境要求"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "h3",
+              "html": "💼 行李建议"
+            },
+            {
+              "type": "transportOptions",
+              "cards": [
+                {
+                  "type": "transportCard",
+                  "open": true,
+                  "title": "🎒 随身行李",
+                  "summary": "",
+                  "blocks": [
+                    {
+                      "type": "ul",
+                      "items": [
+                        "护照、身份证、机票确认单",
+                        "手机、充电器、充电宝",
+                        "少量现金及信用卡",
+                        "常用药品（感冒药、肠胃药等）",
+                        "保暖外套（机舱和高海拔地区）"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "transportCard",
+                  "open": true,
+                  "title": "🧳 托运行李",
+                  "summary": "",
+                  "blocks": [
+                    {
+                      "type": "ul",
+                      "items": [
+                        "衣物（防晒+保暖两手准备）",
+                        "防晒霜、墨镜、帽子",
+                        "舒适的徒步鞋",
+                        "洗漱用品",
+                        "相机及配件",
+                        "预留空间装特产"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hotels",
+      "label": "🏨 酒店住宿",
+      "blocks": [
+        {
+          "type": "card",
+          "blocks": [
+            {
+              "type": "h2",
+              "icon": "🏨",
+              "html": "酒店住宿安排"
+            },
+            {
+              "type": "h3",
+              "html": "📅 住宿日历"
+            },
+            {
+              "type": "calendar"
+            },
+            {
+              "type": "alert",
+              "variant": "info",
+              "icon": "✅",
+              "html": "<strong>酒店付款状态 - 全部完成</strong><br>✓ 已付款：西山酒店（¥2,466.20）、昆明机场酒店（¥400预估）、沙溪听雨小筑民宿（¥1,936）<br>⏱ 延期支付：<br>&nbsp;&nbsp;• 白沙古镇酒店（¥3,914）- 3月17日支付宝自动扣款"
+            },
+            {
+              "type": "h3",
+              "html": "🏨 酒店详情"
+            },
+            {
+              "type": "transportCard",
+              "open": true,
+              "title": "🏠 西山酒店 - 复式榻榻米二楼房",
+              "summary": "",
+              "blocks": [
+                {
+                  "type": "ul",
+                  "items": [
+                    "<strong>入住日期：</strong>3月14日 12:00",
+                    "<strong>退房日期：</strong>3月16日 12:00",
+                    "<strong>住宿天数：</strong>2晚",
+                    "<strong>位置：</strong>大理洱海附近",
+                    "<strong>房型：</strong>复式榻榻米二楼房",
+                    "<strong>费用：</strong>¥2,466.20",
+                    "<strong>状态：</strong><span class=\"status-badge status-paid\">已付款</span>",
+                    "<strong>订单号：</strong>1176095303506738382D",
+                    "<strong>联系电话：</strong>18271882922"
+                  ]
+                }
+              ],
+              "style": "margin-bottom: 20px;"
+            },
+            {
+              "type": "transportCard",
+              "open": true,
+              "title": "🏡 沙溪听雨小筑民宿 ✓ 预订成功",
+              "summary": "",
+              "blocks": [
+                {
+                  "type": "ul",
+                  "items": [
+                    "<strong>入住日期：</strong>3月16日 10:00后",
+                    "<strong>退房日期：</strong>3月18日 12:00前",
+                    "<strong>住宿天数：</strong>2晚",
+                    "<strong>位置：</strong>剑川沙溪镇寺登村委会寺登街101号",
+                    "<strong>房型：</strong>听雨·露台阳光家庭房 | 空调地暖 | 记忆枕 | 慕斯床垫",
+                    "<strong>房间数：</strong>1间",
+                    "<strong>设施：</strong>24小时前台、免费行李寄存、免费公用区WIFI",
+                    "<strong>订单号：</strong>1128145003182703",
+                    "<strong>费用：</strong>¥1,936",
+                    "<strong>支付方式：</strong><span class=\"status-badge status-paid\">已付款</span> ¥1,936（3月8日已扣款）",
+                    "<strong>入住提示：</strong>房间已预留，到店报住客姓名并出示证件即可入住",
+                    "<strong>取消政策：</strong>3月9日12:00前免费取消，之后取消收费¥968"
+                  ]
+                }
+              ],
+              "style": "margin-bottom: 20px; border-color: #17a2b8;"
+            },
+            {
+              "type": "transportCard",
+              "open": true,
+              "title": "🏔️ 不晚里予·日照金山 | 雪山全景度假酒店（白沙古镇店） ✓ 预订成功",
+              "summary": "",
+              "blocks": [
+                {
+                  "type": "ul",
+                  "items": [
+                    "<strong>入住日期：</strong>3月18日 14:00后",
+                    "<strong>退房日期：</strong>3月21日 14:00前",
+                    "<strong>住宿天数：</strong>3晚",
+                    "<strong>位置：</strong>丽江白沙古镇",
+                    "<strong>地址：</strong>丽江精品民宿榜 No.16",
+                    "<strong>订单号：</strong>1128144973013193",
+                    "<strong>特色：</strong>雪山全景、日照金山景观",
+                    "<strong>费用：</strong>¥3,914",
+                    "<strong>支付方式：</strong><span class=\"status-badge status-confirmed\">已授权延期支付</span> - 延期至3月17日于账户（移动版支付宝）中扣取房费",
+                    "<strong>入住提示：</strong>房间已预留，到店报住客姓名并出示证件即可入住",
+                    "<strong>取消政策：</strong>3月17日18:00前免费取消，之后取消收费¥1,308",
+                    "<strong>重要提醒：</strong>请确保支付宝账户在3月17日前有足够余额（¥3,914）"
+                  ]
+                }
+              ],
+              "style": "margin-bottom: 20px; border-color: #17a2b8;"
+            },
+            {
+              "type": "transportCard",
+              "open": true,
+              "title": "🛫 桔子昆明长水国际机场酒店",
+              "summary": "",
+              "blocks": [
+                {
+                  "type": "ul",
+                  "items": [
+                    "<strong>入住日期：</strong>3月21日 14:00",
+                    "<strong>退房日期：</strong>3月22日 13:00",
+                    "<strong>住宿天数：</strong>1晚",
+                    "<strong>位置：</strong>昆明长水国际机场",
+                    "<strong>优势：</strong>靠近机场，方便次日赶早班机",
+                    "<strong>状态：</strong><span class=\"status-badge status-paid\">已付款</span>"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "transit",
+      "label": "🚗 酒店交通",
+      "blocks": [
+        {
+          "type": "card",
+          "blocks": [
+            {
+              "type": "h2",
+              "icon": "🚗",
+              "html": "酒店间交通方案 (Hotel Transit)"
+            },
+            {
+              "type": "alert",
+              "variant": "warning",
+              "icon": "ℹ️",
+              "html": "<strong>路线选择优先级：</strong><br>1️⃣ 用户指定的交通方式（最优先）<br>2️⃣ 亲子友好（2大2小，考虑舒适度和安全性）<br>3️⃣ 性价比（合理预算控制）<br>4️⃣ 便利性（直达 vs 转车）",
+              "style": "margin-bottom: 20px;"
+            },
+            {
+              "type": "h4",
+              "html": "路线1：昆明机场 → 大理西山酒店 (3月14日) ✅ 已确认"
+            },
+            {
+              "type": "alert",
+              "variant": "info",
+              "icon": "🚄",
+              "html": "<strong>打车 + C9506高铁（09:48发车）✅ 已购票</strong><br>06:55抵达昆明机场 → 入境取行李（60分钟）→ 打车到昆明站（50分钟）→ 09:48乘C9506列车 → 11:59抵达大理站<br><strong>座位：</strong>7车厢 2A/2B/2C/2D号 | <strong>检票口：</strong>北京路昆明站 3B | <strong>取票号：</strong>E8W4667802<br><strong>费用：</strong>¥552全家（成人¥134×2 + 儿童¥67×2 = ¥402 + 打车¥150）",
+              "style": "margin-bottom: 20px;"
+            },
+            {
+              "type": "transportCard",
+              "open": false,
+              "title": "🚄 打车+高铁 详细信息",
+              "summary": "06:55抵达昆明机场 → 入境取行李(60分钟) → 打车到昆明站(50分钟) → 09:48乘C9506列车 → 11:59抵达大理站 → 12:30抵达酒店<br><strong>费用：</strong>¥552全家（¥138/人）✅ 已购票 • <strong>时长：</strong>5.5小时",
+              "style": "border-color: #28a745;",
+              "blocks": [
+                {
+                  "type": "p",
+                  "html": "<strong>📍 路线描述：</strong>"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "昆明长水国际机场（T2航站楼）→ 出境大厅 → 出租车 → 昆明站 → C9506高铁 → 大理站 → 出租车 → 西山酒店"
+                  ]
+                },
+                {
+                  "type": "p",
+                  "html": "<strong>📏 距离与时长：</strong>"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "<strong>总距离：</strong>机场到昆明站27公里 + 昆明到大理高铁333公里 = 约360公里",
+                    "<strong>总时长：</strong>约5.5小时（含所有环节）"
+                  ]
+                },
+                {
+                  "type": "p",
+                  "html": "<strong>⏰ 完整时间线：</strong>"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "<strong>06:55</strong> 飞机降落昆明机场",
+                    "<strong>07:00-07:55</strong> 下机 → 入境检查 → 取行李 → 到达接机大厅（预留60分钟）",
+                    "<strong>08:00</strong> 打车出发前往昆明站",
+                    "<strong>08:00-08:50</strong> 行驶至昆明站（27公里，约50分钟）",
+                    "<strong>08:50-09:30</strong> 到达车站 → 刷身份证 → 安检 → 候车（预留40分钟）",
+                    "<strong>09:48</strong> 登上C9506次列车 — 7车厢2A/2B/2C/2D号（检票口3B）",
+                    "<strong>09:48-11:59</strong> 高铁行驶（2小时11分钟）",
+                    "<strong>11:59</strong> 抵达大理站",
+                    "<strong>12:00-12:30</strong> 出站 → 打车至西山酒店（约30分钟）",
+                    "<strong>12:30</strong> 抵达酒店办理入住（酒店14:00入住，可寄存行李）"
+                  ]
+                },
+                {
+                  "type": "p",
+                  "html": "<strong>💰 费用明细：</strong>"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "<strong>机场到昆明站：</strong>出租车¥100（全车4人）",
+                    "<strong>高铁票（C9506）：</strong>成人¥134×2 + 儿童¥67×2 = ¥402 ✅ 已购票",
+                    "<strong>大理站到酒店：</strong>出租车¥50（全车）",
+                    "<strong>总费用：</strong>¥552（全家4人）= <strong>¥138/人</strong>"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "h4",
+              "html": "路线2：大理西山 → 沙溪古镇 (3月16日)",
+              "style": "margin-top: 40px;"
+            },
+            {
+              "type": "routeChooser",
+              "route": "route2",
+              "html": "💡 <strong>请对比两个方案</strong>，然后勾选适合您的出行方式（勾选后自动隐藏另一个方案）"
+            },
+            {
+              "type": "transportOptions",
+              "cards": [
+                {
+                  "type": "transportCard",
+                  "open": false,
+                  "route": "route2",
+                  "option": "car",
+                  "style": "border-color: #28a745;",
+                  "title": "🚗 方案A：包车（强烈推荐）",
+                  "summary": "10:00西山酒店退房 → 途经剑川石宝山 → 服务区休息 → 12:00抵达沙溪听雨小栈<br><strong>费用：</strong>¥400-500全家（¥100-125/人） • <strong>时长：</strong>2小时 • <strong>亲子指数：</strong>⭐⭐⭐⭐⭐",
+                  "blocks": [
+                    {
+                      "type": "p",
+                      "html": "<strong>📍 路线描述：</strong>"
+                    },
+                    {
+                      "type": "ul",
+                      "items": [
+                        "西山酒店 → 大理市区 → G56杭瑞高速 → 剑川县 → 沙溪古镇听雨小栈",
+                        "途径景点：剑川石宝山（可选择停车游览30分钟）"
+                      ]
+                    },
+                    {
+                      "type": "p",
+                      "html": "<strong>📏 距离与时长：</strong>"
+                    },
+                    {
+                      "type": "ul",
+                      "items": [
+                        "<strong>总距离：</strong>约115公里（不是233公里，那是到丽江的距离）",
+                        "<strong>总时长：</strong>约2小时（含服务区休息15分钟）"
+                      ]
+                    },
+                    {
+                      "type": "p",
+                      "html": "<strong>⏰ 时间安排：</strong>"
+                    },
+                    {
+                      "type": "ul",
+                      "items": [
+                        "<strong>10:00</strong> 酒店退房（check-out 12:00前）",
+                        "<strong>10:00</strong> 出发前往沙溪",
+                        "<strong>11:00</strong> 途经服务区休息（上厕所、买零食）",
+                        "<strong>12:00</strong> 抵达沙溪古镇听雨小栈，办理入住",
+                        "<strong>12:30</strong> 午餐（在古镇品尝白族美食）"
+                      ]
+                    },
+                    {
+                      "type": "p",
+                      "html": "<strong>💰 费用明细：</strong>"
+                    },
+                    {
+                      "type": "ul",
+                      "items": [
+                        "<strong>包车费：</strong>¥400-500（全车4人）= <strong>¥100-125/人</strong>",
+                        "<strong>过路费：</strong>约¥60（已含在包车费中）",
+                        "<strong>油费：</strong>约¥80（已含在包车费中）<ul style=\"margin-left: 20px; margin-top: 5px;\"><li>建议价格：¥450合理</li></ul>"
+                      ]
+                    },
+                    {
+                      "type": "p",
+                      "html": "<strong>📱 预订方式：</strong>"
+                    },
+                    {
+                      "type": "ul",
+                      "items": [
+                        "<strong>西山酒店前台：</strong>退房时请前台帮忙联系包车司机（最可靠）",
+                        "<strong>滴滴出行：</strong>\"城际快车\"选项（大理→沙溪）",
+                        "<strong>听雨小栈：</strong>提前联系酒店，他们也可安排接送<ul style=\"margin-left: 20px; margin-top: 5px;\"><li>建议提前1天预订</li></ul>"
+                      ]
+                    },
+                    {
+                      "type": "p",
+                      "html": "<strong>👨‍👩‍👧‍👦 亲子友好指数：⭐⭐⭐⭐⭐</strong>"
+                    },
+                    {
+                      "type": "ul",
+                      "items": [
+                        "<strong>行李空间：</strong>SUV后备箱足够放4人行李",
+                        "<strong>舒适度：</strong>2小时车程适中，孩子可接受",
+                        "<strong>风景：</strong>途经云南乡村风光，风景优美",
+                        "<strong>灵活性：</strong>可随时停车拍照、上厕所",
+                        "<strong>安全性：</strong>酒店推荐司机最可靠"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "transportCard",
+                  "open": false,
+                  "route": "route2",
+                  "option": "bus",
+                  "title": "🚌 方案B：公共交通（大巴转车）",
+                  "summary": "09:00打车到大理客运站 → 10:00大理→剑川班车 → 11:30转剑川→沙溪班车 → 12:30抵达听雨小栈<br><strong>费用：</strong>¥220全家（¥55/人） • <strong>时长：</strong>3.5-4小时 • <strong>亲子指数：</strong>⭐⭐",
+                  "blocks": [
+                    {
+                      "type": "p",
+                      "html": "<strong>📍 路线描述：</strong>"
+                    },
+                    {
+                      "type": "ul",
+                      "items": [
+                        "西山酒店 → 打车到大理客运站 → 大理→剑川班车 → 剑川→沙溪班车 → 听雨小栈"
+                      ]
+                    },
+                    {
+                      "type": "p",
+                      "html": "<strong>📏 距离与时长：</strong>"
+                    },
+                    {
+                      "type": "ul",
+                      "items": [
+                        "<strong>总时长：</strong>约3.5-4小时（含等车、转车）"
+                      ]
+                    },
+                    {
+                      "type": "p",
+                      "html": "<strong>⏰ 时间安排：</strong>"
+                    },
+                    {
+                      "type": "ul",
+                      "items": [
+                        "<strong>09:00</strong> 打车到大理客运北站（¥30，30分钟）",
+                        "<strong>10:00</strong> 乘大理→剑川班车（约1.5小时，¥35/人）",
+                        "<strong>11:30</strong> 抵达剑川，转乘剑川→沙溪班车（约30分钟，¥10/人）",
+                        "<strong>12:30</strong> 抵达沙溪，打车到听雨小栈（¥10）"
+                      ]
+                    },
+                    {
+                      "type": "p",
+                      "html": "<strong>💰 费用明细：</strong>"
+                    },
+                    {
+                      "type": "ul",
+                      "items": [
+                        "<strong>大理市区→客运站：</strong>¥30（全车）= ¥7.5/人",
+                        "<strong>大理→剑川：</strong>¥35/人 × 4 = ¥140（儿童可能半价）",
+                        "<strong>剑川→沙溪：</strong>¥10/人 × 4 = ¥40",
+                        "<strong>沙溪→酒店：</strong>¥10（全车）= ¥2.5/人",
+                        "<strong>总费用：</strong>¥220（全家4人）= <strong>¥55/人</strong><ul style=\"margin-left: 20px; margin-top: 5px;\"><li>比包车省¥230（但费时费力）</li></ul>"
+                      ]
+                    },
+                    {
+                      "type": "p",
+                      "html": "<strong>📱 预订方式：</strong>"
+                    },
+                    {
+                      "type": "ul",
+                      "items": [
+                        "<strong>大理客运北站：</strong>现场买票（班次较多，无需提前）",
+                        "<strong>班车时刻：</strong>大理→剑川（09:00/10:00/11:00/13:00/15:00）<ul style=\"margin-left: 20px; margin-top: 5px;\"><li>建议坐10:00班次，时间最合适</li></ul>"
+                      ]
+                    },
+                    {
+                      "type": "p",
+                      "html": "<strong>👨‍👩‍👧‍👦 亲子友好指数：⭐⭐</strong>"
+                    },
+                    {
+                      "type": "ul",
+                      "items": [
+                        "<strong>行李空间：</strong>需自己搬运行李上下车，不便",
+                        "<strong>舒适度：</strong>班车空间小，4小时对孩子来说太累",
+                        "<strong>风景：</strong>与包车路线相同",
+                        "<strong>灵活性：</strong>无法停车，受班次限制",
+                        "<strong>安全性：</strong>正规班车，安全无忧"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "h4",
+              "html": "路线3：沙溪古镇 → 丽江白沙古镇 (3月18日)",
+              "style": "margin-top: 40px;"
+            },
+            {
+              "type": "routeChooser",
+              "route": "route3",
+              "html": "💡 <strong>请对比两个方案</strong>，然后勾选适合您的出行方式（勾选后自动隐藏另一个方案）"
+            },
+            {
+              "type": "transportOptions",
+              "cards": [
+                {
+                  "type": "transportCard",
+                  "open": false,
+                  "route": "route3",
+                  "option": "car",
+                  "style": "border-color: #28a745;",
+                  "title": "🚗 方案A：包车直达（强烈推荐）",
+                  "summary": "10:00听雨小栈退房 → 途经玉龙雪山远景观景台拍照 → 11:30抵达白沙悦榕庄<br><strong>费用：</strong>¥300-400全家（¥75-100/人） • <strong>时长：</strong>1.5小时 • <strong>亲子指数：</strong>⭐⭐⭐⭐⭐",
+                  "blocks": [
+                    {
+                      "type": "p",
+                      "html": "<strong>📍 路线描述：</strong>"
+                    },
+                    {
+                      "type": "ul",
+                      "items": [
+                        "沙溪听雨小栈 → 剑川县城 → S221省道 → 丽江白沙古镇白沙悦榕庄酒店",
+                        "途径景点：可顺路经过玉龙雪山远景观景台拍照"
+                      ]
+                    },
+                    {
+                      "type": "p",
+                      "html": "<strong>📏 距离与时长：</strong>"
+                    },
+                    {
+                      "type": "ul",
+                      "items": [
+                        "<strong>总距离：</strong>约60公里",
+                        "<strong>总时长：</strong>约1.5小时（含中途拍照10分钟）"
+                      ]
+                    },
+                    {
+                      "type": "p",
+                      "html": "<strong>⏰ 时间安排：</strong>"
+                    },
+                    {
+                      "type": "ul",
+                      "items": [
+                        "<strong>10:00</strong> 酒店退房（check-out 12:00前）",
+                        "<strong>10:00</strong> 出发前往白沙",
+                        "<strong>10:45</strong> 途经观景台拍照（10分钟）",
+                        "<strong>11:30</strong> 抵达白沙悦榕庄，办理入住",
+                        "<strong>12:00</strong> 酒店内午餐或白沙古镇用餐"
+                      ]
+                    },
+                    {
+                      "type": "p",
+                      "html": "<strong>💰 费用明细：</strong>"
+                    },
+                    {
+                      "type": "ul",
+                      "items": [
+                        "<strong>包车费：</strong>¥300-400（全车4人）= <strong>¥75-100/人</strong>",
+                        "<strong>过路费：</strong>无（省道免费）",
+                        "<strong>油费：</strong>约¥40（已含在包车费中）<ul style=\"margin-left: 20px; margin-top: 5px;\"><li>建议价格：¥350合理（距离短）</li></ul>"
+                      ]
+                    },
+                    {
+                      "type": "p",
+                      "html": "<strong>📱 预订方式：</strong>"
+                    },
+                    {
+                      "type": "ul",
+                      "items": [
+                        "<strong>听雨小栈前台：</strong>退房时请前台帮忙联系包车司机（最推荐）",
+                        "<strong>白沙悦榕庄：</strong>提前联系酒店安排接送服务",
+                        "<strong>滴滴出行：</strong>\"城际快车\"选项（沙溪→白沙）<ul style=\"margin-left: 20px; margin-top: 5px;\"><li>建议提前1天预订</li></ul>"
+                      ]
+                    },
+                    {
+                      "type": "p",
+                      "html": "<strong>👨‍👩‍👧‍👦 亲子友好指数：⭐⭐⭐⭐⭐</strong>"
+                    },
+                    {
+                      "type": "ul",
+                      "items": [
+                        "<strong>行李空间：</strong>SUV后备箱充足",
+                        "<strong>舒适度：</strong>1.5小时车程短，孩子完全不会累",
+                        "<strong>风景：</strong>途经玉龙雪山远景，风景绝佳",
+                        "<strong>灵活性：</strong>可随时停车拍照、休息",
+                        "<strong>安全性：</strong>酒店推荐司机最可靠"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "transportCard",
+                  "open": false,
+                  "route": "route3",
+                  "option": "bus",
+                  "title": "🚌 方案B：公共交通",
+                  "summary": "08:30打车到沙溪路口 → 09:00沙溪→剑川班车 → 10:00剑川→丽江班车 → 12:00转6路公交 → 13:00抵达白沙悦榕庄<br><strong>费用：</strong>¥238全家（¥59.5/人） • <strong>时长：</strong>3.5-4小时 • <strong>亲子指数：</strong>⭐",
+                  "blocks": [
+                    {
+                      "type": "p",
+                      "html": "<strong>📍 路线描述：</strong>"
+                    },
+                    {
+                      "type": "ul",
+                      "items": [
+                        "沙溪听雨小栈 → 打车到沙溪路口 → 沙溪→剑川班车 → 剑川→丽江班车 → 丽江市区→白沙公交/打车 → 白沙悦榕庄"
+                      ]
+                    },
+                    {
+                      "type": "p",
+                      "html": "<strong>📏 距离与时长：</strong>"
+                    },
+                    {
+                      "type": "ul",
+                      "items": [
+                        "<strong>总时长：</strong>约3.5-4小时（含等车、转车）"
+                      ]
+                    },
+                    {
+                      "type": "p",
+                      "html": "<strong>⏰ 时间安排：</strong>"
+                    },
+                    {
+                      "type": "ul",
+                      "items": [
+                        "<strong>08:30</strong> 打车到沙溪路口（¥10，10分钟）",
+                        "<strong>09:00</strong> 乘沙溪→剑川班车（约30分钟，¥10/人）",
+                        "<strong>09:30</strong> 抵达剑川，等候剑川→丽江班车",
+                        "<strong>10:00</strong> 乘剑川→丽江班车（约2小时，¥45/人）",
+                        "<strong>12:00</strong> 抵达丽江客运站，转6路公交到白沙（50分钟，¥2/人）",
+                        "<strong>13:00</strong> 白沙路口下车，打车到悦榕庄（¥10）"
+                      ]
+                    },
+                    {
+                      "type": "p",
+                      "html": "<strong>💰 费用明细：</strong>"
+                    },
+                    {
+                      "type": "ul",
+                      "items": [
+                        "<strong>沙溪→剑川：</strong>¥10/人 × 4 = ¥40",
+                        "<strong>剑川→丽江：</strong>¥45/人 × 4 = ¥180（儿童可能半价）",
+                        "<strong>丽江→白沙：</strong>6路公交¥2/人 × 4 = ¥8",
+                        "<strong>白沙→酒店：</strong>¥10（全车）",
+                        "<strong>总费用：</strong>¥238（全家4人）= <strong>¥59.5/人</strong><ul style=\"margin-left: 20px; margin-top: 5px;\"><li>比包车省¥110-160（但费时费力）</li></ul>"
+                      ]
+                    },
+                    {
+                      "type": "p",
+                      "html": "<strong>📱 预订方式：</strong>"
+                    },
+                    {
+                      "type": "ul",
+                      "items": [
+                        "<strong>班车：</strong>现场买票（无需提前预订）",
+                        "<strong>班车时刻：</strong>沙溪→剑川（07:00/09:00/11:00），剑川→丽江（08:00/10:00/13:00/15:00）<ul style=\"margin-left: 20px; margin-top: 5px;\"><li>需要合理衔接班次时间</li></ul>"
+                      ]
+                    },
+                    {
+                      "type": "p",
+                      "html": "<strong>👨‍👩‍👧‍👦 亲子友好指数：⭐</strong>"
+                    },
+                    {
+                      "type": "ul",
+                      "items": [
+                        "<strong>行李空间：</strong>需自己搬运行李，转车3次非常累",
+                        "<strong>舒适度：</strong>4小时车程+3次转车，孩子会很疲惫",
+                        "<strong>风景：</strong>与包车路线相同",
+                        "<strong>灵活性：</strong>完全受班次限制，无法停车",
+                        "<strong>安全性：</strong>正规班车，安全无忧"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "h4",
+              "html": "路线4：丽江白沙古镇 → 昆明机场酒店 (3月21日) ✅ 已确认",
+              "style": "margin-top: 40px;"
+            },
+            {
+              "type": "alert",
+              "variant": "info",
+              "icon": "🚄",
+              "html": "<strong>打车 + C456高铁 商务座（13:01发车）✅ 已购票</strong><br>11:00酒店退房 → 打车到丽江站 → 13:01乘C456高铁 → 17:01抵达昆明站 → 机场大巴919路 → 18:30抵达桔子酒店<br><strong>座位：</strong>09车厢 01A/01F/02A/02F号（商务座）<br><strong>费用：</strong>¥2,044（成人¥568×2 + 儿童¥454×2）+ 打车¥90 + 大巴¥100 = ¥2,234全家",
+              "style": "margin-bottom: 20px;"
+            },
+            {
+              "type": "transportCard",
+              "open": false,
+              "title": "🚄 打车+高铁商务座 详细信息",
+              "summary": "11:00酒店退房 → 打车到丽江站 → 13:01乘C456高铁 → 17:01抵达昆明站 → 机场大巴 → 18:30抵达桔子酒店<br><strong>费用：</strong>¥2,234全家 ✅ 已购票 • <strong>时长：</strong>7小时",
+              "style": "border-color: #28a745;",
+              "blocks": [
+                {
+                  "type": "p",
+                  "html": "<strong>📍 路线描述：</strong>"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "白沙悦榕庄 → 打车到丽江站 → 高铁C456到昆明站 → 机场大巴到机场 → 桔子机场酒店"
+                  ]
+                },
+                {
+                  "type": "p",
+                  "html": "<strong>📏 距离与时长：</strong>"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "<strong>白沙→丽江站：</strong>约30公里，40-50分钟车程",
+                    "<strong>丽江→昆明：</strong>C456高铁商务座，4小时整（13:01-17:01）",
+                    "<strong>昆明站→机场：</strong>机场大巴919路，约50分钟",
+                    "<strong>总时长：</strong>约7小时（含转车等待）"
+                  ]
+                },
+                {
+                  "type": "p",
+                  "html": "<strong>⏰ 完整时间线：</strong>"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "<strong>11:00</strong> 酒店退房，打车前往丽江站",
+                    "<strong>11:40-12:00</strong> 抵达丽江站，安检、候车",
+                    "<strong>13:01</strong> C456次高铁发车 — 09车厢01A/01F/02A/02F号（商务座）",
+                    "<strong>17:01</strong> 抵达昆明站（4小时车程）",
+                    "<strong>17:15</strong> 出站，前往昆明站北广场机场大巴站",
+                    "<strong>17:30</strong> 乘坐919路机场大巴（发车频率15-20分钟/班）",
+                    "<strong>18:20</strong> 抵达昆明长水机场，步行至桔子酒店（5分钟）",
+                    "<strong>18:30</strong> 办理酒店入住"
+                  ]
+                },
+                {
+                  "type": "p",
+                  "html": "<strong>💰 费用明细：</strong>"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "<strong>白沙→丽江站：</strong>打车¥90（全车，约40分钟）",
+                    "<strong>丽江→昆明高铁：</strong>C456商务座 成人¥568×2 + 儿童¥454×2 = ¥2,044 ✅ 已购票",
+                    "<strong>昆明站→机场大巴：</strong>919路¥25/人 × 4 = ¥100",
+                    "<strong>总费用：</strong>¥2,234（全家4人）= <strong>¥558.5/人</strong>"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "daily",
+      "label": "📅 每日行程",
+      "blocks": [
+        {
+          "type": "card",
+          "blocks": [
+            {
+              "type": "h2",
+              "icon": "📅",
+              "html": "每日详细行程"
+            },
+            {
+              "type": "timeline",
+              "items": [
+                {
+                  "title": "Day 1 - 3月14日（周五）抵达大理",
+                  "items": [
+                    "<strong>02:40</strong> 新加坡起飞",
+                    "<strong>06:55</strong> 抵达昆明长水国际机场",
+                    "<strong>07:30-11:30</strong> 前往大理（高铁或包车）",
+                    "<strong>12:00</strong> 西山酒店入住",
+                    "<strong>14:00-18:00</strong> 大理古城自由逛吃",
+                    "<strong>18:00-21:00</strong> 兴盛夜市品尝当地美食",
+                    "<strong>住宿：</strong>西山酒店（洱海附近）"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "highlight",
+              "blocks": [
+                {
+                  "type": "h3",
+                  "html": "✓ 今日推荐"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "大理古城：人民路、复兴路、红龙井",
+                    "美食：烤乳扇、鲜花饼、凉鸡米线",
+                    "早点休息，调整时差"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "timeline",
+              "items": [
+                {
+                  "title": "Day 2 - 3月15日（周六）大理环海",
+                  "items": [
+                    "<strong>09:00-12:00</strong> 生态走廊骑行或漫步",
+                    "<strong>12:00-14:00</strong> 午餐休息",
+                    "<strong>14:00-17:00</strong> 喜洲三塔寺、崇圣寺三塔",
+                    "<strong>17:00-19:00</strong> 苍山上关欣赏日落",
+                    "<strong>19:00-21:00</strong> 猫花园-兴盛大夜市",
+                    "<strong>住宿：</strong>西山酒店"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "highlight",
+              "blocks": [
+                {
+                  "type": "h3",
+                  "html": "✓ 今日推荐"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "洱海生态走廊：最美骑行路线",
+                    "崇圣寺三塔：大理标志性建筑",
+                    "建议租电动车环海游"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "timeline",
+              "items": [
+                {
+                  "title": "Day 3 - 3月16日（周日）前往沙溪古镇",
+                  "items": [
+                    "<strong>09:00-12:00</strong> 酒店退房，前往沙溪古镇（约2-3小时车程）",
+                    "<strong>10:00</strong> 沙溪听雨小筑民宿入住（可提前入住）",
+                    "<strong>12:00-14:00</strong> 在沙溪享用午餐",
+                    "<strong>14:00-18:00</strong> 沙溪古镇初探（寺登街、古戏台、欧阳大院）",
+                    "<strong>18:00-20:00</strong> 品尝沙溪特色美食",
+                    "<strong>住宿：</strong>沙溪听雨小筑民宿"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "highlight",
+              "blocks": [
+                {
+                  "type": "h3",
+                  "html": "✓ 今日推荐"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "沙溪古镇：茶马古道上唯一幸存的集市",
+                    "寺登街：古朴的四方街",
+                    "古戏台：白族建筑精华",
+                    "比大理、丽江更安静原始"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "timeline",
+              "items": [
+                {
+                  "title": "Day 4 - 3月17日（周一）沙溪深度游或周边游",
+                  "items": [
+                    "<strong>09:00-12:00</strong> 沙溪古镇深度游（玉津桥、兴教寺）",
+                    "<strong>12:00-14:00</strong> 沙溪传统午餐",
+                    "<strong>14:00-17:00</strong> 选项A：沙溪周边村落徒步",
+                    "<strong>14:00-17:00</strong> 选项B：返回大理（喜洲、双廊一日游，当晚回沙溪）",
+                    "<strong>17:00-19:00</strong> 民宿露台观日落",
+                    "<strong>19:00-20:00</strong> 晚餐",
+                    "<strong>住宿：</strong>沙溪听雨小筑民宿"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "highlight",
+              "blocks": [
+                {
+                  "type": "h3",
+                  "html": "✓ 今日推荐"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "沙溪古镇：兴教寺（国家重点文物保护单位）",
+                    "如想去喜洲、双廊，可包车往返（约2小时车程）",
+                    "沙溪周边：石宝山石窟、剑川木雕村",
+                    "享受古镇的宁静时光"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "timeline",
+              "items": [
+                {
+                  "title": "Day 5 - 3月18日（周二）前往丽江",
+                  "items": [
+                    "<strong>09:00-12:00</strong> 退房前往沙溪/丽江",
+                    "<strong>12:00-14:00</strong> 途中午餐休息",
+                    "<strong>14:00</strong> 白沙古镇酒店入住",
+                    "<strong>15:00-18:00</strong> 白沙古镇初探",
+                    "<strong>18:00-20:00</strong> 酒店享用晚餐，欣赏雪山日落",
+                    "<strong>住宿：</strong>不晚单予·日照金山雪山全景度假酒店"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "highlight",
+              "blocks": [
+                {
+                  "type": "h3",
+                  "html": "✓ 今日推荐"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "车程较长，建议早点出发",
+                    "白沙古镇：壁画、纳西族文化",
+                    "酒店可欣赏玉龙雪山全景"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "timeline",
+              "items": [
+                {
+                  "title": "Day 6 - 3月19日（周三）丽江古城亲子游 👨‍👩‍👧‍👦",
+                  "items": [
+                    "<strong>08:30-09:30</strong> 酒店早餐，享受雪山晨景",
+                    "<strong>09:30-10:00</strong> 包车前往丽江古城",
+                    "<strong>10:00-12:00</strong> 丽江古城漫步<ul style=\"margin-left: 20px; margin-top: 5px;\"><li>四方街：古城中心广场，感受纳西族文化</li><li>大水车：丽江古城标志性地标</li><li>木府：纳西族土司府邸，了解纳西历史</li><li>沿溪流漫步，孩子可以喂鱼、看水车</li></ul>",
+                    "<strong>12:00-13:30</strong> 古城内午餐（纳西特色美食）",
+                    "<strong>13:30-15:30</strong> 亲子手工体验<ul style=\"margin-left: 20px; margin-top: 5px;\"><li>东巴纸坊：体验纳西族古法造纸</li><li>或：东巴文字绘画体验</li><li>孩子可亲手制作纪念品带回家</li></ul>",
+                    "<strong>15:30-17:00</strong> 狮子山观景台登高远眺古城全景",
+                    "<strong>17:00-18:00</strong> 返回白沙古镇酒店休息",
+                    "<strong>18:00-19:30</strong> 纳西特色晚餐",
+                    "<strong>住宿：</strong>白沙古镇雪山全景度假酒店"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "highlight",
+              "blocks": [
+                {
+                  "type": "h3",
+                  "html": "✓ 今日推荐"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "丽江古城：世界文化遗产，纳西族风情",
+                    "木府：被誉为\"丽江紫禁城\"，值得一看",
+                    "东巴文化体验：孩子会喜欢的手工活动",
+                    "狮子山：俯瞰古城全景的最佳观景点"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "timeline",
+              "items": [
+                {
+                  "title": "Day 7 - 3月20日（周四）古镇漫游",
+                  "items": [
+                    "<strong>09:00-12:00</strong> 白沙古镇深度游（壁画、手工艺）",
+                    "<strong>12:00-14:00</strong> 白沙特色午餐",
+                    "<strong>14:00-18:00</strong> 束河古镇游览",
+                    "<strong>18:00-20:00</strong> 束河古镇晚餐",
+                    "<strong>20:00-21:00</strong> 返回酒店",
+                    "<strong>住宿：</strong>白沙古镇酒店"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "highlight",
+              "blocks": [
+                {
+                  "type": "h3",
+                  "html": "✓ 今日推荐"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "白沙壁画：明代壁画艺术瑰宝",
+                    "束河古镇：比丽江古城更安静",
+                    "亲子活动：扎染、做鲜花饼、骑马",
+                    "当地集市体验（查询农历日期）"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "timeline",
+              "items": [
+                {
+                  "title": "Day 8 - 3月21日（周五）返回昆明",
+                  "items": [
+                    "<strong>08:00-10:30</strong> 睡到自然醒，悦榕庄早餐，收拾行李",
+                    "<strong>11:00</strong> 酒店退房，打车前往丽江站（40分钟，¥80-100）",
+                    "<strong>11:40</strong> 抵达丽江站，安检后前往商务座专属候车室",
+                    "<strong>11:50-12:30</strong> 商务座候车室休息（免费茶水、小食、充电、沙发座椅），孩子们可以休息玩耍",
+                    "<strong>12:30-12:50</strong> 候车室内用简餐/零食，上洗手间",
+                    "<strong>12:50</strong> 商务座专属通道优先检票",
+                    "<strong>13:01</strong> 乘坐<strong>C456高铁商务座</strong>出发 — 09车厢01A/01F/02A/02F",
+                    "<strong>13:01-13:30</strong> 安顿好行李，商务座可调节躺平休息",
+                    "<strong>13:30-14:30</strong> 车上免费餐食/小食（商务座含餐饮服务），孩子们吃点东西",
+                    "<strong>14:30-16:30</strong> 午休或欣赏沿途云南高原风景，孩子可以在宽敞座位上睡一觉",
+                    "<strong>16:30-17:01</strong> 收拾行李，准备下车",
+                    "<strong>17:01</strong> 抵达昆明站",
+                    "<strong>17:30</strong> 乘坐919路机场大巴前往机场（50分钟，¥25/人）",
+                    "<strong>18:30</strong> 抵达昆明长水机场，办理桔子酒店入住",
+                    "<strong>19:00-20:00</strong> 酒店晚餐或机场美食广场",
+                    "<strong>20:00-21:00</strong> 整理行李，确认航班信息",
+                    "<strong>21:00</strong> 早点休息（次日05:00起床）",
+                    "<strong>住宿：</strong>桔子昆明长水国际机场酒店"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "highlight",
+              "blocks": [
+                {
+                  "type": "h3",
+                  "html": "✓ 今日推荐"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "<strong>高铁票：</strong>C456车次（13:01-17:01），商务座 ✅ 已购票（成人¥568×2+儿童¥454×2=¥2,044）",
+                    "机场附近可购买云南特产（普洱茶、鲜花饼、云腿月饼）",
+                    "确认航班信息（3月22日07:25起飞）",
+                    "准备次日凌晨出发，提前2小时到机场（05:25）"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "timeline",
+              "items": [
+                {
+                  "title": "Day 9 - 3月22日（周六）返程",
+                  "items": [
+                    "<strong>05:00</strong> 起床准备",
+                    "<strong>05:25</strong> 前往机场（建议提前2小时）",
+                    "<strong>05:25-07:25</strong> 办理登机、安检、候机",
+                    "<strong>07:25</strong> 昆明起飞",
+                    "<strong>11:40</strong> 抵达新加坡",
+                    "<strong>12:00-13:00</strong> 入境、提取行李",
+                    "🏠 温馨的家"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cost",
+      "label": "💰 费用预算",
+      "blocks": [
+        {
+          "type": "card",
+          "blocks": [
+            {
+              "type": "h2",
+              "icon": "💰",
+              "html": "费用预算明细"
+            },
+            {
+              "type": "h3",
+              "html": "📊 预算概况"
+            },
+            {
+              "type": "budgetKpis"
+            },
+            {
+              "type": "budgetPayments",
+              "title": "💳 付款进度"
+            },
+            {
+              "type": "budgetBreakdown",
+              "title": "🧾 人民币支出构成"
+            },
+            {
+              "type": "costTable"
+            },
+            {
+              "type": "alert",
+              "variant": "info",
+              "icon": "💡",
+              "html": "<strong>费用说明</strong><br>1. 汇率按 1 SGD = 5 CNY 估算，实际以当日汇率为准<br>2. 餐饮费用为中等消费水平估算<br>3. 已包含主要景点门票和交通费用<br>4. 建议预留10-15%应急备用金<br>5. 购物预算根据个人需求调整",
+              "style": "margin-top: 20px;"
+            },
+            {
+              "type": "h3",
+              "html": "💳 支付方式建议"
+            },
+            {
+              "type": "transportOptions",
+              "cards": [
+                {
+                  "type": "transportCard",
+                  "open": true,
+                  "title": "💰 现金",
+                  "summary": "",
+                  "blocks": [
+                    {
+                      "type": "ul",
+                      "items": [
+                        "建议携带：¥3,000-5,000",
+                        "用途：小摊小贩、集市、部分景区",
+                        "可在机场或市区兑换"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "transportCard",
+                  "open": true,
+                  "title": "📱 移动支付",
+                  "summary": "",
+                  "blocks": [
+                    {
+                      "type": "ul",
+                      "items": [
+                        "微信支付 / 支付宝",
+                        "绑定信用卡即可使用",
+                        "几乎所有商家都接受"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "transportCard",
+                  "open": true,
+                  "title": "💳 信用卡",
+                  "summary": "",
+                  "blocks": [
+                    {
+                      "type": "ul",
+                      "items": [
+                        "Visa / MasterCard",
+                        "酒店、大型商场可用",
+                        "备用支付方式"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tips",
+      "label": "💡 旅行贴士",
+      "blocks": [
+        {
+          "type": "card",
+          "blocks": [
+            {
+              "type": "h2",
+              "icon": "💡",
+              "html": "旅行贴士"
+            },
+            {
+              "type": "h3",
+              "html": "🌤️ 天气与穿衣指南"
+            },
+            {
+              "type": "highlight",
+              "blocks": [
+                {
+                  "type": "ul",
+                  "items": [
+                    "3-4月云南春暖花开，是最佳旅游季节",
+                    "大理温差大：白天20-25°C，晚上10-15°C",
+                    "丽江早晚温差大，需准备薄外套",
+                    "紫外线强，必备：防晒霜SPF50+、墨镜、帽子",
+                    "建议穿搭：薄外套+T恤+长裤，洋葱式穿法"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "h3",
+              "html": "🏔️ 高原反应预防"
+            },
+            {
+              "type": "transportCard",
+              "open": true,
+              "title": "⚠️ 重要提醒",
+              "summary": "",
+              "blocks": [
+                {
+                  "type": "ul",
+                  "items": [
+                    "大理海拔约1900米，丽江约2400米",
+                    "初到高原：不要剧烈运动，慢慢行走",
+                    "多喝水，不要喝酒",
+                    "准备：红景天胶囊（提前3天服用）、葡萄糖口服液",
+                    "如有不适：头痛、恶心，立即休息并下降海拔"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "h3",
+              "html": "🍜 美食推荐"
+            },
+            {
+              "type": "transportOptions",
+              "cards": [
+                {
+                  "type": "transportCard",
+                  "open": true,
+                  "title": "🥘 大理美食",
+                  "summary": "",
+                  "blocks": [
+                    {
+                      "type": "ul",
+                      "items": [
+                        "烤乳扇：白族特色奶制品",
+                        "喜洲粑粑：香脆可口",
+                        "凉鸡米线：清爽酸辣",
+                        "砂锅鱼：洱海鲜鱼",
+                        "生皮：生猪皮配调料",
+                        "鲜花饼：玫瑰花馅"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "transportCard",
+                  "open": true,
+                  "title": "🍲 丽江美食",
+                  "summary": "",
+                  "blocks": [
+                    {
+                      "type": "ul",
+                      "items": [
+                        "腊排骨火锅：必吃",
+                        "鸡豆凉粉：纳西小吃",
+                        "丽江粑粑：类似烙饼",
+                        "野生菌火锅：时令美味",
+                        "水性杨花：湖菜特色",
+                        "酥油茶：藏式饮品"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "transportCard",
+                  "open": true,
+                  "title": "🥤 特色饮品",
+                  "summary": "",
+                  "blocks": [
+                    {
+                      "type": "ul",
+                      "items": [
+                        "鲜榨果汁：木瓜、芒果",
+                        "酸奶：当地特色",
+                        "普洱茶：云南名茶",
+                        "梅子酒：当地特产",
+                        "玫瑰花茶：美容养颜"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "h3",
+              "html": "🛍️ 购物特产"
+            },
+            {
+              "type": "highlight",
+              "blocks": [
+                {
+                  "type": "h3",
+                  "html": "推荐特产"
+                },
+                {
+                  "type": "ul",
+                  "items": [
+                    "鲜花饼：嘉华、潘祥记品牌",
+                    "普洱茶：可去专业茶店",
+                    "云南白药：国药精品",
+                    "银器：鹤庆银饰",
+                    "扎染布艺：白族传统工艺",
+                    "野生菌干货：松茸、牛肝菌",
+                    "玛咖、虫草等保健品"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "h3",
+              "html": "📱 实用APP推荐"
+            },
+            {
+              "type": "infoGrid",
+              "items": [
+                {
+                  "label": "🗺️ 导航",
+                  "html": "高德地图、百度地图"
+                },
+                {
+                  "label": "🚗 出行",
+                  "html": "滴滴出行、携程旅行"
+                },
+                {
+                  "label": "🍽️ 美食",
+                  "html": "大众点评、美团"
+                },
+                {
+                  "label": "💰 支付",
+                  "html": "微信、支付宝"
+                },
+                {
+                  "label": "🌤️ 天气",
+                  "html": "墨迹天气、中国天气通"
+                }
+              ]
+            },
+            {
+              "type": "h3",
+              "html": "⚠️ 注意事项"
+            },
+            {
+              "type": "alert",
+              "variant": "warning",
+              "icon": "⚠️",
+              "html": "<strong>安全提醒</strong><br>1. 不要在景区购买高价银器、玉石（容易被坑）<br>2. 参加骑马等活动要选正规商家，提前谈好价格<br>3. 晚上不要单独去偏僻地方<br>4. 保管好贵重物品，酒店使用保险柜<br>5. 注意防晒，云南紫外线非常强<br>6. 尊重当地少数民族风俗习惯<br>7. 高原地区量力而行，有高反症状立即休息<br>8. 保存好所有消费凭证"
+            },
+            {
+              "type": "h3",
+              "html": "📞 紧急联系方式"
+            },
+            {
+              "type": "infoGrid",
+              "items": [
+                {
+                  "label": "🚨 报警",
+                  "html": "110"
+                },
+                {
+                  "label": "🚑 急救",
+                  "html": "120"
+                },
+                {
+                  "label": "🚒 火警",
+                  "html": "119"
+                },
+                {
+                  "label": "🇸🇬 新加坡驻华使馆",
+                  "html": "+86 10 6532 1115"
+                }
+              ]
+            },
+            {
+              "type": "h3",
+              "html": "🌸 3月特别推荐"
+            },
+            {
+              "type": "highlight",
+              "blocks": [
+                {
+                  "type": "ul",
+                  "items": [
+                    "樱花盛开：大理大学、无量山",
+                    "油菜花：洱海周边、喜洲",
+                    "古城火把节：3月8-9日晚上8点开始",
+                    "集市赶集：农历初二、初九、十六、二十三",
+                    "天气舒适，适合户外活动",
+                    "游客相对较少，春节后旺季"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "h3",
+              "html": "📸 拍照打卡点"
+            },
+            {
+              "type": "transportOptions",
+              "cards": [
+                {
+                  "type": "transportCard",
+                  "open": true,
+                  "title": "📷 大理",
+                  "summary": "",
+                  "blocks": [
+                    {
+                      "type": "ul",
+                      "items": [
+                        "洱海生态廊道：最美骑行路",
+                        "双廊：海景+小普陀",
+                        "喜洲：稻田+白族建筑",
+                        "崇圣寺三塔：倒影",
+                        "大理古城：人民路"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "transportCard",
+                  "open": true,
+                  "title": "📷 丽江",
+                  "summary": "",
+                  "blocks": [
+                    {
+                      "type": "ul",
+                      "items": [
+                        "丽江古城：四方街、大水车",
+                        "白沙古镇：壁画",
+                        "束河古镇：四方街",
+                        "雪山全景：酒店观景台",
+                        "纳西庭院：传统建筑"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
